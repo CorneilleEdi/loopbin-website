@@ -2,6 +2,7 @@
   "name": "loopbin-website",
   "version": "1.0.0",
   "private": true,
+  "author": "\"@CorneilleEdi <corneilleayap@gmail.com> (https://loopbin.dev)",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",

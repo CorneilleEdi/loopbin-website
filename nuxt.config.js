@@ -1,6 +1,10 @@
 export default {
   target: 'static',
 
+  server: {
+    host: '0.0.0.0',
+  },
+
   head: {
     title: 'loopbin',
     htmlAttrs: {
@@ -13,7 +17,7 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon/favicon.ico' },
       {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap',

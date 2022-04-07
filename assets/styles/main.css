@@ -1,3 +1,7 @@
 .container {
   @apply max-w-9xl px-4 sm:px-10 mx-auto;
 }
+
+.exact-navigation {
+  @apply bg-dark-low text-blue text-white;
+}
