@@ -29,7 +29,11 @@ export default {
 
   plugins: [],
 
-  buildModules: ['@nuxtjs/eslint-module', '@nuxtjs/tailwindcss'],
+  buildModules: [
+    '@nuxtjs/eslint-module',
+    '@nuxtjs/color-mode',
+    '@nuxtjs/tailwindcss',
+  ],
 
   modules: ['@nuxt/content'],
 

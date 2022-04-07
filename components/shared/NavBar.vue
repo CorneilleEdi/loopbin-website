@@ -1,8 +1,10 @@
 <template>
   <nav
-    class="fixed flex w-full bg-white items-center justify-between flex-wrap top-0 animated mx-auto py-2 md:py-3 h-auto border-b border-dark-low z-10"
+    class="fixed flex w-full bg-white dark:bg-dark-high items-center justify-between flex-wrap top-0 animated mx-auto py-2 md:py-3 h-auto border-b border-dark-low dark:border-dark z-10"
   >
-    <div class="container flex items-center justify-between text-dark">
+    <div
+      class="container flex items-center justify-between text-dark dark:text-dark-low"
+    >
       <nuxt-link to="/">
         <img
           src="@/assets/images/logo/main/main-logo.png"
@@ -76,7 +78,7 @@
       </div>
       <div class="flex justify-center items-center space-x-4">
         <div
-          class="hidden md:flex items-center border border-dark bg-dark bg-opacity-10 hover:bg-opacity-20 border-opacity-10 rounded-sm pl-2 pr-10 py-2 cursor-pointer"
+          class="hidden md:flex items-center border border-dark dark:border-dark-low dark:border-opacity-20 bg-dark bg-opacity-10 hover:bg-opacity-20 border-opacity-10 rounded-sm pl-2 pr-10 py-2 cursor-pointer"
         >
           <span class="mr-2 opacity-70">
             <svg
@@ -95,11 +97,51 @@
           <p class="text-sm text-opacity-70">Rechercher</p>
         </div>
         <button class="p-2 hover:bg-dark-low rounded-sm">
-          <span class="">
+          <span
+            v-if="$colorMode.preference === 'light'"
+            class=""
+            @click="$colorMode.preference = 'system'"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
-              class="w-5 h-5 md:w-6 :h-6"
+              class="w-5 h-5 md:w-6 md:h-6"
+            >
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path
+                fill="currentColor"
+                d="M4 5v11h16V5H4zm-2-.993C2 3.451 2.455 3 2.992 3h18.016c.548 0 .992.449.992 1.007V18H2V4.007zM1 19h22v2H1v-2z"
+              />
+            </svg>
+          </span>
+
+          <span
+            v-if="$colorMode.preference === 'dark'"
+            class=""
+            @click="$colorMode.preference = 'light'"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              class="w-5 h-5 md:w-6 md:h-6"
+            >
+              <path fill="none" d="M0 0h24v24H0z" />
+              <path
+                fill="currentColor"
+                d="M12 18a6 6 0 1 1 0-12 6 6 0 0 1 0 12zm0-2a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM11 1h2v3h-2V1zm0 19h2v3h-2v-3zM3.515 4.929l1.414-1.414L7.05 5.636 5.636 7.05 3.515 4.93zM16.95 18.364l1.414-1.414 2.121 2.121-1.414 1.414-2.121-2.121zm2.121-14.85l1.414 1.415-2.121 2.121-1.414-1.414 2.121-2.121zM5.636 16.95l1.414 1.414-2.121 2.121-1.414-1.414 2.121-2.121zM23 11v2h-3v-2h3zM4 11v2H1v-2h3z"
+              />
+            </svg>
+          </span>
+
+          <span
+            v-if="$colorMode.preference === 'system'"
+            class=""
+            @click="$colorMode.preference = 'dark'"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              class="w-5 h-5 md:w-6 md:h-6"
             >
               <path fill="none" d="M0 0h24v24H0z" />
               <path

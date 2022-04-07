@@ -1,5 +1,8 @@
 <template>
-  <div class="w-full bg-white text-dark-high">
+  <div
+    class="w-full bg-white dark:bg-dark-high text-dark-high dark:text-white"
+    :class="$colorMode.preference === 'dark' ? 'dark' : ''"
+  >
     <nav-bar />
     <Nuxt />
     <bottom-nav />

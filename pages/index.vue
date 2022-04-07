@@ -1,5 +1,7 @@
 <template>
-  <div class="h-screen flex justify-center items-center"></div>
+  <div
+    class="flex h-screen justify-center items-center bg-white dark:bg-dark-high text-dark-high dark:text-white"
+  ></div>
 </template>
 
 <script>
