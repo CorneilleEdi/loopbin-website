@@ -17,7 +17,7 @@
           <nuxt-link
             to="/posts"
             exact-active-class="exact-navigation"
-            class="flex px-4 items-center py-2 hover:bg-dark-low cursor-pointer rounded-sm"
+            class="flex px-4 items-center py-2 slick-hover cursor-pointer rounded-sm"
           >
             <span class="mr-2">
               <svg
@@ -37,7 +37,7 @@
           <nuxt-link
             to="/projets"
             exact-active-class="exact-navigation"
-            class="flex px-4 items-center py-2 hover:bg-dark-low cursor-pointer rounded-sm"
+            class="flex px-4 items-center py-2 slick-hover cursor-pointer rounded-sm"
           >
             <span class="mr-2">
               <svg
@@ -57,7 +57,7 @@
           <nuxt-link
             to="/about"
             exact-active-class="exact-navigation"
-            class="flex px-4 items-center py-2 hover:bg-dark-low cursor-pointer rounded-sm"
+            class="flex px-4 items-center py-2 slick-hover cursor-pointer rounded-sm"
           >
             <span class="mr-2">
               <svg
@@ -96,7 +96,7 @@
 
           <p class="text-sm text-opacity-70">Rechercher</p>
         </div>
-        <button class="p-2 hover:bg-dark-low rounded-sm">
+        <button class="p-2 slick-hover rounded-sm">
           <span
             v-if="$colorMode.preference === 'light'"
             class=""

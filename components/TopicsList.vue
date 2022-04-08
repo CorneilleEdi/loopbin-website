@@ -1,0 +1,46 @@
+<template>
+  <div class="flex flex-wrap my-4">
+    <div
+      v-for="topic in topics"
+      :key="topic"
+      class="p-2 lg:w-1/6 md:w-1/4 w-1/2"
+    >
+      <nuxt-link :to="{ name: 'topics-id', params: { id: topic } }">
+        <div
+          class="h-full flex items-center p-2 rounded-sm hover:shadow-sm slick-border dark-text"
+        >
+          <div class="bg-dark-low dark:bg-opacity-20 p-4 mr-4 rounded-sm">
+            <img
+              class="mx-auto h-4 w-4 flex-shrink-0"
+              :src="getImagePath(topic)"
+            />
+          </div>
+          <div class="flex-grow">
+            <p class=" ">
+              {{ topic }}
+            </p>
+          </div>
+        </div>
+      </nuxt-link>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'TopicsList',
+
+  props: {
+    topics: {
+      type: Array,
+      require: true,
+    },
+  },
+
+  methods: {
+    getImagePath(name) {
+      return require(`../assets/images/svg/techs/${name}.svg`)
+    },
+  },
+}
+</script>

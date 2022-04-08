@@ -13,6 +13,7 @@ Build with
 TODO:
 
 - [x] Posts Pages
+- [x] Topics Pages
 - [ ] Post page
 - [ ] Projects page
 - [ ] About

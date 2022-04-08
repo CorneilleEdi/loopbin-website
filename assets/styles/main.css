@@ -1,7 +1,30 @@
 .container {
   @apply max-w-9xl px-4 sm:px-10 mx-auto;
 }
+.page-bg {
+  @apply bg-white dark:bg-dark-high text-dark-high dark:text-white  pb-20 md:pb-12;
+}
 
 .exact-navigation {
   @apply bg-dark-low text-blue text-white;
+}
+
+.slick-border {
+  @apply border-dark-low dark:border-white dark:border-opacity-20 border;
+}
+
+.darker-text {
+  @apply text-dark-high dark:text-white;
+}
+
+.dark-text {
+  @apply text-dark dark:text-white dark:text-opacity-70;
+}
+
+.dark-low-bg {
+  @apply bg-dark-low dark:bg-dark dark:bg-opacity-10;
+}
+
+.slick-hover:hover {
+  @apply bg-dark-low dark:bg-opacity-20;
 }
