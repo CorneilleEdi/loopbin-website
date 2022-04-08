@@ -9,3 +9,13 @@ Build with
 - Tailwind CSS
 - Github Actions
 - Firebase
+
+TODO:
+
+- [x] Posts Pages
+- [ ] Post page
+- [ ] Projects page
+- [ ] About
+- [ ] Home page
+- [ ] Footer
+- [ ] SEO

@@ -4,7 +4,7 @@
     :class="$colorMode.preference === 'dark' ? 'dark' : ''"
   >
     <nav-bar />
-    <Nuxt />
+    <Nuxt class="pt-20 md:pt-24 min-h-screen" />
     <bottom-nav />
   </div>
 </template>

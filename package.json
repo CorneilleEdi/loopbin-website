@@ -15,12 +15,12 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.{js,vue}": "eslint --cache",
-    "*.**": "prettier --check --ignore-unknown"
+    "*.{js,vue}": "eslint --cache"
   },
   "dependencies": {
     "@nuxt/content": "^1.15.1",
     "core-js": "^3.19.3",
+    "dayjs": "^1.11.0",
     "nuxt": "^2.15.8",
     "vue": "^2.6.14",
     "vue-server-renderer": "^2.6.14",
