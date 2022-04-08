@@ -6,15 +6,11 @@ topics: [vagrant, vscode]
 date: 2021-02-16
 ---
 
-## Table of Contents
-
-##
-
-import Button from '~/components/Button.vue'
+#
 
 Dans ce tutoriel, nous allons mettre en place un environnement de développement avec NodeJS et y connecter notre éditeur de texte VsCode.
 
-<Button :isGithub=true text="Code sur Github" link="hhttps://github.com/CorneilleEdi/loopbin-tutos/tree/main/vagrant-vscode"/>
+<action-button type="github" text="Code sur Github" link="https://github.com/CorneilleEdi/loopbin-tutos/tree/main/vagrant-vscode"></action-button>
 
 Notre environnement de développement sera pour un projet nommé Sparky. Nous allons y développer un API pour le backend avec NodeJs,NPM, MongoDB, PM2 et NGINX (notre environnement de développement doit ressembler le plus possible à notre environnement de déploiement). Nous allons utiliser VsCode depuis notre machine. Pour cela il nous faudra connecter VSCode à la machine virtuelle en SSH pour y coder directement.
 
@@ -44,17 +40,17 @@ Structure du dossier
 ```bash
 .
 ├── scripts
-│   ├── install_git.sh
-│   ├── install_mongodb.sh
-│   ├── install_nginx.sh
-│   ├── install_nodejs.sh
-│   └── update.sh
+│   ├── install_git.sh
+│   ├── install_mongodb.sh
+│   ├── install_nginx.sh
+│   ├── install_nodejs.sh
+│   └── update.sh
 └── Vagrantfile
 ```
 
 Voici notre Vagrantfile
 
-```ruby:title=Vagrantfile
+```ruby[Vagrantfile]
 Vagrant.configure("2") do |config|
     config.vm.box_check_update = false
 
@@ -83,7 +79,7 @@ end
 
 Script de mise à jour scripts/update.sh
 
-```bash:title=scripts/update.sh
+```bash[scripts/update.sh]
 # Mise à jour
 sudo apt-get update
 sudo apt-get upgrade -y
@@ -91,7 +87,7 @@ sudo apt-get upgrade -y
 
 Script d'installtion de git scripts/install_git.sh
 
-```bash:title=scripts/install_git.sh
+```bash[scripts/install_git.sh]
 exists()
 {
     command -v "$1" >/dev/null 2>&1
@@ -203,7 +199,7 @@ Une suite d'extension de VSCode développée par Microsoft permet de connecter l
 
 [https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack)
 
-![vscode remoe development extension](./images/vsext.png)
+![vscode remoe development extension](/images/vagrant/vsext.png)
 
 Une fois l'extension installée, il faudra configurer la connexion SSH. Il existe plusieurs méthodes mais la plus simple est celle qui consiste à ajouter les paramètres de connexion dans le fichier de configuration SSH. Pour cela il va falloir que nous récupérions ces paramètres avec la commande `vagrant ssh-config`
 
@@ -229,7 +225,7 @@ Il suffit d'y ajouter les configurations récupérées grâce à la commande `va
 
 Vous pouvez lancer la connexion ssh avec le nouveau bouton ajouter par l'extension remote en bas de l'éditeur.
 
-![ssh connection button](./images/ssh_btn.png)
+![ssh connection button](/images/vagrant/ssh_btn.png)
 
 Choisissez l'option `Se connecter` , puis choisissez votre fichier de configuration ssh et le Host auquel vous vouliez vous connecter.
 
@@ -237,6 +233,13 @@ Un avantage est que VSCode se connecte avec l'utilisateur vagrant qui a les perm
 
 ## Resultat
 
-![remote vscode](./images/remote.png)
+![remote vscode](/images/vagrant/remote.png)
 
 Notre éditeur est connecté et prêt.
+
+<script>
+  import ActionButton from "~/components/ActionButton";
+  export default {
+    components: {ActionButton}
+  }
+</script>

@@ -6,11 +6,6 @@ topics: [vagrant]
 date: 2021-02-06
 ---
 
-## Table of Contents
-
-<!-- import Button from '~/components/Button.vue'
-<Button isDoc text="Package SweetSheet" link="https://pub.dev/packages/sweetsheet"/> -->
-
 Avant de commencer à utiliser Vagrant, il y a des terminologies spécifique à comprendre
 
 Pour plus d'information visiter la documentation officielle

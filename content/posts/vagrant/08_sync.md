@@ -6,9 +6,7 @@ topics: [vagrant]
 date: 2021-02-13
 ---
 
-## Table of Contents
-
-##
+#
 
 Les machines virtuelles sont très utiles, mais ce n'est pas très commode pour certaines personnes d'éditer des fichiers à l'aide d'un simple éditeur basé sur un terminal via SSH. Vagrant nous offre une option pour synchroniser automatiquement des fichiers de la machine hôte vers et depuis la machine virtuelle. De cette façon, il est possible de modifier les fichiers localement et de les exécuter dans l'environnement virtuel. Dans ce passage nous allons explorer cette approche.
 

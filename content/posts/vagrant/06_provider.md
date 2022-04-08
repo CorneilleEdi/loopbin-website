@@ -6,9 +6,7 @@ topics: [vagrant]
 date: 2021-02-11
 ---
 
-## Table of Contents
-
-##
+#
 
 Dans ce post nous allons explorer le concept de provider dans vagrant. Nous allons spécialement utiliser VirtualBox (le provider par défaut).
 

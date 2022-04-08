@@ -6,9 +6,7 @@ topics: [dart]
 date: 2020-01-01
 ---
 
-## Table of Contents
-
-##
+#
 
 import Button from "~/components/Button.vue";
 
@@ -37,7 +35,7 @@ Le processus d'installation est très simple et ne nécessite aucune pré config
 
 Rendez vous sur [le site de téléchargement](http://www.gekorm.com/dart-windows/) et téléchargez la version stable ou la version beta (pas recommandé).
 
-![Dart installation page](./images/dart.png)
+![Dart installation page](/images/dart-base/dart.png)
 
 ## Installation du SDK Dart sur Linux
 
@@ -116,13 +114,13 @@ Pour écrire du code Dart rapidement et profiter des avantages qu'offrent les é
 
 Pour installer Visual Studio Code, rendez vous sur [le site de telechargement](https://code.visualstudio.com/Download) et téléchargez la version appropriée pour votre système d'exploitation.
 
-![vscode installation page](./images/vscode.png)
+![vscode installation page](/images/dart-base/vscode.png)
 
 Pour profiter des avantages qu'offre VS Code, installez l'extension Dart.
 
 - Ouvrez VS Code et faites Cmd+Shift+X ou Cliquez sur Extensions pour ouvrir le panneau des extensions et cherchez Dart
 
-![vscode extension](./images/dart_ext.png)
+![vscode extension](/images/dart-base/dart_ext.png)
 
 - Choisissez **Install** pour installer l'extension
 
@@ -139,6 +137,6 @@ DartPad est un éditeur en ligne qui permet d'écrire et d'exécuter du code Dar
 Il permet de programmer sans installer un SDK ou un éditeur de texte.
 
 dartpad.dev
-![dartpad](./images/dartpad.png)
+![dartpad](/images/dart-base/dartpad.png)
 
 [Essayer DartPad](https://dartpad.dev/)

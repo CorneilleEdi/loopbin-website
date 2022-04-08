@@ -6,8 +6,6 @@ topics: [network]
 date: 2021-01-16
 ---
 
-## Table of Contents
-
 Dans ce petit tuto nous allons explorer la notion d’URL, qu’est-ce que s’est et ces différentes parties.
 
 Si il y a une chose que nous utilisons tout le temps dans nos navigateur se sont les urls. Nous connaissons certains même par cœur comme **`google.com`** , **`facebook.com`**. Mais qu’est-ce que c'est qu’une url ?
@@ -30,7 +28,7 @@ Nos applications utilisent aussi des urls pour recevoir des informations. Par ex
 
 ## Les différentes parties d’une url
 
-![Les parties](./images/parties.jpg)
+![Les parties](/images/url/parties.jpg)
 
 Comme nous l’avons précédemment dit, une url est un ensemble de caractères suivant un format et une convention. Ceci oblige une url valide à avoir différentes parties.
 

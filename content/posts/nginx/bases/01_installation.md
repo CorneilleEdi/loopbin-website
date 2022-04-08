@@ -6,24 +6,18 @@ topics: [nginx]
 date: 2020-12-06
 ---
 
-## Table of Contents
-
-## Installation
-
-import Button from '~/components/Button.vue'
+# Installation
 
 Dans cette partie nous allons installer NGINX sur Linux. Pour plus de précision , veuillez consulter la documentation de NGINX.
 
-<Button :isDoc="true" text="Documentation" link="https://www.nginx.com/resources/wiki/start/topics/tutorials/install/"/>
+<action-button type="doc" text="Documentation" link="https://www.nginx.com/resources/wiki/start/topics/tutorials/install/"></action-button>
 
-## **Installation**
+## Installation
 
 Il existe deux méthodes pour installer NGINX sur Linux.
 
 - Avec le repectoire d'application (APT sur Ubuntu)
 - En Compilant le code source
-
----
 
 ### Avec le repectoire d'application
 
@@ -31,8 +25,6 @@ Il existe deux méthodes pour installer NGINX sur Linux.
 sudo apt-get update
 sudo apt-get -y install nginx
 ```
-
----
 
 ### Installation en compilant le code source
 
@@ -42,13 +34,13 @@ sudo apt-get -y install nginx
 >
 > cette approche configure NGINX suivant vos besoins, pour plus d'informations veuillez consulter la documentation
 
-La première étape serait de télécharger le code source. Pour cela nous allons utliser le programme **wget**. Ouvrez votre terminal et faites
+La première étape serait de télécharger le code source. Pour cela nous allons utliser le programme **wget**. Ouvrez votre terminal et faites
 
 ```bash
 wget http://nginx.org/download/nginx-1.19.2.tar.gz
 ```
 
-En effet **1.19.2** est la version actuelle de NGINX. Pour savoir quelle version est la plus récente, rendez-vous sur [https://nginx.org/en/download.html](https://nginx.org/en/download.html)
+En effet **1.19.2** est la version actuelle de NGINX. Pour savoir quelle version est la plus récente, rendez-vous sur [https://nginx.org/en/download.html](https://nginx.org/en/download.html)
 
 Une fois le fichier compressé téléchargé, vous pouvez utiliser la commande suivante pour l'extraire ou Bien le faire manuellement.
 
@@ -58,7 +50,7 @@ tar -zxvf nginx-1.19.2.tar.gz
 
 #### Configuration
 
-Maintenant, passons à l'installation. Entrez dans le dossier décompressé avec la commande **cd** et faites
+Maintenant, passons à l'installation. Entrez dans le dossier décompressé avec la commande **cd** et faites
 
 ```bash
 ./configre
@@ -126,9 +118,9 @@ Vu que nous avons manuellement installé NGINX, il va falloir que nous configuri
 
 Cette configuration devrait fonctionner sur Fedora, OpenSUSE, Arch Linux, Ubuntu. Testé sur Fedora 16 et 17, Ubuntu 18.04.
 
-L'emplacement du **PIDFile** et du binaire NGINX peut être différent selon la façon dont NGINX a été compilé.
+L'emplacement du **PIDFile** et du binaire NGINX peut être différent selon la façon dont NGINX a été compilé.
 
-Enregistrez ce fichier sous **/lib/systemd/system/nginx.service**
+Enregistrez ce fichier sous **/lib/systemd/system/nginx.service**
 
 ```shell
 [Unit]

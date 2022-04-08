@@ -6,9 +6,7 @@ topics: [dart]
 date: 2020-01-01
 ---
 
-## Table of Contents
-
-##
+#
 
 Les structures de contrôle en programmation permettent de contrôler le
 flux d'exécution d'un programme. En effet, il existe plusieurs structures de contrôle.
@@ -34,7 +32,7 @@ Dans la programmation en général et dans le langage Dart en particulier, il ex
 
 On parle de Structure conditionnelle simple lorsque le traitement du programme dépend d’une seule condition. Quand cette condition est vraie le code s'exécute. Les conditions sont créées grâce aux opérateurs dont nous avons discuté dans les tutoriels précédents.
 
-![condition if](./images/if.png)
+![condition if](/images/dart-base/if.png)
 
 Quand le programme arrive au niveau de la condition **if**, la condition est évaluée. Si cette évaluation retourne **true** l'expression est exécutée. Si la condition est fausse (retourne **false**) le programme continue son exécution sans exécuter l'expression dans la condition **if**.
 
@@ -66,7 +64,7 @@ Dans ce cas, la condition est vraie ( **14.56 est supérieur ou égal à 10** ) 
 
 On parle de Structure conditionnelle alternative lorsque le traitement du programme dépend d’une aussi seule condition comme la structure conditionnelle simple **IF**. Mais dans ce cas, si la condition est vraie, la première expression est exécutée; si la condition est fausse, la deuxième expression est exécutée et l' exécution du programme continue.
 
-![condition if/else](./images/if_else.png)
+![condition if/else](/images/dart-base/if_else.png)
 
 Quand le programme arrive au niveau de la condition **if .... else**, la condition est évaluée. Si cette évaluation retourne **true** l'expression 1 est exécutée. Si la condition est fausse (retourne **false**) l'expression 2 est exécutée.
 
@@ -102,7 +100,7 @@ Le programme ci-dessus évalue un nombre et dit si il est pair ou impair. Par d�
 
 On parle de Structure conditionnelle généralisée lorsqu'elle permet de lier des instructions à des conditions **variables** et **finies**. Cette structure permet de faire plusieurs évaluations de condition à la suite et exécute une certaine expression quand une seule de ces conditions est vraie.
 
-![condition if/else/if](./images/if_else_if.png)
+![condition if/else/if](/images/dart-base/if_else_if.png)
 
 Quand l'expression de la condition vraie est exécutée, le programme quitte la structure conditionnelle et continue son exécution.
 
@@ -195,7 +193,7 @@ print(resultat);
 
 Evaluation du maximum entre deux nombres
 
-```dart:title=max.dart
+```dart[max.dart]
 main() {
   int x = 123;
   int y = 321;
@@ -214,7 +212,7 @@ main() {
 
 ou
 
-```dart:title=max.dart
+```dart[max.dart]
 main() {
   int x = 123;
   int y = 321;
@@ -229,13 +227,13 @@ main() {
 }
 ```
 
-```:title=output
+```[output]
 le maximum entre 123 et 321 est 321
 ```
 
 Un programme qui calcule les solutions d'une équation du second degré (**ax² + bx + c** )
 
-```dart:title=equation.dart
+```dart[equation.dart]
 import 'dart:math' as Math;
 
 main() {
@@ -269,7 +267,7 @@ Dans cet exemple nous utilisons la méthode **Math.pow** de la librairie intégr
 
 > Nous parlerons des librairies intégrées de Dart dans une autre section.
 
-```:title=output
+```[output]
 equation : x² + 5x + 4
 Les solutions sont -1.0 et -4.0
 ```

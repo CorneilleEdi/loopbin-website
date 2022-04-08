@@ -6,9 +6,7 @@ topics: [dart]
 date: 2020-01-01
 ---
 
-## Table of Contents
-
-##
+#
 
 Les méthodes **Map, Where, Reduce et d'autres** sont des méthodes qui s'appliquent aux collections en Dart. Elles permettent de passer à la programmation fonctionnelle en Dart.
 
@@ -128,7 +126,7 @@ Avec les données suivantes, veuillez répondre aux questions suivantes:
 - Quelle est l' âge minimum et l' âge maximum des employés de cette liste ?
 - Créer une nouvelle liste ne contenant que le nom des employés dont l' âge dépasse 30 ans
 
-```json:title=donées
+```json[donées]
 [{
   "nom": "Wallie Colisbe",
   "age": 33,
@@ -192,7 +190,7 @@ Avec les données suivantes, veuillez répondre aux questions suivantes:
 }]
 ```
 
-```dart:title=employees.dart
+```dart[employees.dart]
 void main() {
   List<Map<String, dynamic>> employees = [{
   "nom": "Wallie Colisbe",
@@ -303,7 +301,7 @@ min(liste) {
 
 ```
 
-```:title=output
+```[output]
 nombre d'employees : 15
 Listes des compagnies : [Rhycero, Brainverse,
 			Edgepulse, Oyonder, Jabberbean, Jazzy, Edgeify,

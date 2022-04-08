@@ -6,19 +6,15 @@ topics: [terraform, gcp]
 date: 2021-05-07
 ---
 
-## Table of Contents
-
-#
-
 S'il y a une règle très important à suivre en codant, c'est de ne jamais se répéter. Dans cet article, nous allons vois comment est ce que nous pouvons utiliser une boucle dans Terraform pour éviter les répétition dans la création de ressources similaires.
 
-> **Terraform** est une infrastructure en tant qu'outil de code pour la création, la modification et la gestion des versions d'une infrastructure de manière sûre et efficace entre divers fournisseurs de cloud.
+> **Terraform** est une infrastructure en tant qu'outil de code pour la création, la modification et la gestion des versions d'une infrastructure de manière sûre et efficace entre divers fournisseurs de cloud.
 
 ## Notre objectif
 
 Notre but sera de créer plusieurs topic de PubSub sur Google Cloud Platform. Nous allons passer un ensemble de noms et nous espérons comme output, une list de dictionnaire ayant comme clé l'élément de l'ensemble et pour valeur l'id et le nom du topic. Quelque chose comme ceci
 
-```bash
+```js{1,3-5}[server.js]
 [
        {
            event = ""

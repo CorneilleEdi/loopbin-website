@@ -6,24 +6,20 @@ topics: [dart, flutter]
 date: 2020-06-01
 ---
 
-## Table of Contents
-
-##
-
-import Button from '~/components/Button.vue'
+#
 
 <table>
 <tr>
 <td>
-<img src="./images/nice_sheet.jpg" alt="">
+<img src="/images/sweet_sheet_package/nice_sheet.jpg" alt="">
 </td>
 <td>
-<img src="./images/warning_sheet.jpg" alt="">
+<img src="/images/sweet_sheet_package/warning_sheet.jpg" alt="">
 </td>
 </tr>
 </table>
 
-<Button isPackage=true text="Package SweetSheet" link="https://pub.dev/packages/sweetsheet"/>
+<action-button type="package" text="Package SweetSheet" link="https://pub.dev/packages/sweetsheet"></action-button>
 
 Le package **sweetsheet** permet d'utiliser des bottom sheets comme dialogues de confirmation.
 C'est le premier package que j'ai officiellement créer et publier.
@@ -112,10 +108,10 @@ Le **SweetSheetColor** est une classe qui a quatre valeurs static et qui déterm
 <table>
 <tr>
 <td>
-<img src="./images/black.jpg" alt="">
+<img src="/images/sweet_sheet_package/black.jpg" alt="">
 </td>
 <td>
-<img src="./images/light.jpg" alt="">
+<img src="/images/sweet_sheet_package/light.jpg" alt="">
 </td>
 </tr>
 </table>
@@ -138,9 +134,9 @@ Pour personnaliser l'action, passez une nouvel valeur à l'argument **color** de
 
 ---
 
-## Exemple:
+## Exemple
 
-<Button isGithub=true text="Exemple sur Github" link="https://github.com/CorneilleEdi/sweetsheet/tree/master/example"/>
+<action-button type="github" text="Exemple sur Github" link="https://github.com/CorneilleEdi/sweetsheet/tree/master/example"></action-button>
 
 ### Warning
 
@@ -201,4 +197,4 @@ _sweetSheet.show(
 
 > Le package SweetSheet est un projet **open-source** alors n'hésitez pas à y contribuer.
 
-<Button isGithub=true text="Code source de SweetSheet" link="https://github.com/CorneilleEdi/sweetsheet"/>
+<action-button type="github" text="Code source de SweetSheet" link="https://github.com/CorneilleEdi/sweetsheet"></action-button>

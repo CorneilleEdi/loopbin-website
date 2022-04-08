@@ -6,12 +6,6 @@ topics: [nodejs]
 date: 2021-01-16
 ---
 
-import Button from '~/components/Button.vue'
-
-## Table of Contents
-
-#
-
 Il est fréquent que dans votre code vous soyez appelé à créer une URL.
 
 Bien sûr vu que l’URL est une chaîne de caractère vous pouvez simplement essayer de concaténer les données afin d’avoir votre URL comme ceci
@@ -20,7 +14,7 @@ Mais à moins que vous soyez suicidaire, la plupart des langages de programmatio
 
 Dans ce tuto, nous allons explorer le module URL inclut dans NodeJs par défaut.
 
-<Button isGithub=true text="Code sur Github" link="https://github.com/CorneilleEdi/loopbin-tutos/tree/main/manipuler-les-urls-en-nodejs"/>
+<action-button type="github" text="Code sur Github" link="https://github.com/CorneilleEdi/loopbin-tutos/tree/main/manipuler-les-urls-en-nodejs"></action-button>
 
 > Le module url est un module inclut le défaut dans vous n’avez pas besoin de l’installer
 

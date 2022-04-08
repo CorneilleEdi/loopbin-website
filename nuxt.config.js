@@ -25,8 +25,13 @@ export default {
     ],
   },
 
-  css: ['./assets/styles/main.css', './assets/styles/typography.css'],
+  css: [
+    './assets/styles/main.css',
+    './assets/styles/typography.css',
+    './assets/styles/content.scss',
+  ],
 
+  components: true,
   plugins: [],
 
   buildModules: [
@@ -37,7 +42,13 @@ export default {
 
   modules: ['@nuxt/content'],
 
-  content: {},
+  content: {
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-material-oceanic.css',
+      },
+    },
+  },
 
   build: {},
 }

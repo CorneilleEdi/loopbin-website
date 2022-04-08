@@ -6,11 +6,7 @@ topics: [redis]
 date: 2020-02-01
 ---
 
-import Button from '~/components/Button.vue'
-
-## Table of Contents
-
-##
+#
 
 Dans ce petit tuto , nous allons explorer la méthode pour connecter un programme en **Python** avec **Redis**
 
@@ -18,11 +14,11 @@ Dans ce petit tuto , nous allons explorer la méthode pour connecter un programm
 
 Pour y arriver nous allons utiliser la librairie **Redis-Py**. Elle est très simple et très facile à utiliser.
 
-<Button :isPackage="true" text="Package Redis-Py" link="https://pypi.org/project/redis/"/>
+<action-button type="package" text="Package Redis-Py" link="https://pypi.org/project/redis/"></action-button>
 
 Elle est disponible aussi comme project open source sur Github.
 
-<Button :isGithub="true" text="Github Redis-Py" link="https://github.com/andymccurdy/redis-py/"/>
+<action-button type="github" text="Github Redis-Py" link="https://github.com/andymccurdy/redis-py/"></action-button>
 
 ### Installation
 
@@ -43,7 +39,7 @@ redis 20.0.13 from /home/corneilleedi/.local/lib/python3.7/site-packages/redis/_
 
 Avant tout chose, il va falloir importer Redis et nous connecter à la base de donnée
 
-```python:title=app.py
+```python[app.py]
 import redis
 db = redis.StrictRedis(host="localhost", port=6379, db=0)
 ```
@@ -66,7 +62,7 @@ Il est aussi possible d'utiliser un URI sour le format
 - PORT: le port sous lequel tourne Redis.
 - DATABASE: le numero de la base de donnée que vous visé. Generalement mis à 0
 
-```python:title=app.py
+```python[app.py]
 import redis
 db = redis.from_url(url= 'redis://localhost@loopbin:6379/0')
 ```
@@ -88,13 +84,11 @@ Maintenant que notre code a acces à Redis, nous pouvons commencer à nous amuse
 
 Encore plus de méthode dans la documentation:
 
-<Button :isDoc="true" text="Documentation Redis-Py" link="https://redis-py.readthedocs.io/en/latest/"/>
-
----
+<action-button type="doc" text="Documentation Redis-Py" link="https://redis-py.readthedocs.io/en/latest/"></action-button>
 
 Jetons un coup d'oeuil a un peu de code.
 
-```python:title=app.py
+```python[app.py]
 import redis
 db = redis.from_url(url= 'redis://localhost:6379/0')
 
@@ -103,7 +97,7 @@ n = db.get('name')
 print(n)
 ```
 
-```shell:title=output
+```shell[output]
 b'John Doe'
 ```
 

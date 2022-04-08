@@ -6,10 +6,6 @@ topics: [dart]
 date: 2020-01-01
 ---
 
-## Table of Contents
-
-##
-
 Une fonction est un bloc de code qui effectue une tâche spécifique. Au lieu d'écrire le code complet autant de fois que nécessaire, on crée une fonction que l’on appellera pour l'exécuter, ce qui peut aussi alléger le code, le rendre plus lisible. Les fonctions permettent de diviser le problème que veut résoudre le code en plusieurs parties indépendantes ou interdépendantes.
 
 Une fonction contient des déclarations et des instructions et ces déclarations composent le corps de la fonction.
@@ -503,7 +499,7 @@ Dans ce programme, nous créons deux fonctions **square** et **appliquerFonction
 
 Ecrire une fonction qui affiche tous les éléments de la liste qui lui est passée en paramètre
 
-```dart:title=listes.dart
+```dart[listes.dart]
 affichageListe(liste){
   for(var element in liste){
     print(element);
@@ -518,7 +514,7 @@ main() {
 }
 ```
 
-```:title=output
+```[output]
 Amazon
 Apple
 Samsung
@@ -530,7 +526,7 @@ GOOGLE
 
 Ecrire une fonction qui retourne le factoriel de l'entier positif qui lui est passé en paramètre
 
-```dart:title=factoriel.dart
+```dart[factoriel.dart]
 void main() {
   int z = 5;
   int resultat = fact(z);
@@ -548,6 +544,6 @@ int fact(int nombre) {
 }
 ```
 
-```:title=output
+```[output]
 le factoriel de 5 est 120
 ```

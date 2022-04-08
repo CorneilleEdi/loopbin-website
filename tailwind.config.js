@@ -36,6 +36,7 @@ module.exports = {
 
     fontFamily: {
       sans: ["'Poppins'", ...defaultTheme.fontFamily.sans],
+      mono: [...defaultTheme.fontFamily.mono],
     },
     extend: {
       maxWidth: {

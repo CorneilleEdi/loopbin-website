@@ -4,11 +4,10 @@ description: Tutoriel sur comment installer et sécuriser Redis sur Ubuntu
 tags: [redis, linux, ubuntu]
 topics: [redis, linux]
 date: 2020-02-01
+slug: installer-et-securiser-redis-sur-ubuntu
 ---
 
-## Table of Contents
-
-##
+#
 
 > Redis (pour REmote DIctionary Server) est une base de donnée de clés / valeurs NoSQL, utilisé principalement comme cache d'application ou base de données à réponse rapide. Parce qu'il stocke des données en mémoire plutôt que sur un disque ou un disque SSD, Redis offre une vitesse, une fiabilité et des performances inégalées.
 
@@ -81,7 +80,7 @@ Pour tester Redis, ouvrez votre terminal et faite les commandes suivantes
 $ redis-cli
 ```
 
-```:title=output
+```[output]
 127.0.0.1:6379>
 ```
 

@@ -6,9 +6,7 @@ topics: [git]
 date: 2020-03-01
 ---
 
-## Table of Contents
-
-##
+#
 
 Après avoir utiliser une branche que vous avez créée, il est souhaitable de la supprimée si vous ne planifiez pas de l'utiliser dans le futur.
 Une autre simple raison est qu’avoir beaucoup de branche peut créer des confusions.

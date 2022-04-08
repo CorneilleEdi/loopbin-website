@@ -6,9 +6,7 @@ topics: [dart]
 date: 2020-01-01
 ---
 
-## Table of Contents
-
-##
+#
 
 L'expression switch sert à contrôler les opérations conditionnelles en mettant en place plusieurs conditions. Elle a le même fonctionnement que la structure conditionnelle **if .. else .. if** tout en offrant une syntaxe plus simple.
 
@@ -37,7 +35,7 @@ switch (expression){
 
 ### Explication
 
-![switch case](./images/switch.png)
+![switch case](/images/dart-base/switch.png)
 
 **expression** est l'expression qui sera évaluée dans les différents cas.
 
@@ -68,7 +66,7 @@ int x = 13;
 
 ## Pratique
 
-```dart:title=permission.dart
+```dart[permission.dart]
 void main() {
   String permission = 'ROOT';
   switch (permission) {
@@ -93,7 +91,7 @@ void main() {
 }
 ```
 
-```dart:title=output
+```dart[output]
 hey
 vous pouvez lire et écrire dans ce fichier
 ```

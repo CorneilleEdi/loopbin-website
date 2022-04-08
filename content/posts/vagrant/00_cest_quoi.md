@@ -6,9 +6,7 @@ topics: [vagrant]
 date: 2021-02-05
 ---
 
-## Table of Contents
-
-## Presentation
+# Presentation
 
 Vagrant est un outil pour travailler avec des environnements virtuels. Vagrant fournit un client de ligne de commande simple et facile à utiliser pour gérer ces environnements ainsi qu' un interpréteur pour les définitions des configurations de ce à quoi ressemble chaque environnement dans un fichier spécial appelé Vagrantfile.
 
@@ -18,7 +16,7 @@ Une machine virtuelle (VM) est un environnement virtuel qui fonctionne comme un 
 
 La virtualisation semble être la technologie la plus appropriée pour créer un environnement de développement / ou de test pour les développeurs et les opérateurs. C'est essentiellement parce que, sans jouer avec le système d'exploitation réel que vous utilisez, vous pouvez avoir un tout nouveau monde sur votre système et explorer de nouveau système.
 
-![virtualisation](./images/virtualisation.png)
+![virtualisation](/images/vagrant/virtualisation.png)
 
 Il existe différents logiciels de visualisation disponibles sur le marché, certains d'entre eux sont mentionnés ci-dessous.
 

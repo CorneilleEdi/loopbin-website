@@ -6,52 +6,46 @@ topics: [terraform, gcp]
 date: 2021-05-05
 ---
 
-## Table of Contents
-
-#
-
-import Button from '~/components/Button.vue'
-
-S'il existe un truc indispensable et très important en travaillant avec Terraform c'est l'état (state). Pour faire simple ,l'état permet de sauvegarder les configurations et les ressources créées. Cet état est normalement enregistré dans un fichier local appelé `terraform.tfstate`, mais il peut également être enregistré dans un service de stockage, ce qui est préférable dans un environnement d'équipe et pour de vrais projets.Nous allons voir comment sauvegarder nos états sur Google Cloud Storage.
+S'il existe un truc indispensable et très important en travaillant avec Terraform c'est l'état (state). Pour faire simple ,l'état permet de sauvegarder les configurations et les ressources créées. Cet état est normalement enregistré dans un fichier local appelé `terraform.tfstate`, mais il peut également être enregistré dans un service de stockage, ce qui est préférable dans un environnement d'équipe et pour de vrais projets.Nous allons voir comment sauvegarder nos états sur Google Cloud Storage.
 
 ## Les backends
 
-<Button isDoc text="Documentation" link="https://www.terraform.io/docs/language/settings/backends/index.html"/>
+L'approche pour sauvegarder les états dans un service de stockage n'est pas nouvelle. Elle est directement intégrée dans Terraform grâce aux `backend`
 
-L'approche pour sauvegarder les états dans un service de stockage n'est pas nouvelle. Elle est directement intégrée dans Terraform grâce aux `backend`
-
-Il existe deux types de backend :
+Il existe deux types de backend :
 
 - local
 - distant
 
-Nous allons utiliser un backend distant dans notre cas.
+Nous allons utiliser un backend distant dans notre cas.
 
-Les `backends` distants de Terraform nous permettent de stocker le fichier d'état dans un service de stockage .
+Les `backends` distants de Terraform nous permettent de stocker le fichier d'état dans un service de stockage .
 
-Il existe bien sur plusieurs backend disponible comme :
+Il existe bien sur plusieurs backend disponible comme :
 
-- s3 : Stocke l'état en tant qu'objet sur AWS
-- gcs: Stocke l'état en tant qu'objet sur Google Cloud Storage
-- http: il enregistre l'état grâce a un client REST L'état sera récupéré à l'aide de GET, modifié à l'aide de POST et purgé à l'aide de DELETE. Le processus de mise à niveau est personnalisable.
+- s3 : Stocke l'état en tant qu'objet sur AWS
+- gcs: Stocke l'état en tant qu'objet sur Google Cloud Storage
+- http: il enregistre l'état grâce a un client REST L'état sera récupéré à l'aide de GET, modifié à l'aide de POST et purgé à l'aide de DELETE. Le processus de mise à niveau est personnalisable.
+
+<action-button type="doc" text="Documentation" link="https://www.terraform.io/docs/language/settings/backends/index.html"></action-button>
 
 ## Configuration
 
-Pour utiliser le backend `gcs`, la première chose a noté est que votre bucket doit exister avant que n'ajoutiez la configuration du backend dans votre configuration Terraform. Pour cela, vous pouvez creer le bucket manuellement ou le créer avec Terraform en utilisant le backend local puis changer le backend vers `gcs`.
+Pour utiliser le backend `gcs`, la première chose a noté est que votre bucket doit exister avant que n'ajoutiez la configuration du backend dans votre configuration Terraform. Pour cela, vous pouvez creer le bucket manuellement ou le créer avec Terraform en utilisant le backend local puis changer le backend vers `gcs`.
 
-Dans ce tuto, je vais utiliser la deuxième approche. La première approche est quand même interressante car elle vous permet de garder vos états même si vous détruisez votre infrastructure avec Terraform.
+Dans ce tuto, je vais utiliser la deuxième approche. La première approche est quand même interressante car elle vous permet de garder vos états même si vous détruisez votre infrastructure avec Terraform.
 
 ### Code
 
-Pour cette démonstration, nous allons lancer une instance sur Google Cloud et sauvegarder l'etat sur Google Cloud Storage.
+Pour cette démonstration, nous allons lancer une instance sur Google Cloud et sauvegarder l'etat sur Google Cloud Storage.
 
-Nos fichiers Terraform ressembleront à ceci
+Nos fichiers Terraform ressembleront à ceci
 
-<Button isGithub=true text="Code sur Github" link="https://github.com/CorneilleEdi/terraform-state-google-cloud"/>
+<action-button type="github" text="Code sur Github" link="https://github.com/CorneilleEdi/terraform-state-google-cloud"></action-button>
 
 #
 
-```json:title=variable.tf
+```json[variable.tf]
 variable "project_id" {
   description = "Google Cloud Platform (GCP) Project ID"
   type        = string
@@ -89,7 +83,7 @@ variable "state_bucket_name" {
 }
 ```
 
-```json:title=compute.tf
+```json[compute.tf]
 resource "google_compute_instance" "vm" {
   name         = var.name
   machine_type = var.machine_type
@@ -128,7 +122,7 @@ output "server_ip" {
 }
 ```
 
-```json:title=storage.tf
+```json[storage.tf]
 resource "google_storage_bucket" "terraform_state_bucket" {
   name        = var.state_bucket_name
   location    = upper(var.region)
@@ -137,7 +131,7 @@ resource "google_storage_bucket" "terraform_state_bucket" {
 }
 ```
 
-```json:title=main.tf
+```json[main.tf]
 provider "google" {
   project = var.project_id
   region  = var.region
@@ -150,13 +144,13 @@ terraform {
 }
 ```
 
-Comme spécifié dans le fichier main.tf, nous allons au début garder notre état localement dans l'emplacement `state/terraform.tfstate`.
+Comme spécifié dans le fichier main.tf, nous allons au début garder notre état localement dans l'emplacement `state/terraform.tfstate`.
 
 Ce code exécutera les actions suivantes :
 
-- Créer un bucket avec le nom `loopbin-terraform-state-bucket` dans la zone EUROPE-WEST
-- Créer une instance nommée `nginx-server` et y installera nginx à la création
-- Créer une règle Firewall autorisant la connexion au port 80 par TCP
+- Créer un bucket avec le nom `loopbin-terraform-state-bucket` dans la zone EUROPE-WEST
+- Créer une instance nommée `nginx-server` et y installera nginx à la création
+- Créer une règle Firewall autorisant la connexion au port 80 par TCP
 
 ### Déploiement
 
@@ -203,7 +197,7 @@ Et bien sur, l'adresse IP de notre instance nous montrera la page d'accueil par 
 
 À ce niveau, nous avons notre bucket, mais nous ne l'utilisons pas encore comme backend. Tout ce qu'il nous faut, c'est quelque ligne de code dans notre ficher [main.tf](http://main.tf/)
 
-```json:title=main.tf
+```json[main.tf]
 provider "google" {
   project = var.project_id
   region  = var.region
@@ -217,11 +211,11 @@ terraform {
 }
 ```
 
-Dans le code si dessus, nous avons changé notre backend local pour le backend gcs.
+Dans le code si dessus, nous avons changé notre backend local pour le backend gcs.
 
-Le backend gcs prend une valeur de configuration obligatoire, c'est `bucket` le nom du bucket ou sera stocker nos états. l'option préfix nous permet de spécifier un préfixe qui sera utiliser comme emplacement dans le bucket (nom de dossier).
+Le backend gcs prend une valeur de configuration obligatoire, c'est `bucket` le nom du bucket ou sera stocker nos états. l'option préfix nous permet de spécifier un préfixe qui sera utiliser comme emplacement dans le bucket (nom de dossier).
 
-Tout ce qu'il nous faut maintent, c'est faire les commandes de déploiement `terraform init`, `terraform plan` et `terraform apply`
+Tout ce qu'il nous faut maintent, c'est faire les commandes de déploiement `terraform init`, `terraform plan` et `terraform apply`
 
 ### Vérification
 
@@ -230,9 +224,9 @@ $ gsutil ls -r gs://loopbin-terraform-state-bucket/**
 gs://loopbin-terraform-state-bucket/state/default.tfstate
 ```
 
-La commande gsutil nous montre que notre fichier tfstate est maintenant dans notre bucket sur Google Cloud
+La commande gsutil nous montre que notre fichier tfstate est maintenant dans notre bucket sur Google Cloud
 
 > Attention
-> n'oubliez pas de ramener le backend vers `local` avant de lancer une infrastructure. Si vous ne le faites pas, terraform supprimera le bucket puis ne sera plus en mesure d'avoir accès à l'état bloqué pour continuer.
+> n'oubliez pas de ramener le backend vers `local` avant de lancer une infrastructure. Si vous ne le faites pas, terraform supprimera le bucket puis ne sera plus en mesure d'avoir accès à l'état bloqué pour continuer.
 
 Bravo

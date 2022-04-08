@@ -6,9 +6,7 @@ topics: [vagrant]
 date: 2021-02-10
 ---
 
-## Table of Contents
-
-##
+#
 
 Après avoir construit la machine vagrant, vous aurez surement envie de vous y connecter avec ssh. Vagrant offre des commandes pour ce cas.
 
@@ -22,7 +20,7 @@ vagrant ssh
 
 NB: votre VM devra être entrain de tourner dans le cas contraire cette commande échouera
 
-![ssh](./images/ssh.png)
+![ssh](/images/vagrant/ssh.png)
 
 ## Les informations de la connection SSH
 

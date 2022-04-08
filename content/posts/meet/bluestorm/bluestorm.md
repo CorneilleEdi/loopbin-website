@@ -6,60 +6,56 @@ topics: [firebase]
 date: 2021-05-02
 ---
 
-## Table of Contents
-
-#
-
 Firebase est sans doute l'un des services Cloud les plus utilisés par les développeurs Flutter. Pour faciliter le développement avec leurs services les plus populaires (Firestore, Firebase Auth, Firebase Functions, Firebase Realtime Database et Firebase Pub/Sub), l'équipe Firebase a developpé l'émulateur Firebase permettant aux développeurs de travailler et tester leurs applications offline. Dans cet article, nous allons explorer le Firebase Emulator et l'utiliser avec Flutter.
 
 ## Firebase, qu'est ce que s'est ?
 
-S'il existe un service que les développeurs mobile et web aiment le plus c'est Firebase.
+S'il existe un service que les développeurs mobile et web aiment le plus c'est Firebase.
 
-Firebase est une plateforme de développement d'applications mobiles et Web, soutenue par Google, pour aider les développeurs à offrir des expériences d'application plus riches.
+Firebase est une plateforme de développement d'applications mobiles et Web, soutenue par Google, pour aider les développeurs à offrir des expériences d'application plus riches.
 
-C'est ce qu'on appelle un BaaS (Backend as a Service).
+C'est ce qu'on appelle un BaaS (Backend as a Service).
 
-Firebase gère sa propre infrastructure avec un bel ensemble d'outils pour simplifier le flux de travail du développeur en lui fournissant des kits de développement et un tableau de bord en ligne.
+Firebase gère sa propre infrastructure avec un bel ensemble d'outils pour simplifier le flux de travail du développeur en lui fournissant des kits de développement et un tableau de bord en ligne.
 
-Ce que ça signifie, c'est que Firebae offre aux développeurs un backend avec plusieurs services et un ensemble de librairies pour interagir avec ces services facilement et rapidement.
+Ce que ça signifie, c'est que Firebae offre aux développeurs un backend avec plusieurs services et un ensemble de librairies pour interagir avec ces services facilement et rapidement.
 
-### Les services offerts par Firebase
+### Les services offerts par Firebase
 
-Voici les services les plus populaires de Firebase:
+Voici les services les plus populaires de Firebase:
 
-- Cloud Firestore: c'est une base de donnée NoSQL en temps reel. Il offre une architecture de Collection/Document. Il convient de noter que Firestore est techniquement un produit Google Cloud, pas un produit Firebase. Pourquoi est-il répertorié avec Firebase? Firebase ajoute des SDK à utiliser dans votre application mobile pour rendre possible l'accès direct aux données, supprimant ainsi le besoin de ce composant middleware embêtant.
-- Realtime Database: c'est une base de donnee NoSQL en temps réel tout comme Cloud Firestore. Très utile pour des système de messagerie
-- Cloud storage: Firebase Storage offre un moyen simple d'enregistrer des fichiers binaires, le plus souvent des images, mais ce n'est que Google Cloud Storage.
-- Authentication: Firebase auth dispose d'un système d'authentification par e-mail / mot de passe intégré, par verification de numero de telephone (avec un systeme d'OTP). Il prend également en charge OAuth2 pour Google, Facebook, Twitter et GitHub.
-- Hosting: Firebase comprend un service d'hébergement facile à utiliser pour tous vos fichiers statiques (HTML, CSS, JS, images). Il les sert à partir d'un CDN global avec HTTP/2.
-- Firebase Cloud Messaging: il permet d'envoyer des messages et des notifications aux utilisateurs
-- Cloud Functions: un autre produit Google Cloud. À l'aide des SDK Firebase pour Cloud Functions, vous pouvez écrire et déployer du code, exécuté sur l'infrastructure «sans serveur» (serverless) de Google, qui répond automatiquement aux événements provenant d'autres produits Firebase.
+- Cloud Firestore: c'est une base de donnée NoSQL en temps reel. Il offre une architecture de Collection/Document. Il convient de noter que Firestore est techniquement un produit Google Cloud, pas un produit Firebase. Pourquoi est-il répertorié avec Firebase? Firebase ajoute des SDK à utiliser dans votre application mobile pour rendre possible l'accès direct aux données, supprimant ainsi le besoin de ce composant middleware embêtant.
+- Realtime Database: c'est une base de donnee NoSQL en temps réel tout comme Cloud Firestore. Très utile pour des système de messagerie
+- Cloud storage: Firebase Storage offre un moyen simple d'enregistrer des fichiers binaires, le plus souvent des images, mais ce n'est que Google Cloud Storage.
+- Authentication: Firebase auth dispose d'un système d'authentification par e-mail / mot de passe intégré, par verification de numero de telephone (avec un systeme d'OTP). Il prend également en charge OAuth2 pour Google, Facebook, Twitter et GitHub.
+- Hosting: Firebase comprend un service d'hébergement facile à utiliser pour tous vos fichiers statiques (HTML, CSS, JS, images). Il les sert à partir d'un CDN global avec HTTP/2.
+- Firebase Cloud Messaging: il permet d'envoyer des messages et des notifications aux utilisateurs
+- Cloud Functions: un autre produit Google Cloud. À l'aide des SDK Firebase pour Cloud Functions, vous pouvez écrire et déployer du code, exécuté sur l'infrastructure «sans serveur» (serverless) de Google, qui répond automatiquement aux événements provenant d'autres produits Firebase.
 
 Bien sûr, la liste est plus longue
 
-![Services Firebase](../bluestorm/images/firebase-services.png)
+![Services Firebase](/images/bluestorm/firebase-services.png)
 
 ## Les émulateurs Firebase
 
-Firebase Local Emulator Suite est une collection d'outils avancés pour les développeurs qui cherchent à créer et tester des applications localement à l'aide de Cloud Firestore, Realtime Database, Authentication, Cloud Functions, Pub/Sub et Firebase Hosting.
+Firebase Local Emulator Suite est une collection d'outils avancés pour les développeurs qui cherchent à créer et tester des applications localement à l'aide de Cloud Firestore, Realtime Database, Authentication, Cloud Functions, Pub/Sub et Firebase Hosting.
 
-Il offre une interface utilisateur riche pour vous aider à créer, exécuter et à prototyper rapidement.
+Il offre une interface utilisateur riche pour vous aider à créer, exécuter et à prototyper rapidement.
 
-Imaginez-les comme Firebase, mais sur votre ordinateur. C'est cool n'est ce pas ?
+Imaginez-les comme Firebase, mais sur votre ordinateur. C'est cool n'est ce pas ?
 
-Il supporte actuellement 6 services de Firebase.
+Il supporte actuellement 6 services de Firebase.
 
-![Services des émulateurs](../bluestorm/images/components.png)
+![Services des émulateurs](/images/bluestorm/components.png)
 
 Les émulateurs viennent avec une interface très riche qui vous permet de :
 
 - savoir les services qui tournent et ou les contacter
-- interagir avec les bases de donnée (Realtime Database et Firestore)
+- interagir avec les bases de donnée (Realtime Database et Firestore)
 - Gérer les utilisateurs
 - Explorer les logs
 
-![UI](./images/Firebase-Emulator-Suite.png)
+![UI](/images/bluestorm/Firebase-Emulator-Suite.png)
 
 ## Les limitations des Emulateurs (pour l'instant)
 
@@ -67,7 +63,7 @@ Dans mon utilisation, j'ai rencontré quelques problèmes, quelques limitations.
 
 - Manque de Cloud Storage.
 - Manque des Indexes avec Cloud Firestore
-- Quotas et Usage : il n'existe pour l'instant aucun moyen de savoir combien d'opération vous faite avec vos bases de donnée afin d'optimiser votre code s'il le faut
+- Quotas et Usage : il n'existe pour l'instant aucun moyen de savoir combien d'opération vous faite avec vos bases de donnée afin d'optimiser votre code s'il le faut
 
 ## Installation
 
@@ -154,7 +150,7 @@ Les processus d'émulateur continueront à s'exécuter jusqu'à leur arrêt expl
 
 ## Sauvegarde
 
-L'arrêt des émulateurs supprimera toutes les informations qu'elles contiennent comme les utilisateurs et les données dans les bases de donnes. Il est possible de remédier à cette action par défaut en spécifiant au moment du lancement un dossier d'export ou les informations y seront enregistrées ainsi que le dossier d'où les informations seront importées au moment du lancement. Ces dossiers seront les mêmes dans notre cas.
+L'arrêt des émulateurs supprimera toutes les informations qu'elles contiennent comme les utilisateurs et les données dans les bases de donnes. Il est possible de remédier à cette action par défaut en spécifiant au moment du lancement un dossier d'export ou les informations y seront enregistrées ainsi que le dossier d'où les informations seront importées au moment du lancement. Ces dossiers seront les mêmes dans notre cas.
 
 Pour cela, il faudra ajouter quelques options à notre commande de démarrage.
 
@@ -171,19 +167,19 @@ Dans ce cas le dossier est `firebase-data`
 
 ## Utilisation avec Flutter
 
-L'utilisation des émulateurs avec Flutter ne diffère que dans les configurations des instances des services. Pour le reste, votre code et votre manière, de procéder restera le même.
+L'utilisation des émulateurs avec Flutter ne diffère que dans les configurations des instances des services. Pour le reste, votre code et votre manière, de procéder restera le même.
 
-Biensur, avec Flutter nous utilisons FlutterFire, l'ensemble officiel des Plugins de Firebase pour Flutter pour configurer notre projet.
+Biensur, avec Flutter nous utilisons FlutterFire, l'ensemble officiel des Plugins de Firebase pour Flutter pour configurer notre projet.
 
 [https://firebase.flutter.dev/](https://firebase.flutter.dev/)
 
 La prochaine étape sera d'ajouter les librairies dans les fichiers de dépendance.
 
-![deps](../bluestorm/images/flutters-dps.png)
+![deps](/images/bluestorm/flutters-dps.png)
 
-Comme je l'avais préciser, tout ce qui changera dans votre façon habituelle de procéder avec Firebase dans Flutter, c'est la configuration des instances de vos services Firebase.
+Comme je l'avais préciser, tout ce qui changera dans votre façon habituelle de procéder avec Firebase dans Flutter, c'est la configuration des instances de vos services Firebase.
 
-Par exemple, l'instance de Firestore deviendra:
+Par exemple, l'instance de Firestore deviendra:
 
 ```dart
 String host = defaultTargetPlatform == TargetPlatform.android
@@ -194,11 +190,11 @@ FirebaseFirestore.instance.settings = Settings(host: host, sslEnabled: false);
 _firestore = FirebaseFirestore.instance;
 ```
 
-Le code commence par choisir l'adresse sur laquelle on se contactera a l'émulateur de Firestore. Il le faut parce que normalement les emulateurs sont diponible localement (donc `localhost` ) mais du a la façon dont les émulateurs android accede aux serveurs locals grâce a l'adresse ip `10.0.2.2` il faudra faire une exception dans le cas des android.
+Le code commence par choisir l'adresse sur laquelle on se contactera a l'émulateur de Firestore. Il le faut parce que normalement les emulateurs sont diponible localement (donc `localhost` ) mais du a la façon dont les émulateurs android accede aux serveurs locals grâce a l'adresse ip `10.0.2.2` il faudra faire une exception dans le cas des android.
 
-Ensuite, nous réglons l'instance se Firestore avec un nouveau réglage en précisant l'adresse local de firestore.
+Ensuite, nous réglons l'instance se Firestore avec un nouveau réglage en précisant l'adresse local de firestore.
 
-Dans le cas de Firebase Auth, le code ressemblera à :
+Dans le cas de Firebase Auth, le code ressemblera à :
 
 ```dart
 String host = defaultTargetPlatform == TargetPlatform.android

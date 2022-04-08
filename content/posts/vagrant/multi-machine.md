@@ -6,9 +6,7 @@ topics: [vagrant]
 date: 2021-02-17
 ---
 
-## Table of Contents
-
-##
+#
 
 Vagrant est utile, très utile pour mettre en place un environnement virtuel mais il est aussi possible de lancer plusieurs environnements avec un seul fichier de configuration. Dans cet article nous allons explorer cette approche. Un tel environnement est appelé un environnement `multi-machine`
 

@@ -6,9 +6,7 @@ topics: [vagrant]
 date: 2021-02-14
 ---
 
-## Table of Contents
-
-##
+#
 
 Installer une une image et lancer une machine virtuelle est simple mais comment pouvons nous automatiquement installer des logicielles et configurer d'environnement. Dans cet article nous allons explorer les différents outils de provision et explorer la provision avec shell.
 

@@ -6,9 +6,7 @@ topics: [dart]
 date: 2020-01-01
 ---
 
-## Table of Contents
-
-##
+#
 
 Une boucle est une structure de contrôle destinée à exécuter une portion de code plusieurs fois de suite.
 
@@ -40,7 +38,7 @@ for (initialisation, condition, itération ){
 
 Explication
 
-![condition if/else/if](./images/for.png)
+![condition if/else/if](/images/dart-base/for.png)
 
 - **initialisation** spécifie l'initialisation de la boucle. Il permet d'initialiser un compteur qui sera ensuite utilisé dans la boucle.
 - **condition** dit si l'expression doit être exécutée. Si elle est vraie **true**, l' expression est exécutée puis l'**itération** est évaluée (s’il en existe une). Si la condition est omise elle est considérée comme vrai **true**. Si la condition est fausse **false** , l’instruction **for** se termine et le contrôle passe à l’instruction suivante du programme.
@@ -91,7 +89,7 @@ Le mot while se traduit par **tant que**. Alors cette boucle s' exécute **tant 
 
 La boucle while est une boucle à pré-condition. Cela veut dire que la condition est évaluée avant l' exécution de l'expression.
 
-![condition if/else/if](./images/while.png)
+![condition if/else/if](/images/dart-base/while.png)
 
 Syntaxe d'une boucle **while**.
 
@@ -128,7 +126,7 @@ Cette boucle se traduit par **faire .. tant que**.
 
 La boucle do .. while est une boucle à post-condition. Cela veut dire la condition est évaluée après l' exécution de l'expression.
 
-![condition if/else/if](./images/do_while.png)
+![condition if/else/if](/images/dart-base/do_while.png)
 
 Syntaxe d'une boucle **do .. while**.
 
@@ -231,7 +229,7 @@ L'inspecteur de code du langage Dart appelle cette instruction **un code mort**.
 
 Ecrire un programme qui affiche "Dart est cool." 5 fois avec toutes les boucles.
 
-```dart:title=for.dart
+```dart[for.dart]
 main() {
   for (var i = 0; i < 5; i++) {
     print("Dart est cool.");
@@ -239,7 +237,7 @@ main() {
 }
 ```
 
-```dart:title=while.dart
+```dart[while.dart]
 main() {
   var i = 0;
   while (i != 5) {
@@ -249,7 +247,7 @@ main() {
 }
 ```
 
-```dart:title=do-while.dart
+```dart[do-while.dart]
 main() {
   var i = 0;
   do {
@@ -261,7 +259,7 @@ main() {
 
 Les trois programmes produisent le même resultat
 
-```:title=output
+```[output]
 Dart est cool.
 Dart est cool.
 Dart est cool.
@@ -279,7 +277,7 @@ Ecrire les programmes pour dessiner les figures suivantes avec des étoiles (**\
 
 un rectangle de 8 étoiles de long et 5 étoiles de large
 
-```dart:title=rectangle.dart
+```dart[rectangle.dart]
 import 'dart:io';
 
 main() {
@@ -292,7 +290,7 @@ main() {
 }
 ```
 
-```:title=output
+```[output]
 * * * * * * * *
 * * * * * * * *
 * * * * * * * *
@@ -302,7 +300,7 @@ main() {
 
 un carré de 6 étoiles de coté
 
-```dart:title=carre.dart
+```dart[carre.dart]
 import 'dart:io';
 
 main() {
@@ -315,7 +313,7 @@ main() {
 }
 ```
 
-```:title=output
+```[output]
 * * * * * *
 * * * * * *
 * * * * * *
@@ -326,7 +324,7 @@ main() {
 
 un triangle équilatéral de 7 étoiles de coté
 
-```dart:title=triangle.dart
+```dart[triangle.dart]
 import 'dart:io';
 
 main()
@@ -345,7 +343,7 @@ main()
 }
 ```
 
-```:title=output
+```[output]
 *
 * *
 * * *

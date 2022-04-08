@@ -1,0 +1,32 @@
+pre {
+  margin: 1em 0;
+  font-family: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace, monospace, monospace, monospace;
+  font-weight: 400;
+  overflow: auto;
+
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  color: #c3cee3;
+  background: #263238;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+
+  // @include scrollbar;
+
+  @apply py-4 px-4 md:px-8  rounded-sm  leading-relaxed;
+
+  @media screen and (max-width: 800px) {
+    @apply text-sm;
+  }
+}

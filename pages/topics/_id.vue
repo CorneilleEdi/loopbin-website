@@ -60,6 +60,7 @@ export default {
 
     const posts = await $content('posts', { deep: true })
       .only([
+        'slug',
         'title',
         'description',
         'date',

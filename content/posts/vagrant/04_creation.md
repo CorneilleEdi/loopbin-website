@@ -6,9 +6,7 @@ topics: [vagrant]
 date: 2021-02-09
 ---
 
-## Table of Contents
-
-##
+#
 
 Nous allons dans cette partie écrire un fichier Vagrantfile très simple et lancer notre premier VM.
 
@@ -86,7 +84,7 @@ vagrant up
 
 Resultat
 
-![vagrant up](./images/up.png)
+![vagrant up](/images/vagrant/up.png)
 
 Par defaut:
 
@@ -139,6 +137,6 @@ vagrant status
 
 resultat
 
-![vagrant status](./images/status.png)
+![vagrant status](/images/vagrant/status.png)
 
 Bravo, nous venons de créer notre première machine virtuelle avec l'aide de vagrant

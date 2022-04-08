@@ -2,7 +2,11 @@
   <div
     class="h-full flex items-center border-dark-low dark:border-white dark:border-opacity-20 border rounded-sm hover:shadow-sm"
   >
-    <nuxt-link :to="post.path" class="w-full" style="text-decoration: none">
+    <nuxt-link
+      :to="{ name: 'posts-slug', params: { slug: post.slug } }"
+      class="w-full"
+      style="text-decoration: none"
+    >
       <div class="p-4">
         <p class="text-dark-high dark:text-white font-medium">
           {{ post.title }}

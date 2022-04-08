@@ -6,11 +6,9 @@ topics: [typescript]
 date: 2020-03-01
 ---
 
-![Typescript](./images/typescript.png)
+![Typescript](/images/typescript/typescript.png)
 
-## Table of Contents
-
-## Introduction
+# Introduction
 
 Le TypeScript est sans doute l'une des meilleures choses à venir dans le monde du JavaScript, aidant les développeurs à créer confortablement des logiciels complexes sans inquiétude. Nous décrivons brièvement les avantages et les inconvénients du TypeScript.
 

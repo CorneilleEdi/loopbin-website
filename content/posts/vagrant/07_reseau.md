@@ -6,9 +6,7 @@ topics: [vagrant]
 date: 2021-02-12
 ---
 
-## Table of Contents
-
-##
+#
 
 Comme tout système d'exploitation ou machine, la machine virtuelle créer avec Vagrant a aussi ces configurations réseaux. Dans cette partie, nous allons parler des configurations réseaux. Ces configurations peuvent nous permettre de:
 

@@ -6,15 +6,9 @@ topics: [java]
 date: 2021-01-16
 ---
 
-import Button from '~/components/Button.vue'
-
-## Table of Contents
-
-#
-
 Java ainsi que plusieurs autres langages de programmation comme le Javascript ou Dart contient une librairie qui permet aux programmeurs de jouer avec les urls. Dans ce tuto, nous allons explorer les méthodes offertes par le langage pour extraire les informations d'une url ainsi que générer une URL.
 
-<Button isGithub=true text="Code sur Github" link="https://github.com/CorneilleEdi/loopbin-tutos/tree/main/manipuler-les-urls-en-java"/>
+<action-button type="github" text="Code sur Github" link="https://github.com/CorneilleEdi/loopbin-tutos/tree/main/manipuler-les-urls-en-java"></action-button>
 
 Dans java , il existe deux classes en Java pour interagir avec les URLs:
 
@@ -35,18 +29,16 @@ Le code si dessus retourne une erreur MalformedURLException si l'URL passé en p
 
 ```java
 try {
-            URL url = new URL("https://www.loopbin.dev/tutos/redis?dark=true&type=short#installation");
-
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-    }
+    URL url = new URL("https://www.loopbin.dev/tutos/redis?dark=true&type=short#installation");
+} catch (MalformedURLException e) {
+    e.printStackTrace();
+}
 ```
 
 Il est important d'importer la classe URL
 
 ```java
 import java.net.URL
-
 ```
 
 A ce point , nous avons seulement accès au informations suivantes
@@ -110,7 +102,7 @@ La classe URI peut permettre d'avoir encore plus d'informations sur l'URI ou l'U
 
 > Dans le cas de l'URI, l'erreur dans le cas d'une malformation est l'erreur URISyntaxException
 
-<Button isDoc=true text="Documentation de la classe URI" link="https://docs.oracle.com/javase/8/docs/api/java/net/URI.html"/>
+<action-button type="doc" text="Documentation de la classe URI" link="https://docs.oracle.com/javase/8/docs/api/java/net/URI.html"></action-button>
 
 ```java
 import java.net.URISyntaxException;
@@ -146,7 +138,7 @@ information d'authentification = corneille:verniselle
 
 ## Construire une URL
 
-<Button isDoc=true text="Exemple officiel" link="https://docs.oracle.com/javase/tutorial/networking/urls/creatingUrls.html"/>
+<action-button type="doc" text="Exemple officiel" link="https://docs.oracle.com/javase/tutorial/networking/urls/creatingUrls.html"></action-button>
 
 ### Avec la classe URL
 
@@ -229,7 +221,7 @@ Le regroupement de connexions réduit la latence des requêtes (si HTTP / 2 n'es
 Transparent GZIP réduit la taille des téléchargements.
 La mise en cache des réponses évite complètement le réseau pour les demandes répétées.
 
-<Button isPackage=true text="Librairie OkHTTP" link="https://square.github.io/okhttp/"/>
+<action-button type="package" text="Librairie OkHTTP" link="https://square.github.io/okhttp/"></action-button>
 
 Exemple
 
@@ -247,10 +239,10 @@ System.out.println(url);
 
 **`https://hc.apache.org/httpcomponents-client-4.3.x/quickstart.html`**
 
-<Button isPackage=true text="Librairie Apache client" link="https://hc.apache.org/httpcomponents-client-4.3.x/quickstart.html"/>
+<action-button type="package" text="Librairie Apache client" link="https://hc.apache.org/httpcomponents-client-4.3.x/quickstart.html"></action-button>
 
 ---
 
 N'hésitez pas à jeter un coup d'oeil aux test unitaire sur github
 
-<Button isGithub=true text="Test unitaire" link="https://github.com/CorneilleEdi/loopbin-tutos/blob/main/manipuler-les-urls-en-java/src/test/java/EncodeurTest.java"/>
+<action-button type="github" text="Test unitaire" link="https://github.com/CorneilleEdi/loopbin-tutos/blob/main/manipuler-les-urls-en-java/src/test/java/EncodeurTest.java"></action-button>

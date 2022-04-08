@@ -6,9 +6,7 @@ topics: [dart]
 date: 2020-01-01
 ---
 
-## Table of Contents
-
-##
+#
 
 Dans ce chapitre nous allons discuter de la programmation asynchrone en Dart.
 
@@ -25,7 +23,7 @@ lorsqu'une tache prend du temps, elle retarde ainsi l' exécution des autres fon
 
 Imaginons un scenario où nous souhaitons recevoir les données d'un API, manipuler ces données et faire d'autre actions. Avec la programmation synchrone, ces trois étapes s' exécuteront dans l' ordre mais si la requête vers le serveur pour recevoir les données prend du temps alors tout notre programme prendra du temps à s' exécuter.
 
-![synchrone](./images/sync.png)
+![synchrone](/images/dart-base/sync.png)
 
 C'est dans ce genre de situation que la programmation asynchrone entre en jeu.
 
@@ -33,7 +31,7 @@ La programmation asynchrone est une forme de programmation parallèle qui permet
 
 Si nous revenons dans notre situation passée , avec la programmation asynchrone la requête vers le serveur s' exécutera séparément du thread principal permettant alors aux autres fonctions n'ayant pas besoin des données de cette requête de s' exécuter parallèlement.
 
-![asynchrone](./images/async.png)
+![asynchrone](/images/dart-base/async.png)
 
 Bien que Dart ne comporte qu'un seul thread, il peut interagir avec d'autres codes exécutés dans des threads séparés.
 
@@ -244,7 +242,7 @@ Etude de cas : Les fichiers
 
 De préférence la lecture des fichiers en Dart est une opération asynchrone (par rapport à la taille du fichier, le temps d' exécution de cette opération peut varier).
 
-```json:title=users.json
+```json[users.json]
 [
   {
     "id": "e5a3eec5-3afe-4f59-b920-bdc6d5f705ba",
@@ -306,7 +304,7 @@ De préférence la lecture des fichiers en Dart est une opération asynchrone (p
 
 Nous allons lire de façon asynchrone les données de ce fichier , les décoder et les utiliser.
 
-```dart:title=file.dart
+```dart[file.dart]
 import 'dart:async';
 import 'dart:io';
 import 'dart:convert';
@@ -321,7 +319,7 @@ void main() async {
 }
 ```
 
-```:title=output
+```[output]
 3
 ```
 

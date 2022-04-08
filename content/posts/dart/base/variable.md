@@ -6,9 +6,7 @@ topics: [dart]
 date: 2020-01-01
 ---
 
-## Table of Contents
-
-## Les règles bases de Dart
+# Les règles bases de Dart
 
 - Un code Dart s'exécute toujours en commençant par la fonction **main( ){ }**. Alors il est important de placer votre code à exécuter dans cette fonction.
 - Une ligne complète en Dart se termine toujours par un point virgule **;**
@@ -22,7 +20,7 @@ Les fichiers contenant du code écrit en Dart ont toujours l'extension **.dart**
 
 Dans votre éditeur de texte, copiez et collez le code suivant dans un fichier **main.dart**. (Vous pouvez nommer ce fichier autrement)
 
-```dart:title=main.dart
+```dart: main.dart
 void main(){
     print("Hey, tout marche");
 }
@@ -38,7 +36,7 @@ dart main.dart
 
 Pour exécution avec IntelliJ IDEA ou Android Studio , exécutez votre programme en cliquant sur **Run**.
 
-![Android studio run](./images/android_studio_run.png)
+![Android studio run](/images/dart-base/android_studio_run.png)
 
 Si tout fonctionne bien, vous devriez avoir le résultat suivant:
 
@@ -110,7 +108,7 @@ var langues = ['francais', 'Anglais', 'Espagnol'];
 
 ## Pratique
 
-```dart:title=variable.dart
+```dart[variable.dart]
 void main(){
     const nom = "Steve Jobs";
     var age = 50;
@@ -123,7 +121,7 @@ void main(){
 
 la fonction **Print** permet d'afficher le méssage qui lui est passé en paramètre dans la console.
 
-```:title=output
+```dark[output]
 Steve Jobs
 50
 ```

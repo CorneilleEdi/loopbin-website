@@ -6,9 +6,7 @@ topics: [dart]
 date: 2020-01-01
 ---
 
-## Table of Contents
-
-##
+#
 
 Les collections sont des types de données qui permettent de passer un ensemble de valeur à une variable. Une collection en général renferme des données du même type.
 
@@ -107,7 +105,7 @@ G7 = ["Allemagne", "Canada", "États-UnisÉtats-Unis", "France",
 var nombresPremiers = [2, 3, 5, 7, 11, 13, 17, 19, 23];
 ```
 
-![listes](./images/listes.png)
+![listes](/images/dart-base/listes.png)
 
 ### Accéder aux éléments d'une liste
 
@@ -126,7 +124,7 @@ var G7 = ["Allemagne", "Canada", "États-Unis", "France",
       "Italie", "Japon", "Royaume-Uni" ];
 
 print(G7[0]);	//Allemagne
-print(G7[4]);	//Italie
+print(G7[4]);	/italie
 ```
 
 En accédant à un élément d'une liste, alors il est possible de modifier sa valeur.
@@ -358,9 +356,9 @@ paysEtCapitales = {
 };
 ```
 
-![dictionnaire](./images/dictionnaires.png)
+![dictionnaire](/images/dart-base/dictionnaires.png)
 
-### Accéder à une élément
+### Accéder à un élément
 
 On accède à une valeur par sa clé.
 
@@ -538,7 +536,7 @@ Pour plus d'information sur les chaînes de caractère, rendez vous sur [la docu
 
 Programme qui créer une liste des nombres pairs entre 0 et 50.
 
-```dart:title=paires.dart
+```dart[paires.dart]
 bool estPaire(x) => x % 2 == 0 ? true : false;
 
 void main() {
@@ -550,7 +548,7 @@ void main() {
 }
 ```
 
-```:title=output
+```[output]
 [2, 4, 6, 8, 10, 12, 14,
 16, 18, 20, 22, 24, 26, 28,
 30, 32, 34, 36, 38, 40, 42,

@@ -6,10 +6,6 @@ topics: [network]
 date: 2021-08-20
 ---
 
-## Table of Contents
-
-#
-
 Si il existe une notion à connaître en temps que développeur frontend, backend ou mobile c’est celle des requêtes HTTP. Sans elle, l’internet que nous connaissons aujourd’hui serait totalement différente.
 
 Dans cet article, nous allons explorer les requêtes HTTP, leur composition ainsi que les terminologies et verbes a connaître.
@@ -73,7 +69,7 @@ Les en-têtes HTTP contiennent des informations textuelles stockées dans des pa
 - `Origin`: l’URL de laquelle est produite la requête
 - `Content-Type` : Indique le type de média (text/html ou text/JSON) de la réponse envoyée au client par le serveur, cela aidera le client à traiter correctement le corps de la réponse.
 - `Cache-Control` : Il s'agit de la politique de cache définie par le serveur pour cette réponse, une réponse mise en cache peut être stockée par le client et réutilisée jusqu'à l'heure définie par l'en-tête Cache-Control.
-- `Authorization`  : porte les informations d'identification contenant les informations d'authentification du client pour la ressource demandée.
+- `Authorization` : porte les informations d'identification contenant les informations d'authentification du client pour la ressource demandée.
 
 ```
 access-control-allow-credentials: true
@@ -113,7 +109,7 @@ Une réponse est composée de:
 - En-têtes de réponse HTTP (headers)
 - Corps HTTP (body)
 
-Le corps et l’entête suivent les mêmes principes que celle d’une requête HTTP. Le corps d’une requête HTTP peut être un code HTML (pour une page html) ou des données encodés sous un format precis. Les codes d'état HTTP sont des codes à 3 chiffres utilisés pour indiquer si une requête HTTP a été effectuée avec succès ou pas. Les codes d'état sont répartis dans les 5 blocs suivants :
+Le corps et l’entête suivent les mêmes principes que celle d’une requête HTTP. Le corps d’une requête HTTP peut être un code HTML (pour une page html) ou des données encodés sous un format precis. Les codes d'état HTTP sont des codes à 3 chiffres utilisés pour indiquer si une requête HTTP a été effectuée avec succès ou pas. Les codes d'état sont répartis dans les 5 blocs suivants :
 
 - 1xx Informationnel
 - 2xx Succès
@@ -131,7 +127,7 @@ le code 200 veut dire que la requête a été effectuée avec succès.
 
 ## Mécanisme
 
-![requêtes HTTP](./images/http-request.png)
+![requêtes HTTP](/images/requete-http/http-request.png)
 
 ## Cas d’utilisation
 

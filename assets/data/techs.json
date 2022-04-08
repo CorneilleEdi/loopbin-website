@@ -18,7 +18,13 @@
     "title": "Language de programmation ",
     "techs": [
       {
-        "name": "Java / Kotlin",
+        "name": "Java",
+        "image": "java.svg",
+        "description": "Langage de programmation orienté objet"
+      },
+
+      {
+        "name": "Kotlin",
         "image": "kotlin.svg",
         "description": "Langage de programmation généraliste"
       },
@@ -172,9 +178,9 @@
         "description": "Message Queue"
       },
       {
-        "name": "Réseaux",
+        "name": "Network",
         "image": "network.svg",
-        "description": "HTTP, TSL, SSL, DNS"
+        "description": "Reseaux: HTTP, TSL, SSL, DNS"
       },
       {
         "name": "NGINX",
@@ -250,11 +256,6 @@
         "name": "VSCode",
         "image": "vscode.svg",
         "description": "Editeur de code moderne"
-      },
-      {
-        "name": "Vi/Vim",
-        "image": "vim.svg",
-        "description": "L'éditeur de texte omniprésent"
       }
     ]
   }

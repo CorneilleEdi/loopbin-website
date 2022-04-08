@@ -6,9 +6,7 @@ topics: [vagrant]
 date: 2021-02-15
 ---
 
-## Table of Contents
-
-##
+#
 
 ## Créer une machine virtuelle
 

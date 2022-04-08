@@ -1,0 +1,248 @@
+@import 'code';
+
+.nuxt-content {
+  @apply break-words;
+
+  & h2,
+  & h3 {
+    /* Fix anchor scrollTo */
+    &::before {
+      display: block;
+      content: ' ';
+      margin-top: -50px;
+      height: 85px;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    /* Style anchor links on headings added by @nuxt/content */
+    & > a {
+      @apply ml-5;
+
+      &::before {
+        content: '#';
+        @apply text-blue font-normal text-xl leading-8 -ml-5 pr-2 absolute opacity-100;
+      }
+
+      @screen lg {
+        @apply ml-0;
+
+        &::before {
+          @apply opacity-0;
+        }
+      }
+    }
+
+    &:hover {
+      & > a::before {
+        @apply opacity-100;
+      }
+    }
+  }
+
+  & .nuxt-content-highlight {
+    @apply relative;
+
+    & > pre {
+      @apply m-2;
+    }
+
+    /* Style filename span added by @nuxt/content */
+    & > .filename {
+      @apply absolute right-0 top-0 text-dark-low z-10  font-mono text-sm tracking-tight leading-none mr-4 mt-3;
+    }
+
+    /* Add top padding to code blocks with filename */
+    & > .filename + pre[class*='language-'] {
+      @apply pt-8;
+    }
+
+    /* Style copy button added in `pages/_.vue` */
+    & > .copy {
+      @apply hidden absolute right-0 bottom-0 leading-none shadow-lg px-2 py-2 text-white bg-dark-high text-sm uppercase rounded-md border border-white font-semibold mr-3 mb-3;
+
+      &:hover {
+        @apply bg-dark;
+      }
+
+      &:focus {
+        @apply outline-none bg-dark;
+      }
+    }
+
+    &:hover {
+      & > .copy {
+        @apply block;
+      }
+    }
+  }
+
+  /* Force style on pre elements */
+  & pre[class*='language-'] {
+    /* Make pre static so the relative goes to the parent (.nuxt-content-highlight) */
+    @apply static;
+  }
+
+  scroll-behavior: smooth;
+
+  hr {
+    @apply mt-8 text-dark-low dark:text-dark;
+  }
+
+  @apply px-2;
+  strong {
+    @apply text-blue dark:text-green font-medium;
+  }
+
+  h1 {
+    @apply text-4xl text-dark-high dark:text-white font-bold my-1;
+
+    @media screen and (max-width: 800px) {
+      @apply text-2xl;
+    }
+
+    code {
+      @apply border border-dark-low dark:border-white dark:border-opacity-20 border text-sm p-1 rounded bg-dark-low dark:bg-dark dark:bg-opacity-10 text-dark-high dark:text-white break-normal;
+    }
+  }
+
+  h2 {
+    @apply text-2xl text-dark dark:text-white dark:text-opacity-70 font-bold my-1;
+    code {
+      @apply border border-dark-low dark:border-white dark:border-opacity-20 border text-sm p-1 rounded bg-dark-low dark:bg-dark dark:bg-opacity-10 text-dark-high dark:text-white break-normal;
+    }
+  }
+
+  h3 {
+    @apply text-xl text-dark dark:text-white dark:text-opacity-70 font-bold my-6 underline;
+    code {
+      @apply border border-dark-low dark:border-white dark:border-opacity-20 border text-sm p-1 rounded bg-dark-low dark:bg-dark dark:bg-opacity-10 text-dark-high dark:text-white break-normal;
+    }
+  }
+
+  p {
+    @apply text-base text-dark dark:text-white dark:text-opacity-70  my-4 leading-loose;
+
+    code {
+      @apply border border-dark-low dark:border-white dark:border-opacity-20 border text-sm p-1 rounded bg-dark-low dark:bg-dark dark:bg-opacity-10 text-dark-high dark:text-white dark:text-opacity-80 break-normal;
+    }
+  }
+
+  a {
+    @apply underline text-blue dark:text-green;
+  }
+
+  .description {
+    @apply font-medium text-base md:text-lg;
+  }
+
+  blockquote {
+    width: 100%;
+    margin: 1.5em 0;
+    border-left-width: 0.4em;
+    border-left-style: solid;
+    position: relative;
+    font-size: 1em;
+    @apply bg-dark-low dark:bg-dark bg-opacity-40 dark:bg-opacity-10 px-4 py-1  rounded-sm text-dark-high border-green;
+
+    //&:before {
+    //  position: absolute;
+    //  top: 22px;
+    //  left: -12px;
+    //  color: #fff;
+    //  width: 20px;
+    //  height: 20px;
+    //  border-radius: 100%;
+    //  text-align: center;
+    //  line-height: 20px;
+    //  font-weight: bold;
+    //}
+    //
+    //&:before {
+    //  content: "!";
+    //  background-color:#2E9E78;
+    //}
+  }
+
+  ul {
+    @apply my-4 list-disc text-left;
+
+    li {
+      @apply my-4   ml-4 text-dark dark:text-white dark:text-opacity-70 font-thin;
+      code {
+        @apply border border-dark-low dark:border-white dark:border-opacity-20 border text-sm p-1 rounded bg-dark-low dark:bg-dark dark:bg-opacity-10 text-dark-high dark:text-white dark:text-opacity-80 break-normal;
+      }
+    }
+  }
+
+  img {
+    margin: 1em auto;
+    width: 75%;
+    align-content: center;
+    text-align: center;
+    align-items: center;
+    display: flex;
+
+    @media screen and (max-width: 800px) {
+      width: 100%;
+    }
+  }
+
+  .slick-button {
+    p {
+      margin: 0.5rem !important;
+    }
+  }
+  .slick-button-text-white {
+    * {
+      color: white !important;
+    }
+  }
+  .slick-button-text-black {
+    * {
+      color: black !important;
+    }
+  }
+
+  table {
+    width: 100%;
+    margin-bottom: 1em;
+    overflow-x: auto;
+    margin-top: 1em;
+
+    @apply text-dark text-sm;
+
+    thead {
+      width: 100%;
+      @apply bg-dark-low dark:bg-white dark:bg-opacity-10 text-dark dark:text-white;
+
+      tr {
+        th {
+          padding: 1em 0;
+          font-weight: bold;
+          @apply border border-dark border-opacity-30 dark:border-white dark:border-opacity-10;
+        }
+      }
+    }
+
+    tbody {
+      width: 100%;
+
+      @apply font-thin text-dark;
+    }
+
+    tr {
+      td {
+        font-size: 1.2em;
+        padding: 0.5em 0.3em;
+        @apply border border-dark border-opacity-30 dark:border-white dark:border-opacity-10 rounded-lg  font-thin text-dark  dark:text-white dark:text-opacity-70  text-base;
+
+        @media screen and (max-width: 800px) {
+          & {
+            font-size: 1em;
+          }
+        }
+      }
+    }
+  }
+}

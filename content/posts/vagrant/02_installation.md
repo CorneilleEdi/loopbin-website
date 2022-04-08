@@ -6,8 +6,6 @@ topics: [vagrant]
 date: 2021-02-07
 ---
 
-## Table of Contents
-
 Comme expliqué dans les articles précédents sur les bases de Vagrant, il est nécessaire d'avoir un Provider avant de commencer avec Vagrant.
 
 Le provider peut être
@@ -45,7 +43,7 @@ vagrant version
 Vous aurez un message ressemblant à celui ci dessous si Vagrant a été bien installer
 
 ```bash
-➜  ~ vagrant version
+➜  ~ vagrant version
 
 Installed Version: 2.2.14
 
@@ -53,7 +51,7 @@ Latest Version: 2.2.14
 
 You're running an up-to-date version of Vagrant!
 
-➜  ~
+➜  ~
 ```
 
 Je travaille avec la dernier version 2.2.14

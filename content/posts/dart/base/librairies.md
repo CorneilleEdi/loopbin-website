@@ -6,9 +6,7 @@ topics: [dart]
 date: 2020-01-01
 ---
 
-## Table of Contents
-
-##
+#
 
 Tout comme Java, C, Python; le langage Dart contient des librairies intégrées.
 
@@ -163,11 +161,11 @@ Pour créer une librairie , il suffit de créer un nouveau fichier et d'y écrir
 
 L' importation de cette librairie se fait en utilisant le lien relatif du fichier contenant les fonctions par rapport au fichier principal (là ou nous souhaitons les utiliser)
 
-```dart:title=calculs.dart
+```dart[calculs.dart]
 maximum(x, y) => x > y ? x : y;
 ```
 
-```dart:title=main.dart
+```dart[main.dart]
 import 'lib/calculs.dart';
 
 void main() {
@@ -187,7 +185,7 @@ Dans notre exemple, le fichier **calculs.dart** se trouve dans notre dossier **l
 
 Ecrire un programme qui génère deux nombres aléatoires entre 0 et 250 et retourne le plus grand d'entre eux et sa racine carrée .
 
-```dart:title=maxEtRacine.dart
+```dart[maxEtRacine.dart]
 import 'dart:math' show Random, sqrt, max;
 
 void main() {
@@ -210,7 +208,7 @@ maxEtRacine(int x, int y) {
 }
 ```
 
-```:title=output
+```[output]
 nombre 1 : 121
 nombre 2 : 85
 maximum : 121
@@ -219,7 +217,7 @@ racine du max : 11
 
 Ecrire un programme qui génère une liste contenant 25 nombres aléatoires entre 0 et 1300 et qui retourne le maximum , la somme des éléments et la moyenne de cette liste.
 
-```dart:title=liste.dart
+```dart[liste.dart]
 import 'dart:math' show Random;
 
 void main() {
@@ -255,7 +253,7 @@ somme(liste) {
 }
 ```
 
-```:title=output
+```[output]
 La liste est :
 [143, 303, 235, 398, 35, 975, 1056,
 298, 422, 1062, 795, 1128, 23, 1149,

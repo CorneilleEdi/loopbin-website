@@ -6,9 +6,7 @@ topics: [dart]
 date: 2020-01-01
 ---
 
-## Table of Contents
-
-##
+#
 
 > En [programmation informatique](https://fr.wikipedia.org/wiki/Programmation_informatique), un **opérateur** est une [fonction](<https://fr.wikipedia.org/wiki/Fonction_(informatique)>) spéciale dont l'[identificateur](https://fr.wikipedia.org/wiki/Identificateur) s'écrit généralement avec des caractères non autorisés pour l'identificateur des fonctions ordinaires. Il s'agit souvent des équivalents aux [opérateurs mathématiques](https://fr.wikipedia.org/wiki/Opérateurs_mathématiques) pour un [langage de programmation](https://fr.wikipedia.org/wiki/Langage_de_programmation). Les opérateurs peuvent effectuer des opérations arithmétiques, booléennes ou agir sur des [chaînes de caractères](https://fr.wikipedia.org/wiki/Chaînes_de_caractères). Contrairement aux fonctions, les opérateurs fournissent souvent les opérations primitives du langage. Leur nom est constitué de caractères symboles ou de ponctuation. La terminologie varie néanmoins de langage en langage. Wikipédia
 
@@ -199,7 +197,7 @@ print(x %= 2);//0.0
 
 Quelle seraient les résultats de ces opérations ?
 
-```dart:title=operators.dart
+```dart[operators.dart]
 main() {
   var operation1 = '13/2 = ${13 ~/ 2} r ${13 % 2}';
 
@@ -216,7 +214,7 @@ main() {
 }
 ```
 
-```:title=output
+```[output]
 13/2 = 6 r 1
 true
 null

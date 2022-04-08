@@ -6,13 +6,11 @@ topics: [linux, bash]
 date: 2020-12-08
 ---
 
-## Table of Contents
+#
 
-##
+Parfois, il est utile de lister les fichiers et dossiers dans un répertoire et d'afficher la taille de chaque fichier / dossier dans un format lisible. Vous pouvez facilement accomplir cela avec la commande **du** dans votre terminal.
 
-Parfois, il est utile de lister les fichiers et dossiers dans un répertoire et d'afficher la taille de chaque fichier / dossier dans un format lisible. Vous pouvez facilement accomplir cela avec la commande **du** dans votre terminal.
-
-La commande **du** est une commande Linux / Unix standard qui permet à un utilisateur d'obtenir rapidement des informations sur l'utilisation du disque. Il est préférable de l'appliquer à des répertoires spécifiques et permet de nombreuses variantes pour personnaliser la sortie en fonction de vos besoins.
+La commande **du** est une commande Linux / Unix standard qui permet à un utilisateur d'obtenir rapidement des informations sur l'utilisation du disque. Il est préférable de l'appliquer à des répertoires spécifiques et permet de nombreuses variantes pour personnaliser la sortie en fonction de vos besoins.
 
 Vous pouvez jeter un coup d'oeil au manuel d'utlisation en faisant dans le terminal :
 
@@ -51,7 +49,7 @@ DESCRIPTION
  Manual page du(1) line 1 (press h for help or q to quit)
 ```
 
-En faisant la commande **du** tout simplement, vous aurez un resultat qui ressemble a ceci
+En faisant la commande **du** tout simplement, vous aurez un resultat qui ressemble a ceci
 
 ```bash
 36          ./dev/learn/learn_typescript/decorators/base
@@ -71,7 +69,7 @@ Vous pouvez voir qu'il y a trois lignes de sortie de données par la commande de
 
 ## Les flags utiles
 
-- **h** , **-human-readable** : imprime les tailles dans un format lisible par l'homme (ajoute une unité à la taille).
+- **h** , **-human-readable** : imprime les tailles dans un format lisible par l'homme (ajoute une unité à la taille).
 
 ```bash
 du -h ./dev/learn/learn_typescript
@@ -82,7 +80,7 @@ du -h ./dev/learn/learn_typescript
 200K	./dev/learn/learn_typescript
 ```
 
-- **c** , **-total** : imprime le taille total.
+- **c** , **-total** : imprime le taille total.
 
 ```bash
 du -hc ./dev/learn/learn_typescript
@@ -95,7 +93,7 @@ du -hc ./dev/learn/learn_typescript
 200K	total
 ```
 
-- **s**, **-summarize**: afficher uniquement un total pour le répertoire
+- **s**, **-summarize**: afficher uniquement un total pour le répertoire
 
 ```bash
 du -sh ./dev/learn/learn_typescript
@@ -105,7 +103,7 @@ du -sh ./dev/learn/learn_typescript
 200K	./dev/learn/learn_typescript
 ```
 
-- **S**, **-separate-dirs**: pour les répertoires n'incluent pas la taille des sous-répertoires
+- **S**, **-separate-dirs**: pour les répertoires n'incluent pas la taille des sous-répertoires
 
 Pour plus d'options, veuillez vous référer au manuel.
 

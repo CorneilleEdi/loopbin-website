@@ -6,8 +6,6 @@ topics: [linux, bash, network]
 date: 2021-01-05
 ---
 
-## Table of Contents
-
 Le port réseau est identifié par son numéro, l'adresse IP associée et le type de protocole de communication, tel que TCP ou UDP.
 
 Le port d'écoute est un port écouté par une application ou une procédure, servant de point de terminaison de contact. C'est à dire une porte ouverte qui mène vers l'application.

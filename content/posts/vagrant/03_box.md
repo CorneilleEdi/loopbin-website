@@ -6,9 +6,7 @@ topics: [vagrant]
 date: 2021-02-08
 ---
 
-## Table of Contents
-
-##
+#
 
 Avant de créer notre environnement virtuel, il va falloir que nous choisissons et installons une image.
 
@@ -41,11 +39,11 @@ pour installer l'image de Ubuntu 20.04
 Cette commande répertorie toutes les boîtes installées dans Vagrant.
 
 ```bash
-➜  ~ vagrant box list
+➜  ~ vagrant box list
 
 peru/ubuntu-20.04-server-amd64 (virtualbox, 20210202.01)
 
-➜  ~
+➜  ~
 ```
 
 ### vagrant box update

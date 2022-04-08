@@ -1,6 +1,11 @@
 .container {
   @apply max-w-9xl px-4 sm:px-10 mx-auto;
 }
+
+.container-small {
+  @apply max-w-5xl px-4 sm:px-10 mx-auto;
+}
+
 .page-bg {
   @apply bg-white dark:bg-dark-high text-dark-high dark:text-white  pb-20 md:pb-12;
 }
@@ -27,4 +32,21 @@
 
 .slick-hover:hover {
   @apply bg-dark-low dark:bg-opacity-20;
+}
+
+.toc {
+  @apply list-none dark-text mb-8;
+}
+
+.toc,
+.toc-deep-2 {
+}
+
+.toc,
+.toc-deep-3 {
+  @apply ml-4;
+}
+
+.nuxt-content {
+  @apply break-words;
 }

@@ -6,9 +6,7 @@ topics: [dart]
 date: 2020-01-01
 ---
 
-## Table of Contents
-
-##
+#
 
 > En [programmation informatique](https://fr.wikipedia.org/wiki/Programmation_informatique), un **type de donnée**, ou simplement un **type**, définit la nature des valeurs que peut prendre une [donnée](<https://fr.wikipedia.org/wiki/Donnée_(informatique)>), ainsi que les [opérateurs](<https://fr.wikipedia.org/wiki/Opérateur_(informatique)>) qui peuvent lui être appliqués. **Wikipédia**
 
@@ -224,7 +222,7 @@ String alert = "votre solde est à ${solde/450000} %";
 
 ## Pratique
 
-```dart:title=donnees.dart
+```dart[donnees.dart]
 main() {
   String nom = "Apple";
   var date = "1 April 1976";
@@ -241,7 +239,7 @@ main() {
 }
 ```
 
-```:title=output
+```[output]
 La marque Apple a été créé le 1 APRIL 1976.
 Sa valeur actuelle est de 80 milliard de dollars 💵.
 L'un de ses produits les plus connus est l'iPhone.

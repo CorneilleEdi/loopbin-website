@@ -6,9 +6,7 @@ topics: [dart]
 date: 2020-01-01
 ---
 
-## Table of Contents
-
-##
+#
 
 Le concept de base des entrées et sorties est de gérer les interactions avec le programme durant son exécution. Elle permet de soumettre des informations au programme et de recevoir des données venant du programme.
 
@@ -111,7 +109,7 @@ void main() {
 
 ```
 
-```text:title=message.txt
+```text[message.txt]
 Hey, je viens de creer un fichier 📃
 ```
 
@@ -143,7 +141,7 @@ Créer le jeu du hasard:
 
 Deviner un nombre choisi aléatoirement par le programme entre 0 et 50
 
-```dart:title=hasard.dart
+```dart[hasard.dart]
 import 'dart:io' show stdin;
 import 'dart:math' show Random;
 
@@ -167,7 +165,7 @@ void main() {
 }
 ```
 
-```:title=output
+```shell[output]
 Entrez votre nombre :
 12
 Essayer encore une fois
