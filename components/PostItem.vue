@@ -4,7 +4,7 @@
   >
     <nuxt-link :to="post.path" class="w-full" style="text-decoration: none">
       <div class="p-4">
-        <p class="text-dark-high dark:text-white">
+        <p class="text-dark-high dark:text-white font-medium">
           {{ post.title }}
         </p>
         <p
