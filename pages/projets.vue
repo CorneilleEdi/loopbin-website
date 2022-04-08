@@ -1,8 +1,10 @@
 <template>
-  <div
-    class="flex h-screen justify-center items-center bg-white dark:bg-dark-high text-dark-high dark:text-white"
-  >
-    <h3 class="">Projets</h3>
+  <div class="page-bg">
+    <div class="container">
+      <projects-list />
+
+      <meets-list />
+    </div>
   </div>
 </template>
 

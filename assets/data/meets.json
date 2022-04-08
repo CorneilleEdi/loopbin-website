@@ -1,0 +1,112 @@
+[
+  {
+    "number": 1,
+    "code": "flutter101",
+    "uid": "state_management_avec_flutter_les_bases",
+    "title": "State management avec Flutter: Les bases",
+    "description": "Exploration du concept de State management,présentation des différentes méthodes et implémentation avec Provider",
+    "about": "",
+    "date": "Samedi, 18 Juillet 2020 à 19h15 GMT",
+    "dateUnix": "1619153989",
+    "image": "https://storage.googleapis.com/docs.meet.loopbin.dev/flutter101/images/flutter101.jpg",
+    "imageFull": "https://storage.googleapis.com/docs.meet.loopbin.dev/flutter101/images/flutter101-full.jpg",
+    "program": [
+      "Introduction à la nation de state management",
+      "Exploration des concepts et approches",
+      "Codelab avec Flutter"
+    ],
+    "topics": ["Flutter"],
+    "link": "meet.google.com/ghj-jydt-spd",
+    "resources": [
+      {
+        "title": "Présentation",
+        "link": "https://docs.google.com/présentation/d/1VUmWmWDqdvcS_X8uDIkifgtOQcJMn8nP8ECmwbKWqDk/edit?usp=sharing"
+      },
+      {
+        "title": "Code",
+        "link": "https://github.com/CorneilleEdi/state_management_101"
+      }
+    ]
+  },
+  {
+    "number": 2,
+    "code": "bluestorm",
+    "uid": "developpement_local_flutter_avec_les_emulateurs_firebase",
+    "title": "Développement local Flutter avec les émulateurs Firebase",
+    "description": "Présentation, installation, configuration et codelab.",
+    "about": "Firebase est sans doute l'un des services Cloud les plus utilisés par les développeurs Flutter. Pour faciliter le développement avec leurs services les plus populaires (Firestore, Firebase Auth, Firebase Functions, Firebase Realtime Database et Firebase Pub/Sub), l'équipe Firebase a developpé l'émulateur Firebase permettant aux développeurs de travailler et tester leurs applications offline. Dans cette section, nous allons explorer le Firebase Emulator et l'utiliser avec Flutter.",
+    "date": "Samedi, 1er Mai 2021 à 16h GMT",
+    "image": "https://storage.googleapis.com/docs.meet.loopbin.dev/bluestorm/images/bluestorm.jpg",
+    "imageFull": "https://storage.googleapis.com/docs.meet.loopbin.dev/bluestorm/images/bluestorm-full.jpg",
+    "dateUnix": "1619884800",
+    "link": "meet.google.com/fog-wnwu-hqp",
+    "program": [
+      "Présentation de l'emulateur Firebase",
+      "Installation et configuration",
+      "Codelab avec Flutter"
+    ],
+    "calendars": {
+      "google": "https://calendar.google.com/event?action=TEMPLATE&tmeid=MWtjajI2ZG5uMWJ0NDAxMTFzZWhxanNuMXMgbmI3bm5iMzUxZjE5MG5qaWphb2oycWtubGtAZw&tmsrc=nb7nnb351f190njijaoj2qknlk%40group.calendar.google.com",
+      "apple": "https://calendar.google.com/calendar/ical/nb7nnb351f190njijaoj2qknlk%40group.calendar.google.com/public/basic.ics"
+    },
+    "resources": [
+      {
+        "title": "Présentation",
+        "link": "https://docs.google.com/presentation/d/11wX-TNk7jEeTNtYo46dprp6Aw_J4Elq_ayQJhlPst7U/edit?usp=sharing"
+      },
+      {
+        "title": "Code",
+        "link": "https://github.com/CorneilleEdi/flutter-firebase-emulators-bluestorm"
+      },
+      {
+        "title": "Article",
+        "link": "https://loopbin.dev/tutos/developpement-local-flutter-avec-les-emulateurs-firebase/"
+      }
+    ],
+    "topics": ["Flutter", "Firebase"]
+  },
+  {
+    "number": 3,
+    "code": "echo",
+    "uid": "maitriser_les_requetes_http_avec_flutter",
+    "title": "Maitriser les requêtes HTTP avec Flutter",
+    "description": "Les bases des requêtes HTTP et comment s'y prendre avec Flutter",
+    "about": "",
+    "date": "Dimanche, 22 Aout 2021 à 16h GMT",
+    "image": "https://storage.googleapis.com/images.meet.loopbin.dev/echo/echo-22-xm.jpg",
+    "imageFull": "https://storage.googleapis.com/images.meet.loopbin.dev/echo/echo-22-xm.jpg",
+    "dateUnix": "1629648000",
+    "link": "meet.google.com/gwn-gfvd-joe",
+    "program": [
+      "Introduction aux requêtes HTTP",
+      "HTTP avec Flutter",
+      "Notions avancées & Dio"
+    ],
+    "calendars": {
+      "google": "https://calendar.google.com/event?action=TEMPLATE&tmeid=NjF0ZDlkM2hlNnBrajZidG0wc2YzMDQ0dGogbmI3bm5iMzUxZjE5MG5qaWphb2oycWtubGtAZw&tmsrc=nb7nnb351f190njijaoj2qknlk%40group.calendar.google.com",
+      "apple": "https://calendar.google.com/calendar/ical/nb7nnb351f190njijaoj2qknlk%40group.calendar.google.com/public/basic.ics"
+    },
+    "resources": [],
+    "topics": ["Flutter"]
+  },
+  {
+    "number": 4,
+    "code": "mars",
+    "uid": "docker-en-production",
+    "title": "Docker en production",
+    "description": "Les étapes après le développement",
+    "about": "",
+    "date": "Samedi, 19 Mars 2022 à 16h GMT",
+    "image": "https://storage.googleapis.com/images.meet.loopbin.dev/mars/mars.jpg",
+    "imageFull": "https://storage.googleapis.com/images.meet.loopbin.dev/mars/mars.jpg",
+    "dateUnix": "1647705600",
+    "link": "meet.google.com/uan-ywdz-ayk",
+    "program": ["Le processus", "Mise en production"],
+    "calendars": {
+      "google": "",
+      "apple": ""
+    },
+    "resources": [],
+    "topics": ["Docker", "Github", "CI/CD"]
+  }
+]

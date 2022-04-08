@@ -14,8 +14,8 @@ TODO:
 
 - [x] Posts Pages
 - [x] Topics Pages
-- [ ] Post page
-- [ ] Projects page
+- [x] Post page
+- [x] Projects page
 - [ ] About
 - [ ] Search
 - [x] Home page

@@ -56,7 +56,7 @@
           </nuxt-link>
           <nuxt-link
             to="/about"
-            exact-active-class="exact-navigation"
+            active-class="exact-navigation"
             class="flex px-4 items-center py-2 slick-hover cursor-pointer rounded-sm"
           >
             <span class="mr-2">
