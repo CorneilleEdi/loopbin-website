@@ -1,5 +1,11 @@
+import config from './config.util';
+
+
+const siteUrl = config.baseUrl;
 export default (meta) => {
   return [
+    { property: 'og:site_name', content: 'Loopbin' },
+    { hid: 'og:type', property: 'og:type', content: 'website' },
     {
       hid: 'title',
       name: 'title',
@@ -13,7 +19,7 @@ export default (meta) => {
     {
       hid: 'og:url',
       property: 'og:url',
-      content: (meta && meta.url) || '',
+      content: (meta && meta.url) || siteUrl,
     },
     {
       hid: 'og:title',
@@ -33,12 +39,14 @@ export default (meta) => {
     {
       hid: 'og:image',
       property: 'og:image',
-      content: (meta && meta.image) || '',
+      content: (meta && meta.image) || `${siteUrl}/images/logo/logo.png`,
     },
+    {property: 'og:image:width', content: '1240'},
+    {property: 'og:image:height', content: '545'},
     {
       hid: 'twitter:url',
       name: 'twitter:url',
-      content: (meta && meta.url) || '',
+      content: (meta && meta.url) || siteUrl,
     },
     {
       hid: 'twitter:card',
@@ -58,7 +66,7 @@ export default (meta) => {
     {
       hid: 'twitter:image',
       name: 'twitter:image',
-      content: (meta && meta.image) || '',
+      content: (meta && meta.image) || `${siteUrl}/images/logo/logo-small.png`,
     },
     {
       hid: 'twitter:site',
