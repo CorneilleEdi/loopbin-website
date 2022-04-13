@@ -5,19 +5,28 @@
       <p class="mt-2">
         Un total de {{ numberOfPosts }} sur {{ numberOfTopics }} sujets
       </p>
-      <topics-list :topics="topics" />
+      <topics-list :topics="topics"/>
     </div>
   </div>
 </template>
 
 <script>
 import TopicsList from '~/components/TopicsList'
+import generateMeta from "~/utils/meta.util";
 
 export default {
   name: 'Topics',
-  components: { TopicsList },
-  async asyncData({ $content }) {
-    const posts = await $content('posts', { deep: true })
+  components: {TopicsList},
+  head() {
+    return {
+      title: 'Topics',
+      meta: generateMeta({
+        title: "Topics",
+      }),
+    }
+  },
+  async asyncData({$content}) {
+    const posts = await $content('posts', {deep: true})
       .only(['topics'])
       .fetch()
 
@@ -32,7 +41,7 @@ export default {
     const numberOfTopics = topics.size
     const numberOfPosts = posts.length
 
-    return { topics: [...topics].sort(), numberOfTopics, numberOfPosts }
+    return {topics: [...topics].sort(), numberOfTopics, numberOfPosts}
   },
 }
 </script>

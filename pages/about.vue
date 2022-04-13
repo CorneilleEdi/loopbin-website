@@ -80,7 +80,7 @@
                 <div
                   class="h-full flex items-center slick-border rounded-sm hover:shadow-sm cursor-pointer"
                 >
-                  <div class="bg-dark-low m-2 p-2 mr-2 rounded-sm">
+                  <div class="bg-dark-low m-2 p-2 mr-4 rounded-sm">
                     <img
                       class="mx-auto h-6 w-6 md:h-8 md:w-8 flex-shrink-0"
                       :src="getImagePath(item.image)"
@@ -106,9 +106,18 @@
 
 <script>
 import techs from '../assets/data/techs.json'
+import generateMeta from "~/utils/meta.util";
 
 export default {
   name: 'About',
+  head() {
+    return {
+      title: 'A propos',
+      meta: generateMeta({
+        title: "A propos",
+      }),
+    }
+  },
   data() {
     return {
       techs,

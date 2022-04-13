@@ -47,11 +47,23 @@
 
 <script>
 import ActionButton from '~/components/ActionButton'
+import generateMeta from "~/utils/meta.util";
 
 export default {
   name: 'Post',
   // eslint-disable-next-line vue/no-unused-components
   components: { ActionButton },
+
+  head(){
+    return {
+      title: this.post.title,
+      description: this.post.description,
+      meta: generateMeta({
+        title: this.post.title,
+        description: this.post.description,
+      }),
+    }
+  },
   async asyncData({ $content, params, error }) {
     const post = await $content('posts', { deep: true })
       .where({ slug: params.slug })

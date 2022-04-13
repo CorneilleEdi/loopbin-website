@@ -32,10 +32,20 @@
 <script>
 import techs from '../../assets/data/techs.json'
 import PostItem from '~/components/PostItem'
+import generateMeta from "~/utils/meta.util";
 
 export default {
   name: 'TopicsDetails',
   components: { PostItem },
+
+  head() {
+    return {
+      title: this.$data.techno.name,
+      meta: generateMeta({
+        title: this.$data.techno.name,
+      }),
+    }
+  },
   async asyncData({ $content, params, error }) {
     const id = params.id
     let techId

@@ -26,10 +26,19 @@
 import Pager from '~/components/shared/Pager'
 import { formatDate } from '~/utils/date.util'
 import PostItem from '~/components/PostItem'
+import generateMeta from "~/utils/meta.util";
 
 export default {
   name: 'Posts',
   components: { PostItem, Pager },
+  head() {
+    return {
+      title: "Posts",
+      meta: generateMeta({
+        title: "Posts",
+      }),
+    }
+  },
   async asyncData({ $content, query, redirect }) {
     const actualPage = parseInt(query?.page ?? '1')
 

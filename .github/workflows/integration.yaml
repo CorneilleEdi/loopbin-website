@@ -4,6 +4,10 @@ on:
   push:
     branches: [main]
 
+env:
+  IN_PRODUCTION: false
+  BASE_URL: https://luna.loopbin.dev
+
 jobs:
   integration:
     runs-on: ubuntu-latest
