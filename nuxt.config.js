@@ -44,6 +44,7 @@ export default {
 
   content: {
     fullTextSearchFields: ['title', 'description', 'slug'],
+
     markdown: {
       prism: {
         theme: 'prism-themes/themes/prism-material-oceanic.css',

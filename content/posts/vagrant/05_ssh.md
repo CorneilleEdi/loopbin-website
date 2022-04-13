@@ -4,6 +4,7 @@ description: SSH dans une machine Vagrant en cours d'exécution
 tags: [vagrant]
 topics: [vagrant]
 date: 2021-02-10
+slug: vagrant-05-se-connecter-avec-ssh
 ---
 
 #

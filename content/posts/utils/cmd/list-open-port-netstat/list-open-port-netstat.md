@@ -4,6 +4,7 @@ description: Toouvez les ports en utilisation
 tags: [linux, bash, cmd, network]
 topics: [linux, bash, network]
 date: 2021-01-05
+slug: lister-les-ports-en-utilisations-sur-linux
 ---
 
 Le port réseau est identifié par son numéro, l'adresse IP associée et le type de protocole de communication, tel que TCP ou UDP.

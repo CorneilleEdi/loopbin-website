@@ -4,6 +4,7 @@ description: Résumé des commandes à retenir
 tags: [vagrant]
 topics: [vagrant]
 date: 2021-02-15
+slug: vagrant-les-commandes-a-retenir
 ---
 
 #

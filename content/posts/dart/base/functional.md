@@ -1,9 +1,10 @@
 ---
-title: Dart 11 - Map, Where, Reduce
+title: Dart 11 - Map, Where, Reduce, Every
 description: L'utilisation de Map, Where, Reduce, Every en Dart
 tags: [dart, dart-base]
 topics: [dart]
 date: 2020-01-01
+slug: dart-11-map-where-reduce-every
 ---
 
 #

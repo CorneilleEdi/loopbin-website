@@ -4,6 +4,7 @@ description: Les pour et contre du Language de programmation Typescript
 tags: [typescript, javascript, node]
 topics: [typescript]
 date: 2020-03-01
+slug: typescript-est-ce-une-si-bonne-idee
 ---
 
 ![Typescript](/images/typescript/typescript.png)

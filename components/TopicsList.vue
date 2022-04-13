@@ -9,7 +9,7 @@
         <div
           class="h-full flex items-center p-2 rounded-sm hover:shadow-sm slick-border dark-text"
         >
-          <div class="bg-dark-low dark:bg-opacity-20 p-4 mr-4 rounded-sm">
+          <div class="bg-dark-low p-4 mr-4 rounded-sm">
             <img
               class="mx-auto h-4 w-4 flex-shrink-0"
               :src="getImagePath(topic)"

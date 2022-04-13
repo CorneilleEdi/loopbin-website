@@ -4,6 +4,7 @@ description: Utilisation de Vagrant pour créer un machine virtuelle
 tags: [vagrant]
 topics: [vagrant]
 date: 2021-02-09
+slug: vagrant-04-creation-de-notre-premiere-machine
 ---
 
 #

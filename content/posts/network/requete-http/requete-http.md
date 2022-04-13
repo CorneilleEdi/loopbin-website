@@ -4,6 +4,7 @@ description: C'est quoi les requêtes HTTP?
 tags: [network, web]
 topics: [network]
 date: 2021-08-20
+slug: les-requetes-http
 ---
 
 Si il existe une notion à connaître en temps que développeur frontend, backend ou mobile c’est celle des requêtes HTTP. Sans elle, l’internet que nous connaissons aujourd’hui serait totalement différente.

@@ -4,6 +4,7 @@ description: Garder le controle et supprimer vos branches n'importe ou.
 tags: [git]
 topics: [git]
 date: 2020-03-01
+slug: comment-supprimer-une-branch-git-en-local-et-sur-les-remotes
 ---
 
 #

@@ -4,6 +4,7 @@ description: Comment sauvegarder l'état de Terraform sur Google Cloud Storage
 tags: [terraform, gcp]
 topics: [terraform, gcp]
 date: 2021-05-05
+slug: sauvegarder-letat-de-terraform-sur-google-cloud-storage
 ---
 
 S'il existe un truc indispensable et très important en travaillant avec Terraform c'est l'état (state). Pour faire simple ,l'état permet de sauvegarder les configurations et les ressources créées. Cet état est normalement enregistré dans un fichier local appelé `terraform.tfstate`, mais il peut également être enregistré dans un service de stockage, ce qui est préférable dans un environnement d'équipe et pour de vrais projets.Nous allons voir comment sauvegarder nos états sur Google Cloud Storage.

@@ -4,6 +4,7 @@ description: C'est quoi une URL web et quelles sont ces différentes parties?
 tags: [network, web]
 topics: [network]
 date: 2021-01-16
+slug: cest-quoi-une-url-web
 ---
 
 Dans ce petit tuto nous allons explorer la notion d’URL, qu’est-ce que s’est et ces différentes parties.

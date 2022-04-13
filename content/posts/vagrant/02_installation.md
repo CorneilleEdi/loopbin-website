@@ -4,6 +4,7 @@ description: Installation de Vagrant
 tags: [vagrant]
 topics: [vagrant]
 date: 2021-02-07
+slug: vagrant-02-installation
 ---
 
 Comme expliqué dans les articles précédents sur les bases de Vagrant, il est nécessaire d'avoir un Provider avant de commencer avec Vagrant.

@@ -4,6 +4,7 @@ description: Quelques méthodes pour manipuler les entrées / sorties et les fic
 tags: [dart, dart-base]
 topics: [dart]
 date: 2020-01-01
+slug: dart-10-les-entrees-sorties
 ---
 
 #

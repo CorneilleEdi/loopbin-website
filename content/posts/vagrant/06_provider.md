@@ -4,6 +4,7 @@ description: Notion de Provider/Fournisseur
 tags: [vagrant]
 topics: [vagrant]
 date: 2021-02-11
+slug: vagrant-06-provider-fournisseur
 ---
 
 #

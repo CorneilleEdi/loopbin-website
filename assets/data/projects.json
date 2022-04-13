@@ -4,7 +4,12 @@
     "title": "Bluebook Search",
     "description": "Add blazingly fast full-text search capability to Cloud Firestore using MeiliSearch",
     "date": "Mai 2021",
-    "tags": ["gcp"],
+    "tags": [
+      "google-cloud-platform",
+      "nodejs",
+      "full-text-search",
+      "meiliSearch"
+    ],
     "github": "https://github.com/CorneilleEdi/bluebook-cloud-functions-meilisearch",
     "preview": "https://hashnode.com/post/how-to-add-a-blazing-fast-full-text-search-capability-to-cloud-firestore-using-meilisearch-introduction-15-ckoz64twc07ppdss1hk3mfeh6"
   },
@@ -13,19 +18,11 @@
     "title": "Loopbin Meet",
     "description": "Plateforme d'organisation de sessions live",
     "date": "April 2021",
-    "tags": ["open-source"],
+    "tags": ["nuxtjs", "express", "nodejs", "sendgrid"],
     "preview": "https://meet.loopbin.dev"
   },
   {
     "id": 3,
-    "title": "Formatik",
-    "description": "Validation de formulaire sur android avec Live Data, ViewModel, DataBinding",
-    "date": "23 Janv 2020",
-    "tags": ["android", "kotlin", "open-source"],
-    "github": "https://github.com/CorneilleEdi/formatik"
-  },
-  {
-    "id": 4,
     "title": "Package SweetSheet",
     "description": "Affichez rapidement et facilement de beaux bottoms sheets comme des dialogue de confirmation.",
     "date": "25 March 2020",
@@ -34,11 +31,11 @@
     "preview": "https://pub.dev/packages/sweetsheet"
   },
   {
-    "id": 5,
-    "title": "Book Shop",
-    "description": "Enregistrer les données localement grace à  Room , LiveData et ViewModels d' Android Jetpack",
-    "date": "22 Nov 2018",
-    "tags": ["android", "kotlin", "open-source"],
-    "github": "https://github.com/CorneilleEdi/BookShop"
+    "id": 4,
+    "title": "Kotlin Testing Container",
+    "description": "Looking at testing with test-container with Kotlin, junit5, mongodb and docker",
+    "date": "Avril 2021",
+    "tags": ["Kotlin", "mongodb", "open-source", "junit5", "test-containers"],
+    "github": "https://github.com/CorneilleEdi/test-container-kotlin-playground"
   }
 ]

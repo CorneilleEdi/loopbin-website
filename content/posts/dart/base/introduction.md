@@ -4,6 +4,7 @@ description: Introduction, Installation et Setup de l'IDE
 tags: [dart, dart-base]
 topics: [dart]
 date: 2020-01-01
+slug: dart-00-introduction
 ---
 
 #

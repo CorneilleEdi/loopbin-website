@@ -4,6 +4,7 @@ description: Installer NGINX sur Linux
 tags: [nginx]
 topics: [nginx]
 date: 2020-12-06
+slug: nginx-01-installation-et-configuration
 ---
 
 # Installation

@@ -4,6 +4,7 @@ description: Introduction à Vagrant
 tags: [vagrant]
 topics: [vagrant]
 date: 2021-02-05
+slug: vagrant-00-cest-quoi-vagrant
 ---
 
 # Presentation

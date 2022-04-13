@@ -4,6 +4,7 @@ description: Comment utiliser la commande du pour lister la taille des fichiers 
 tags: [linux, bash, cmd]
 topics: [linux, bash]
 date: 2020-12-08
+slug: lister-la-taille-des-fichiers-et-dossiers-sur-linux
 ---
 
 #

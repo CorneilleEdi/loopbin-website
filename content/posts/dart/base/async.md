@@ -4,6 +4,7 @@ description: Pogrammation asynchrone en Dart. Explication et utilisation des Fut
 tags: [dart, dart-base]
 topics: [dart]
 date: 2020-01-01
+slug: dart-12-programmation-asynchrone
 ---
 
 #

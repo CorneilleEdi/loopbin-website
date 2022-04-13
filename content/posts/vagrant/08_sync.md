@@ -4,6 +4,7 @@ description: Synchronisation entre hôte et machine virtuelle
 tags: [vagrant]
 topics: [vagrant]
 date: 2021-02-13
+slug: vagrant-08-dossiers-synchronises
 ---
 
 #

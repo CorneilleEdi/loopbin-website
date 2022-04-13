@@ -1,9 +1,10 @@
 ---
-title: Manipuler les  URLs en NodeJs
+title: Manipuler les URLs en NodeJs
 description: Construire et extraire des informtions des URLs en Javascript
 tags: [javascript, nodejs, network, web]
 topics: [nodejs]
 date: 2021-01-16
+slug: manipuler-les-urls-en-nodejs
 ---
 
 Il est fréquent que dans votre code vous soyez appelé à créer une URL.

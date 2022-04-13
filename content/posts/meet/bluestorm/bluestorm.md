@@ -4,6 +4,7 @@ description: Présentation, installation, configuration et codelab.
 tags: [firebase, flutter]
 topics: [firebase]
 date: 2021-05-02
+slug: developpement-local-flutter-avec-les-emulateurs-firebase
 ---
 
 Firebase est sans doute l'un des services Cloud les plus utilisés par les développeurs Flutter. Pour faciliter le développement avec leurs services les plus populaires (Firestore, Firebase Auth, Firebase Functions, Firebase Realtime Database et Firebase Pub/Sub), l'équipe Firebase a developpé l'émulateur Firebase permettant aux développeurs de travailler et tester leurs applications offline. Dans cet article, nous allons explorer le Firebase Emulator et l'utiliser avec Flutter.

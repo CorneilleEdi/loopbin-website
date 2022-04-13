@@ -4,6 +4,7 @@ description: Notion de box / image
 tags: [vagrant]
 topics: [vagrant]
 date: 2021-02-08
+slug: vagrant-03-les-box-images
 ---
 
 #

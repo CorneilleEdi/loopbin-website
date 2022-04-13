@@ -4,6 +4,7 @@ description: Approvisionnement des machines
 tags: [vagrant]
 topics: [vagrant]
 date: 2021-02-14
+slug: vagrant-09-provision-approvisionnement
 ---
 
 #

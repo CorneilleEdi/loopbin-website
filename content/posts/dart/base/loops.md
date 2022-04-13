@@ -4,6 +4,7 @@ description: Notion de boucle for, while et do while. Utilisation de break et co
 tags: [dart, dart-base]
 topics: [dart]
 date: 2020-01-01
+slug: dart-05-les-boucles
 ---
 
 #

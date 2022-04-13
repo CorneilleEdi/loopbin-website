@@ -16,6 +16,16 @@
             <p class="dark-text opacity-80 text-sm sm:text-base">
               {{ project.description || '' }}
             </p>
+
+            <div class="flex flex-grow flex-wrap space-x-2 mt-2">
+              <p
+                v-for="tag in project.tags"
+                :key="tag"
+                class="mt-1 text-xs py-1 px-2 bg-dark-low dark:bg-dark dark:bg-opacity-50 slick-border rounded-sm dark-text"
+              >
+                {{ tag }}
+              </p>
+            </div>
           </div>
           <div class="flex">
             <div v-if="project.github" class="mt-6">

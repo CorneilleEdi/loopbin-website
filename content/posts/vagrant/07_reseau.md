@@ -4,6 +4,7 @@ description: Configurations réseaux avec Vagrant
 tags: [vagrant]
 topics: [vagrant]
 date: 2021-02-12
+slug: vagrant-07-reseau
 ---
 
 #

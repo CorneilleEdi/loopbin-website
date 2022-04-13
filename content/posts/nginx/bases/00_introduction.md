@@ -4,6 +4,7 @@ description: Qu'est-ce que c'est que NGINX? C'est quoi son rôle?
 tags: [nginx]
 topics: [nginx]
 date: 2020-12-05
+slug: nginx-00-introduction
 ---
 
 # Qu'est-ce que c'est que NGINX? C'est quoi son rôle?

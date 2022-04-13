@@ -4,6 +4,7 @@ description: Les fonctions en Dart, leurs syntaxes et les différents types de p
 tags: [dart, dart-base]
 topics: [dart]
 date: 2020-01-01
+slug: dart-07-les-fonctions
 ---
 
 Une fonction est un bloc de code qui effectue une tâche spécifique. Au lieu d'écrire le code complet autant de fois que nécessaire, on crée une fonction que l’on appellera pour l'exécuter, ce qui peut aussi alléger le code, le rendre plus lisible. Les fonctions permettent de diviser le problème que veut résoudre le code en plusieurs parties indépendantes ou interdépendantes.

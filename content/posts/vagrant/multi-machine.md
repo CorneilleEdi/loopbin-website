@@ -4,6 +4,7 @@ description: Configurer Vagrantfile pour lancer plusieurs machines
 tags: [vagrant]
 topics: [vagrant]
 date: 2021-02-17
+slug: lancer-plusieurs-machines-avec-vagrant
 ---
 
 #

@@ -1,9 +1,10 @@
 ---
-title: Manipuler les  URLs en Java
+title: Manipuler les URLs en Java
 description: Construire et extraire des informtions des URLs en Java
 tags: [java, network, web]
 topics: [java]
 date: 2021-01-16
+slug: manipuler-les-urls-en-java
 ---
 
 Java ainsi que plusieurs autres langages de programmation comme le Javascript ou Dart contient une librairie qui permet aux programmeurs de jouer avec les urls. Dans ce tuto, nous allons explorer les méthodes offertes par le langage pour extraire les informations d'une url ainsi que générer une URL.

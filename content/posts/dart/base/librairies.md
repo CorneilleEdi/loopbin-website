@@ -4,6 +4,7 @@ description: Les librairies intégrées et les outils qu'elles proposent
 tags: [dart, dart-base]
 topics: [dart]
 date: 2020-01-01
+slug: dart-09-les-librairies-integrees
 ---
 
 #

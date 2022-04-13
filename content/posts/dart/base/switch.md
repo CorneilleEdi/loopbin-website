@@ -4,6 +4,7 @@ description: Structure de contrôle switch en Dart et son utilisation
 tags: [dart, dart-base]
 topics: [dart]
 date: 2020-01-01
+slug: dart-06-switch-case
 ---
 
 #

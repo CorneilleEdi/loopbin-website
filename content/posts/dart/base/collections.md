@@ -4,6 +4,7 @@ description: Les listes, ensembles et  dictionnaires en Dart. La syntaxe de déf
 tags: [dart, dart-base]
 topics: [dart]
 date: 2020-01-01
+slug: dart-08-les-collections
 ---
 
 #

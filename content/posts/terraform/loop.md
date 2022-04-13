@@ -4,6 +4,7 @@ description: Faire usage des boucles count, for et for_each pour créer des ress
 tags: [terraform, gcp]
 topics: [terraform, gcp]
 date: 2021-05-07
+slug: comment-utiliser-une-boucle-pour-creer-des-ressources-similaires-avec-terraform
 ---
 
 S'il y a une règle très important à suivre en codant, c'est de ne jamais se répéter. Dans cet article, nous allons vois comment est ce que nous pouvons utiliser une boucle dans Terraform pour éviter les répétition dans la création de ressources similaires.

@@ -4,6 +4,7 @@ description: Utiliser SweetSheet pour afficher rapidement et facilement un botto
 tags: [flutter, dart, ui]
 topics: [dart, flutter]
 date: 2020-06-01
+slug: le-package-sweetsheet-pour-flutter
 ---
 
 #

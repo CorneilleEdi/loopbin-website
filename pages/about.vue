@@ -48,16 +48,24 @@
           </p>
         </div>
       </div>
+
       <about-contact-list />
 
       <div class="mt-12">
+        <h4 class="my-4">Profile Github</h4>
+        <img
+          src="https://github-readme-stats.vercel.app/api?username=CorneilleEdi&&show_icons=true&title_color=0c1518&icon_color=0c1518&text_color=0c1518&bg_color=15DB95"
+          alt="profile"
+        />
+      </div>
+      <div class="mt-12">
         <h4>Mes Centres d'interets</h4>
 
-        <div class="my-4 px-2">
+        <div class="my-4">
           <div
             v-for="tech in techs"
             :key="tech.title"
-            class="w-full slick-border rounded-sm px-2 py-3 mb-5"
+            class="w-full slick-border rounded-sm p-2 mb-5"
           >
             <p class="mx-2 text-gray-600">{{ tech.title }}</p>
 

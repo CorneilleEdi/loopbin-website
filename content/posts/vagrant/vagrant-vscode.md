@@ -4,6 +4,7 @@ description: Connecter VSCode à une machine virtuelle créee avec Vagrant
 tags: [vagrant, vscode]
 topics: [vagrant, vscode]
 date: 2021-02-16
+slug: configurer-un-environnement-de-developpement-nodejs-avec-vagrant-et-vscode
 ---
 
 #
