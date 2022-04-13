@@ -39,6 +39,15 @@ module.exports = {
       mono: [...defaultTheme.fontFamily.mono],
     },
     extend: {
+      borderRadius: {
+        "2xs": "2px",
+        xs: "3px",
+        sm: "4px",
+        md: "6px",
+        DEFAULT: "8px",
+        lg: "10px",
+        xl: "12px",
+      },
       maxWidth: {
         '7xl': '72rem',
         '8xl': '80rem',

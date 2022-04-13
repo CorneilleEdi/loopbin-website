@@ -1,7 +1,7 @@
 <template>
   <div class="md:hidden">
     <div
-      class="block fixed inset-x-0 bottom-0 z-10 border-t border-dark-low dark:border-opacity-10 bg-white dark:bg-dark-high px-2"
+      class="block fixed inset-x-0 bottom-0 z-10 border-t border-dark-low dark:border-opacity-10 bg-green  px-2"
     >
       <div
         id="tabs"
@@ -12,8 +12,8 @@
         >
           <nuxt-link
             to="/posts"
-            exact-active-class="exact-navigation"
-            class="flex flex-col py-2 px-3 items-center hover:bg-dark-low cursor-pointer rounded-sm"
+            active-class="bg-white bg-opacity-30"
+            class="flex flex-col py-2 px-3 items-center hover:bg-white hover:bg-opacity-40 cursor-pointer rounded-sm"
           >
             <span class="mb-0">
               <svg
@@ -31,9 +31,9 @@
             <p class="text-xs">Posts</p>
           </nuxt-link>
           <nuxt-link
-            exact-active-class="exact-navigation"
+            active-class="bg-white bg-opacity-30"
             to="/projets"
-            class="flex flex-col py-2 px-3 items-center hover:bg-dark-low cursor-pointer rounded-sm"
+            class="flex flex-col py-2 px-3 items-center hover:bg-white hover:bg-opacity-40 cursor-pointer rounded-sm"
           >
             <span class="mb-0">
               <svg
@@ -51,9 +51,9 @@
             <p class="text-xs">Projets</p>
           </nuxt-link>
           <nuxt-link
-            exact-active-class="exact-navigation"
+            active-class="bg-white bg-opacity-30"
             to="/about"
-            class="flex flex-col py-2 px-3 items-center hover:bg-dark-low cursor-pointer rounded-sm"
+            class="flex flex-col py-2 px-3 items-center hover:bg-white hover:bg-opacity-40 cursor-pointer rounded-sm"
           >
             <span class="mb-0">
               <svg

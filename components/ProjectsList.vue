@@ -10,7 +10,7 @@
       >
         <div class="h-full flex flex-col slick-border p-6 rounded-sm">
           <div class="flex-grow">
-            <p class="darker-text text-base sm:text-lg font-medium">
+            <p class="darker-text text-base sm:text-lg font-medium mb-2">
               {{ project.title }}
             </p>
             <p class="dark-text opacity-80 text-sm sm:text-base">
@@ -41,7 +41,7 @@
             </div>
             <div v-if="project.preview" class="mt-6 ml-2">
               <button
-                class="px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base flex items-center justify-center transition duration-500 ease-in-out text-white focus:outline-none focus:shadow-outline bg-dark-high dark:bg-white dark:bg-opacity-10 rounded-full"
+                class="px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base flex items-center justify-center transition duration-500 ease-in-out text-dark-high focus:outline-none focus:shadow-outline bg-green dark:bg-green rounded-full"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

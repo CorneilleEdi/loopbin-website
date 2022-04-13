@@ -1,17 +1,28 @@
 .container {
-  @apply max-w-9xl px-4 sm:px-10 mx-auto;
+  @apply max-w-5xl 2xl:max-w-9xl px-4 sm:px-10 mx-auto;
 }
 
 .container-small {
-  @apply max-w-5xl px-4 sm:px-10 mx-auto;
+  @apply max-w-3xl  2xl:max-w-5xl px-4 sm:px-10 mx-auto;
 }
 
 .page-bg {
   @apply bg-white dark:bg-dark-high text-dark-high dark:text-white  pb-20 md:pb-12;
 }
 
+.bg-light-dark {
+  @apply bg-white dark:bg-dark-high text-dark-high dark:text-white;
+}
+
+.bg-light-dark-low {
+  @apply bg-white dark:bg-dark text-dark-high dark:text-white;
+}
+
 .exact-navigation {
-  @apply bg-dark-low text-blue text-white;
+  @apply bg-blue text-white;
+}
+.exact-navigation:hover {
+  @apply text-dark dark:text-white;
 }
 
 .slick-border {
@@ -32,6 +43,10 @@
 
 .slick-hover:hover {
   @apply bg-dark-low dark:bg-opacity-20;
+}
+
+.slick-hover-blue:hover {
+  @apply bg-blue bg-opacity-20;
 }
 
 .toc {
