@@ -65,3 +65,6 @@
 .nuxt-content {
   @apply break-words;
 }
+.hightlighted {
+  @apply text-blue dark:text-green font-medium;
+}

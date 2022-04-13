@@ -112,7 +112,6 @@ export default {
     '$route.query'(q) {
       if (q.page && q.page !== this.currentPage) {
         this.$emit('changed', q.page)
-        console.log(`emitted ${q.page}`)
       }
     },
   },

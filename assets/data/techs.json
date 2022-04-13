@@ -100,6 +100,11 @@
         "name": "JUnit",
         "image": "junit.png",
         "description": "Framework de test Java"
+      },
+      {
+        "name": "Cypress",
+        "image": "cypress.svg",
+        "description": "JavaScript end-to-end testing"
       }
     ]
   },
@@ -126,6 +131,11 @@
   {
     "title": "DevOps",
     "techs": [
+      {
+        "name": "Docker",
+        "image": "docker.svg",
+        "description": "Containerization"
+      },
       {
         "name": "Git",
         "image": "git.svg",
@@ -216,11 +226,6 @@
         "name": "Vagrant",
         "image": "vagrant.svg",
         "description": "Gestionnaire d'environnement"
-      },
-      {
-        "name": "Docker",
-        "image": "docker.svg",
-        "description": "Containerization"
       },
       {
         "name": "Gradle",

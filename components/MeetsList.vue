@@ -17,7 +17,7 @@
           <div class="flex">
             <div class="mt-2">
               <button
-                class="px-3 py-2 text-sm  flex items-center justify-center transition duration-500 ease-in-out hover:bg-dark-high hover:text-white focus:outline-none focus:shadow-outline dark-low-bg slick-border"
+                class="px-3 py-2 text-sm flex items-center justify-center transition duration-500 ease-in-out hover:bg-dark-high hover:text-white focus:outline-none focus:shadow-outline dark-low-bg slick-border"
               >
                 <a
                   target="_blank"

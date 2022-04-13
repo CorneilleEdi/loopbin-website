@@ -1,7 +1,7 @@
 <template>
   <div class="md:hidden">
     <div
-      class="block fixed inset-x-0 bottom-0 z-10 border-t border-dark-low dark:border-opacity-10 bg-green  px-2"
+      class="block fixed inset-x-0 bottom-0 z-10 border-t border-dark-low dark:border-opacity-10 bg-green px-2"
     >
       <div
         id="tabs"
