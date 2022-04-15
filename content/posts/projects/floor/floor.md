@@ -7,8 +7,6 @@ date: 2020-01-19
 slug: application-de-note-avec-floor
 ---
 
-#
-
 <action-button type="github" text="Floor task sur Github" link="https://github.com/CorneilleEdi/floor_task"></action-button>
 
 Application de note avec sauvegarde dans une base de données SQlite grâce au package Floor (La branche Provider utilise le package Provider pour la gestion des états).

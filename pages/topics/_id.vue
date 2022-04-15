@@ -23,20 +23,20 @@
       <h4 class="mb-4">Posts ({{ posts.length }})</h4>
 
       <section class="space-y-4">
-        <post-item v-for="post in posts" :key="post.slug" :post="post" />
+        <post-item v-for="post in posts" :key="post.slug" :post="post"/>
       </section>
     </div>
   </div>
 </template>
 
 <script>
-import techs from '../../assets/data/techs.json'
+import techs from '../../assets/data/techs-all.json'
 import PostItem from '~/components/PostItem'
 import generateMeta from "~/utils/meta.util";
 
 export default {
   name: 'TopicsDetails',
-  components: { PostItem },
+  components: {PostItem},
 
   head() {
     return {
@@ -46,7 +46,7 @@ export default {
       }),
     }
   },
-  async asyncData({ $content, params, error }) {
+  async asyncData({$content, params, error}) {
     const id = params.id
     let techId
 
@@ -65,10 +65,10 @@ export default {
     })
 
     if (!techno) {
-      error({ statusCode: 404 })
+      error({statusCode: 404})
     }
 
-    const posts = await $content('posts', { deep: true })
+    const posts = await $content('posts', {deep: true})
       .only([
         'slug',
         'title',
@@ -81,9 +81,9 @@ export default {
         'dir',
       ])
       .sortBy('date', 'desc')
-      .where({ topics: { $contains: id } })
+      .where({topics: {$contains: id}})
       .fetch()
-    return { techno, posts }
+    return {techno, posts}
   },
 
   methods: {

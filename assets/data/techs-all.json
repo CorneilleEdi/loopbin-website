@@ -142,6 +142,11 @@
         "description": "Version Control"
       },
       {
+        "name": "Github",
+        "image": "github.svg",
+        "description": "Github"
+      },
+      {
         "name": "Github Actions",
         "image": "github-actions.svg",
         "description": "CI/CD by Github"

@@ -30,7 +30,7 @@
           <div class="flex">
             <div v-if="project.github" class="mt-6">
               <button
-                class="px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base flex items-center justify-center transition duration-500 ease-in-out hover:bg-dark-high hover:text-white focus:outline-none focus:shadow-outline dark-low-bg slick-border rounded-full"
+                class="px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base font-medium flex items-center justify-center transition duration-500 ease-in-out hover:bg-dark-high hover:text-white focus:outline-none focus:shadow-outline dark-low-bg slick-border rounded-full"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -51,7 +51,7 @@
             </div>
             <div v-if="project.preview" class="mt-6 ml-2">
               <button
-                class="px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base flex items-center justify-center transition duration-500 ease-in-out text-dark-high focus:outline-none focus:shadow-outline bg-green dark:bg-green rounded-full"
+                class="px-3 py-2 sm:px-4 sm:py-3 text-sm sm:text-base font-medium flex items-center justify-center transition duration-500 ease-in-out text-dark-high focus:outline-none focus:shadow-outline bg-green dark:bg-green rounded-full"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +65,7 @@
                   />
                 </svg>
                 <span class="ml-1 text-sm leading-5"
-                  ><a :href="project.preview" target="_blank">Preview</a></span
+                  ><a :href="project.preview" target="_blank" >Preview</a></span
                 >
               </button>
             </div>
