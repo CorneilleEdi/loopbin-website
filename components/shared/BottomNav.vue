@@ -5,7 +5,7 @@
     >
       <div
         id="tabs"
-        class="flex justify-between text-white w-full my-1 text-dark"
+        class="flex justify-between w-full my-1 text-dark"
       >
         <ul
           class="flex w-full justify-between sm:justify-around items-center space-x-6 sm:space-x-8 px-8"

@@ -17,7 +17,7 @@
           {{ post.description }}
         </p>
         <div class="flex flex-wrap items-center mt-2">
-          <div class="flex flex-grow mr-2">
+          <div class="flex flex-grow mr-2 flex-wrap">
             <p
               v-for="tag in post.tags"
               :key="tag"
