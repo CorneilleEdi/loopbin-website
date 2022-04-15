@@ -1,8 +1,7 @@
 [
   {
-    "id": 1,
     "title": "Bluebook Search",
-    "description": "Add blazingly fast full-text search capability to Cloud Firestore using MeiliSearch",
+    "description": "Recherche plain texte sur Cloud Firestore à l'aide de MeiliSearch",
     "date": "Mai 2021",
     "tags": [
       "google-cloud-platform",
@@ -11,26 +10,42 @@
       "meiliSearch"
     ],
     "github": "https://github.com/CorneilleEdi/bluebook-cloud-functions-meilisearch",
-    "preview": "https://hashnode.com/post/how-to-add-a-blazing-fast-full-text-search-capability-to-cloud-firestore-using-meilisearch-introduction-15-ckoz64twc07ppdss1hk3mfeh6"
+    "preview": "https://loopbin.dev/posts/recherche-plain-texte-sur-cloud-firestore-a-laide-de-meilisearch-1-introduction"
   },
   {
-    "id": 2,
+    "title": "TipTap",
+    "description": "Plate-forme de Q&A avec une architecture événementielle basée sur le Cloud",
+    "date": "Mai 2021",
+    "tags": [
+      "nodejs",
+      "nestjs",
+      "terraform",
+      "vuejs",
+      "google-cloud-platform",
+      "text-sentiment-analysis",
+      "compute-vision",
+      "full-text=search",
+      "caching",
+      "docker"
+    ],
+    "github": "https://github.com/CorneilleEdi/tiptap",
+    "preview": "https://docs.google.com/presentation/d/1X27-9_CD9AgdlKWmV7hwE1-oVAcbVnWD-kXUYj3ciTo/edit?usp=sharing"
+  },
+  {
     "title": "Loopbin Website",
-    "description": "Blog loopbin, ce blog",
+    "description": "Blog Loopbin, ce blog",
     "date": "April 2022",
     "tags": [
       "nuxtjs",
       "nodejs",
       "markdown",
       "firebase",
-      "github-actions",
-      "firebase"
+      "github-actions"
     ],
     "github": "https://github.com/CorneilleEdi/loopbin-website",
     "preview": "https://loopbin.dev"
   },
   {
-    "id": 3,
     "title": "Loopbin Meet",
     "description": "Plateforme d'organisation de sessions live",
     "date": "April 2021",
@@ -43,7 +58,6 @@
     "preview": "https://meet.loopbin.dev"
   },
   {
-    "id": 4,
     "title": "Package SweetSheet",
     "description": "Affichez rapidement et facilement de beaux bottoms sheets comme des dialogue de confirmation.",
     "date": "25 March 2020",
@@ -57,14 +71,25 @@
     "preview": "https://pub.dev/packages/sweetsheet"
   },
   {
-    "id": 5,
+    "title": "Redstorm",
+    "description": "Preuve de concept:comment déployer une instance Redis dans une VM sur GCE et y connecter un service tournant sur Cloud Run.",
+    "date": "Mai 2021",
+    "tags": [
+      "nodejs",
+      "nestjs",
+      "google-cloud-platform",
+      "redis",
+      "docker"
+    ],
+    "github": "https://github.com/CorneilleEdi/nest-redis-gcp-run-serverless-vpc"
+  },
+  {
     "title": "Kotlin Testing Container",
     "description": "Looking at testing with test-container with Kotlin, junit5, mongodb and docker",
     "date": "Avril 2021",
     "tags": [
       "Kotlin",
       "mongodb",
-      "open-source",
       "junit5",
       "test-containers"
     ],
