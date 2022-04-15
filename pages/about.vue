@@ -15,7 +15,7 @@
             Informatique et je suis agé de 22 ans. Je suis un grand passionné de
             programmation et des nouvelles techs. J'adore tout ce qui touche au
             <span class="hightlighted"
-              >developpement Web (specialement le backend)</span
+            >developpement Web (specialement le backend)</span
             >, à l'architecture et au
             <span class="hightlighted">developpement Cloud</span>, à
             <span class="hightlighted">l'algorithmique 📊</span>, et au
@@ -33,23 +33,28 @@
             tout ce qui est backend, testing et gestion de projet.
           </p>
 
-          <p class="mt-4">
-            Je suis le fondateur de la start-up
-            <span class="hightlighted">BytesLabs</span>
-            <!-- (<a
-              href="https://byteslabs.dev"
-              target="_blank"
-              class="underline"
-              >https://byteslabs.dev</a
-            >)  -->
-            dans laquelle moi et mes collègues traivaillont sur des projects de
-            développement d'applications mobiles , de sites web et
-            d'architecture de système Informatique.
-          </p>
+          <ul class="mt-4 list-disc ml-3">
+            <li>Bachelor (4 ans) en Computer Science Engineering en Inde 🇮🇳</li>
+            <li>Master (en cours) en Ingénierie Systèmes et Logiciels en France 🇫🇷</li>
+          </ul>
+
+          <!--          <p class="mt-4">
+                      Je suis le fondateur de la start-up
+                      <span class="hightlighted">BytesLabs</span>
+                      &lt;!&ndash; (<a
+                        href="https://byteslabs.dev"
+                        target="_blank"
+                        class="underline"
+                        >https://byteslabs.dev</a
+                      >)  &ndash;&gt;
+                      dans laquelle moi et mes collègues traivaillont sur des projects de
+                      développement d'applications mobiles , de sites web et
+                      d'architecture de système Informatique.
+                    </p>-->
         </div>
       </div>
 
-      <about-contact-list />
+      <about-contact-list/>
 
       <div class="mt-12">
         <h4 class="my-4">Profile Github</h4>
