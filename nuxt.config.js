@@ -79,7 +79,8 @@ export default {
 
     markdown: {
       prism: {
-        theme: 'prism-themes/themes/prism-material-oceanic.css',
+        // theme: 'prism-themes/themes/prism-material-oceanic.css',
+        theme: false
       },
     },
   },

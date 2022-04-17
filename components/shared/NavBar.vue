@@ -76,8 +76,8 @@
           </nuxt-link>
         </ul>
       </div>
-      <div class="flex justify-center items-center space-x-4">
-        <div
+      <div class="flex justify-center items-center space-x-2 md:space-x-4">
+<!--        <div
           class="hidden md:flex items-center border border-dark dark:border-dark-low dark:border-opacity-20 bg-dark bg-opacity-10 hover:bg-opacity-20 border-opacity-10 rounded-sm pl-2 pr-10 py-2 cursor-pointer"
           @click="showSearch"
         >
@@ -96,16 +96,17 @@
           </span>
 
           <p class="text-sm text-opacity-70">Rechercher</p>
-        </div>
+        </div>-->
         <div
-          class="flex md:hidden items-center p-2 cursor-pointer slick-hover rounded-full"
+          class="flex items-center p-2 cursor-pointer slick-hover rounded-full slick-border"
           @click="showSearch"
         >
-          <span>
+          <span class="flex space-x-2 items-center  px-2">
+            <p class="text-sm font-medium">Recherche</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
-              class="w-5 h-5 md:w-6 md:h-6"
+              class="w-5 h-5 "
             >
               <path fill="none" d="M0 0h24v24H0z" />
               <path
@@ -115,16 +116,17 @@
             </svg>
           </span>
         </div>
-        <button class="p-2 slick-hover rounded-full">
+        <button class="p-2 slick-hover slick-border rounded-full">
           <span
-            v-if="$colorMode.preference === 'light'"
-            class=""
-            @click="$colorMode.preference = 'system'"
+            v-if="$colorMode.preference === 'system'"
+            class="flex md:space-x-2 items-center md:px-2"
+            @click="$colorMode.preference = 'light'"
           >
+            <p class="text-sm font-medium hidden md:block">auto</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
-              class="w-5 h-5 md:w-6 md:h-6"
+              class="w-5 h-5 "
             >
               <path fill="none" d="M0 0h24v24H0z" />
               <path
@@ -135,14 +137,17 @@
           </span>
 
           <span
-            v-if="$colorMode.preference === 'dark'"
-            class=""
-            @click="$colorMode.preference = 'light'"
+            v-if="$colorMode.preference === 'light'"
+            class="flex md:space-x-2 items-center md:px-2"
+            @click="$colorMode.preference = 'dark'"
           >
+
+            <p class="text-sm font-medium hidden md:block">light</p>
+
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
-              class="w-5 h-5 md:w-6 md:h-6"
+              class="w-5 h-5"
             >
               <path fill="none" d="M0 0h24v24H0z" />
               <path
@@ -153,14 +158,16 @@
           </span>
 
           <span
-            v-if="$colorMode.preference === 'system'"
-            class=""
-            @click="$colorMode.preference = 'dark'"
+            v-if="$colorMode.preference === 'dark'"
+            class="flex md:space-x-2 items-center md:px-2"
+            @click="$colorMode.preference = 'system'"
           >
+
+            <p class="text-sm font-medium hidden md:block">dark</p>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
-              class="w-5 h-5 md:w-6 md:h-6"
+              class="w-5 h-5"
             >
               <path fill="none" d="M0 0h24v24H0z" />
               <path

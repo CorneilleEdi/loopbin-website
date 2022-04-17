@@ -7,7 +7,7 @@ Build with
 - NuxJs
 - Nuxt Content
 - Tailwind CSS
-- Github Actions
+- GitHub Actions
 - Firebase
 
 TODO:
@@ -19,5 +19,5 @@ TODO:
 - [x] About
 - [x] Search
 - [x] Home page
-- [ ] Footer
-- [ ] SEO
+- [ ] ~~Footer~~
+- [x] SEO
