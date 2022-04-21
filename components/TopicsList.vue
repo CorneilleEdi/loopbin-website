@@ -12,7 +12,7 @@
           <div class="bg-dark-low p-3 mr-4 rounded-sm">
             <img
               class="mx-auto h-5 w-5 flex-shrink-0"
-              :src="getImagePath(topic)"
+              :src="getImagePath(topic)" :alt="topic"
             />
           </div>
           <div class="flex-grow">
