@@ -1,18 +1,18 @@
 <template>
   <div
-    class="h-full flex items-center border-dark-low dark:border-white dark:border-opacity-20 border rounded-sm hover:shadow-sm"
+    class="h-full  border-dark-low dark:border-white dark:border-opacity-20 border rounded-sm hover:shadow-sm"
   >
     <nuxt-link
       :to="{ name: 'posts-slug', params: { slug: post.slug } }"
       class="w-full"
       style="text-decoration: none"
     >
-      <div class="p-4">
+      <div class="p-4  flex flex-col h-full">
         <p class="text-dark-high dark:text-white font-medium">
           {{ post.title }}
         </p>
         <p
-          class="mt-2 text-sm leading-5 text-dark dark:text-white dark:text-opacity-80"
+          class="flex-1 mt-2 text-sm leading-5 text-dark dark:text-white dark:text-opacity-80"
         >
           {{ post.description }}
         </p>
@@ -29,7 +29,7 @@
 
           <p
             v-if="post.date !== 'Invalid date'"
-            class="text-sm text-gray-400 mt-2 ml-2"
+            class="text-sm text-gray-400 mt-3 ml-2"
           >
             {{ fDate(post.date) }}
           </p>

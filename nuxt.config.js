@@ -2,6 +2,7 @@ import generateMeta from "./utils/meta.util";
 import config from "./utils/config.util";
 
 const siteUrl = config.baseUrl;
+
 const generateSitemapRoutes = async () => {
   const routes = []
   const {$content} = require('@nuxt/content')
@@ -12,6 +13,7 @@ const generateSitemapRoutes = async () => {
   }
   return routes
 }
+const meta = generateMeta();
 
 export default {
   target: 'static',
@@ -21,22 +23,19 @@ export default {
   },
 
   head: {
-    titleTemplate: '%s - Loopbin',
-    title: 'Loopbin',
-    description: "Les tutoriels et articles pour les fans de technologies et de programmation et de développement.",
-
     htmlAttrs: {
       lang: 'fr',
     },
+
+    titleTemplate: '%s - Loopbin',
+    title: 'Loopbin',
+
     meta: [
+      ...meta,
       {charset: 'utf-8'},
       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
       {hid: 'description', name: 'description', content: ''},
       {name: 'format-detection', content: 'telephone=no'},
-      ...generateMeta({
-        title: "Loopbin",
-        description: "Les tutoriels et articles pour les fans de technologies et de programmation et de développement.",
-      }),
     ],
     link: [
       {rel: 'icon', type: 'image/x-icon', href: '/favicon/favicon.ico'},

@@ -2,10 +2,12 @@ import config from './config.util';
 
 
 const siteUrl = config.baseUrl;
+
+export const simpleDescription = "Les tutoriels et articles pour les fans de technologies et de programmation et de développement."
 export default (meta) => {
   return [
-    { property: 'og:site_name', content: 'Loopbin' },
-    { hid: 'og:type', property: 'og:type', content: 'website' },
+    {property: 'og:site_name', content: 'Loopbin'},
+    {hid: 'og:type', property: 'og:type', content: 'website'},
     {
       hid: 'title',
       name: 'title',
@@ -14,7 +16,7 @@ export default (meta) => {
     {
       hid: 'description',
       name: 'description',
-      content: (meta && meta.description) || 'Les tutoriels et articles pour les fans de technologies et de programmation et de développement.',
+      content: (meta && meta.description) || simpleDescription,
     },
     {
       hid: 'og:url',
@@ -34,7 +36,7 @@ export default (meta) => {
     {
       hid: 'og:description',
       property: 'og:description',
-      content: (meta && meta.description) || 'Les tutoriels et articles pour les fans de technologies et de programmation et de développement.',
+      content: (meta && meta.description) || simpleDescription
     },
     {
       hid: 'og:image',
@@ -61,7 +63,7 @@ export default (meta) => {
     {
       hid: 'twitter:description',
       name: 'twitter:description',
-      content: (meta && meta.description) || 'Les tutoriels et articles pour les fans de technologies et de programmation et de développement.',
+      content: (meta && meta.description) || simpleDescription
     },
     {
       hid: 'twitter:image',
