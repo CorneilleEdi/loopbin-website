@@ -22,35 +22,38 @@
             <span>backend engineering</span> ⚙️.
           </p>
 
-          <p class="mt-4">
-            Je suis aussi la personne derrière le projet
-            <span class="hightlighted">Loopbin</span>. Je maintiens ce site web
-            ,j'écris les tutoriels et je publie des articles.
-          </p>
+          <ul class="mt-4 list-disc ml-4 md:ml-6">
+            <li><p class="mt-4">
+              Je suis aussi la personne derrière le projet
+              <span class="hightlighted">Loopbin</span>. Je maintiens ce site web
+              ,j'écris les tutoriels et je publie des articles et je fais des Lives occasionnellement.
+            </p></li>
 
-          <p class="mt-4">
-            Je suis l'un des coachs de la communauté Flutter Togo, specialisé en
-            tout ce qui est backend, testing et gestion de projet.
-          </p>
+            <li><p class="mt-4">
+              J'intervient dans <span class="hightlighted">la communauté togolaise des développeurs TDev </span> en tant
+              que <span class="hightlighted">Lead Cloud</span>.
+            </p></li>
 
-          <ul class="mt-4 list-disc ml-3">
+            <li><p class="mt-4">
+              Je suis l'un des coachs de la communauté <span class="hightlighted">Flutter Togo</span>, specialisé en
+              tout ce qui touche au backend.
+            </p></li>
+
+            <li><p class="mt-4">
+              J'ai commencé à m'intéresser au Cloud depuis 2019. Maintenant je suis certifié <span class="hightlighted">Google Cloud Associate Cloud Engineer. </span>
+              <span class="hightlighted"><a
+                href="https://www.credential.net/ccfbc629-c59a-4160-8376-5be9f414c130" target="_blank"
+                class="underline">(Certificat)</a></span>
+            </p></li>
+          </ul>
+
+
+          <h6 class="mt-4 font-medium">Cursus</h6>
+          <ul class="mt-4 list-disc ml-4 md:ml-6">
             <li>Bachelor (4 ans) en Computer Science Engineering en Inde 🇮🇳</li>
             <li>Master (en cours) en Ingénierie Systèmes et Logiciels en France 🇫🇷</li>
           </ul>
 
-          <!--          <p class="mt-4">
-                      Je suis le fondateur de la start-up
-                      <span class="hightlighted">BytesLabs</span>
-                      &lt;!&ndash; (<a
-                        href="https://byteslabs.dev"
-                        target="_blank"
-                        class="underline"
-                        >https://byteslabs.dev</a
-                      >)  &ndash;&gt;
-                      dans laquelle moi et mes collègues traivaillont sur des projects de
-                      développement d'applications mobiles , de sites web et
-                      d'architecture de système Informatique.
-                    </p>-->
         </div>
       </div>
 
@@ -115,17 +118,17 @@ import generateMeta from "~/utils/meta.util";
 
 export default {
   name: 'About',
+  data() {
+    return {
+      techs,
+    }
+  },
   head() {
     return {
       title: 'A propos',
       meta: generateMeta({
         title: "A propos",
       }),
-    }
-  },
-  data() {
-    return {
-      techs,
     }
   },
   methods: {
