@@ -5,7 +5,7 @@ on:
     branches: [ production ]
 
 env:
-  IN_PRODUCTION: false
+  IN_PRODUCTION: true
   BASE_URL: https://loopbin.dev
   GOOGLE_ANALYTICS_ID: ${{ secrets.GOOGLE_ANALYTICS_ID }}
 
