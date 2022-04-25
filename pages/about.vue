@@ -67,7 +67,7 @@
           </a>
         </div>
         <div class="md:w-1/2">
-          <h4 class="my-4">Bagdes</h4>
+          <h4 class="my-4">Badges</h4>
           <a href="https://www.credential.net/ccfbc629-c59a-4160-8376-5be9f414c130" target="_blank">
             <img src="../assets/images/gcp-ace.png" alt="gcp ace" class="h-28 md:h-32 lg:h-44">
           </a>
