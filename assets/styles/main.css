@@ -68,3 +68,10 @@
 .hightlighted {
   @apply text-blue dark:text-green font-medium;
 }
+
+*::selection {
+ @apply bg-green bg-opacity-40 dark:bg-white dark:bg-opacity-40/* WebKit/Blink Browsers */
+}
+*::-moz-selection {
+ @apply bg-green bg-opacity-40 dark:bg-white dark:bg-opacity-40/* Gecko Browsers */
+}

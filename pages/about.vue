@@ -11,22 +11,19 @@
           <h3>Hey 👋, salut</h3>
           <p class="mt-8">
             Je m'appelle
-            <span class="hightlighted">Corneille</span> ,étudiant en Ingénierie
-            Informatique et je suis agé de 22 ans. Je suis un grand passionné de
-            programmation et des nouvelles techs. J'adore tout ce qui touche au
+            <span class="hightlighted">Corneille</span>, étudiant en Ingénierie Systèmes et Logiciels et je suis agé de
+            22 ans. Je suis un grand passionné de
+            programmation et de nouvelles techs. J'aime tout ce qui touche au
             <span class="hightlighted"
-            >developpement Web (specialement le backend)</span
-            >, à l'architecture et au
-            <span class="hightlighted">developpement Cloud</span>, à
-            <span class="hightlighted">l'algorithmique 📊</span>, et au
-            <span>backend engineering</span> ⚙️.
+            >développement et à l'architecture Backend et Cloud</span
+            >, au développement web et au développement de logiciel en général.
           </p>
 
           <ul class="mt-4 list-disc ml-4 md:ml-6">
             <li><p class="mt-4">
               Je suis aussi la personne derrière le projet
-              <span class="hightlighted">Loopbin</span>. Je maintiens ce site web
-              ,j'écris les tutoriels et je publie des articles et je fais des Lives occasionnellement.
+              <span class="hightlighted">Loopbin</span>. Je maintiens ce site web. J'écris des tutoriels et des
+              articles. Je fais aussi des Lives occasionnellement.
             </p></li>
 
             <li><p class="mt-4">
@@ -35,7 +32,7 @@
             </p></li>
 
             <li><p class="mt-4">
-              Je suis l'un des coachs de la communauté <span class="hightlighted">Flutter Togo</span>, specialisé en
+              Je suis l'un des coachs de la communauté <span class="hightlighted">Flutter Togo</span>, spécialisé en
               tout ce qui touche au backend.
             </p></li>
 
@@ -43,7 +40,7 @@
               J'ai commencé à m'intéresser au Cloud depuis 2019. Maintenant je suis certifié <span class="hightlighted">Google Cloud Associate Cloud Engineer. </span>
               <span class="hightlighted"><a
                 href="https://www.credential.net/ccfbc629-c59a-4160-8376-5be9f414c130" target="_blank"
-                class="underline">(Certificat)</a></span>
+                class="underline">(certificat)</a></span>
             </p></li>
           </ul>
 
@@ -59,14 +56,25 @@
 
       <about-contact-list/>
 
-      <div class="mt-12">
-        <h4 class="my-4">Profile Github</h4>
-        <img
-          src="https://github-readme-stats.vercel.app/api?username=CorneilleEdi&&show_icons=true&title_color=0c1518&icon_color=0c1518&text_color=0c1518&bg_color=15DB95"
-          alt="profile"
-        />
+      <div class="mt-16 flex flex-col md:flex-row md:justify-between  space-y-4 md:space-x-20">
+        <div class="md:w-1/2">
+          <h4 class="my-4">Profile Github</h4>
+          <a href="https://github.com/CorneilleEdi" target="_blank">
+            <img
+              src="https://github-readme-stats.vercel.app/api?username=CorneilleEdi&&show_icons=true&title_color=0c1518&icon_color=0c1518&text_color=0c1518&bg_color=15DB95"
+              alt="profile"
+            />
+          </a>
+        </div>
+        <div class="md:w-1/2">
+          <h4 class="my-4">Bagdes</h4>
+          <a href="https://www.credential.net/ccfbc629-c59a-4160-8376-5be9f414c130" target="_blank">
+
+            <img src="../assets/images/gcp-ace.png" class="h-28 md:h-32 lg:h-44">
+          </a>
+        </div>
       </div>
-      <div class="mt-12">
+      <div class="mt-16">
         <h4>Mes Centres d'interets</h4>
 
         <div class="my-4">

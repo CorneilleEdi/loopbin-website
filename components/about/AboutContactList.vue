@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-12">
+  <div class="mt-16">
     <h4>Mes contacts</h4>
     <div
       class="mt-6 space-y-2 md:space-y-0 grid 2xl:grid-cols-4 2xl:gap-4 md:grid-cols-2 md:gap-2"

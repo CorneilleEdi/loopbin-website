@@ -72,7 +72,7 @@
   },
   {
     "title": "Redstorm",
-    "description": "Preuve de concept:comment déployer une instance Redis dans une VM sur GCE et y connecter un service tournant sur Cloud Run.",
+    "description": "Preuve de concept: comment déployer une instance Redis dans une VM sur GCE et y connecter un service tournant sur Cloud Run.",
     "date": "Mai 2021",
     "tags": [
       "nodejs",
