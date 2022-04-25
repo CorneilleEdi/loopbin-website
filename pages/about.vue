@@ -27,7 +27,7 @@
             </p></li>
 
             <li><p class="mt-4">
-              J'intervient dans <span class="hightlighted">la communauté togolaise des développeurs TDev </span> en tant
+              J'interviens dans <span class="hightlighted">la communauté togolaise des développeurs TDev </span> en tant
               que <span class="hightlighted">Lead Cloud</span>.
             </p></li>
 
