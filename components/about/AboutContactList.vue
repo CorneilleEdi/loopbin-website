@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-16">
+  <div class="mt-12 md:mt-16">
     <h4>Mes contacts</h4>
     <div
       class="mt-6 space-y-2 md:space-y-0 grid 2xl:grid-cols-4 2xl:gap-4 md:grid-cols-2 md:gap-2"
@@ -25,7 +25,7 @@
           </div>
           <div class="flex-grow">
             <p class="text-sm darker-text">Email</p>
-            <p class="text-sm darker-text font-medium hidden md:block">
+            <p class="text-sm darker-text font-medium  md:block">
               corneilleayao@gmail.com
             </p>
           </div>
@@ -52,7 +52,7 @@
           </div>
           <div class="flex-grow">
             <p class="text-sm darker-text">Github</p>
-            <p class="text-sm darker-text font-medium hidden md:block">
+            <p class="text-sm darker-text font-medium  md:block">
               CorneilleEdi
             </p>
           </div>
@@ -82,7 +82,7 @@
           </div>
           <div class="flex-grow">
             <p class="text-sm darker-text">LinkedIn</p>
-            <p class="text-sm darker-text font-medium hidden md:block">
+            <p class="text-sm darker-text font-medium  md:block">
               Ayao Corneille ALLOGBALO
             </p>
           </div>
@@ -109,7 +109,7 @@
           </div>
           <div class="flex-grow">
             <p class="text-sm darker-text">Twitter</p>
-            <p class="text-sm darker-text font-medium hidden md:block">
+            <p class="text-sm darker-text font-medium  md:block">
               @CorneilleEdi
             </p>
           </div>

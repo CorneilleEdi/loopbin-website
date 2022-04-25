@@ -56,7 +56,7 @@
 
       <about-contact-list/>
 
-      <div class="mt-16 flex flex-col md:flex-row md:justify-between  space-y-4 md:space-x-20">
+      <div class="mt-12 md:mt-16 flex flex-col md:flex-row md:justify-between  space-y-4 md:space-x-20">
         <div class="md:w-1/2">
           <h4 class="my-4">Profile Github</h4>
           <a href="https://github.com/CorneilleEdi" target="_blank">
@@ -69,12 +69,11 @@
         <div class="md:w-1/2">
           <h4 class="my-4">Bagdes</h4>
           <a href="https://www.credential.net/ccfbc629-c59a-4160-8376-5be9f414c130" target="_blank">
-
-            <img src="../assets/images/gcp-ace.png" class="h-28 md:h-32 lg:h-44">
+            <img src="../assets/images/gcp-ace.png" alt="gcp ace" class="h-28 md:h-32 lg:h-44">
           </a>
         </div>
       </div>
-      <div class="mt-16">
+      <div class="mt-12 md:mt-16">
         <h4>Mes Centres d'interets</h4>
 
         <div class="my-4">

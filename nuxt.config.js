@@ -32,6 +32,8 @@ export default {
 
     meta: [
       ...meta,
+      {name: "theme-color", media: "(prefers-color-scheme: light)", content: "white"},
+      {name: "theme-color", media: "(prefers-color-scheme: dark)", content: "#0c1518"},
       {charset: 'utf-8'},
       {name: 'viewport', content: 'width=device-width, initial-scale=1'},
       {hid: 'description', name: 'description', content: ''},
