@@ -4,7 +4,7 @@
       <div class="flex">
         <nuxt-link
           class="pager-item"
-          :to="{ name: 'posts', query: { page: 1 } }"
+          :to="{ name: 'tutos', query: { page: 1 } }"
           :class="{ disabled: isInFirstPage }"
         >
           <p aria-hidden="true">First</p>
@@ -12,7 +12,7 @@
         <nuxt-link
           class="pager-item"
           :to="{
-            name: 'posts',
+            name: 'tutos',
             query: { page: currentPage > 1 ? currentPage - 1 : 1 },
           }"
           :class="{ disabled: isInFirstPage }"
@@ -25,14 +25,14 @@
           :key="page.name"
           class="pager-item"
           :class="{ active: isPageActive(page.name) }"
-          :to="{ name: 'posts', query: { page: page.name } }"
+          :to="{ name: 'tutos', query: { page: page.name } }"
           ><p>{{ page.name }}</p>
         </nuxt-link>
 
         <nuxt-link
           class="pager-item"
           :to="{
-            name: 'posts',
+            name: 'tutos',
             query: {
               page: currentPage < totalPages ? currentPage + 1 : totalPages,
             },
@@ -46,7 +46,7 @@
         <nuxt-link
           class="pager-item"
           :class="{ disabled: isInLastPage }"
-          :to="{ name: 'posts', query: { page: totalPages } }"
+          :to="{ name: 'tutos', query: { page: totalPages } }"
         >
           <p aria-hidden="true">Last</p>
         </nuxt-link>

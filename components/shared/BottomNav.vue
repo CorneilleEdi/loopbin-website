@@ -12,7 +12,7 @@
         >
           <li>
             <nuxt-link
-              to="/posts"
+              to="/tutos"
               active-class="bg-white bg-opacity-30"
               class="flex flex-col py-2 px-3 items-center hover:bg-white hover:bg-opacity-40 cursor-pointer rounded-sm"
             >
@@ -29,7 +29,7 @@
                 />
               </svg>
             </span>
-              <p class="text-xs">Posts</p>
+              <p class="text-xs">Tutos</p>
             </nuxt-link>
           </li>
           <li>

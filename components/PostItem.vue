@@ -3,7 +3,7 @@
     class="h-full  border-dark-low dark:border-white dark:border-opacity-20 border rounded-sm hover:shadow-sm"
   >
     <nuxt-link
-      :to="{ name: 'posts-slug', params: { slug: post.slug } }"
+      :to="{ name: 'tutos-slug', params: { slug: post.slug } }"
       class="w-full"
       style="text-decoration: none"
     >

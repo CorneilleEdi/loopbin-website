@@ -17,7 +17,7 @@
         <ul class="flex justify-center items-center space-x-6">
           <li>
             <nuxt-link
-              to="/posts"
+              to="/tutos"
               active-class="exact-navigation"
               class="flex px-4 items-center py-2 font-medium slick-hover-blue cursor-pointer rounded-sm"
             >
@@ -34,7 +34,7 @@
                 />
               </svg>
             </span>
-              <p class="text-sm">Posts</p>
+              <p class="text-sm">Tutos</p>
             </nuxt-link>
           </li>
           <li>
