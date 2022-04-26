@@ -5,6 +5,8 @@ tags: [dart, dart-base]
 topics: [dart]
 date: 2020-01-02
 slug: dart-02-les-types-de-donnees
+prev: dart-01-les-variables
+next: dart-03-les-operateurs-en-dart
 ---
 
 #

@@ -3,7 +3,7 @@
     <div class="container">
       <h3>Les sujets ({{ numberOfTopics }})</h3>
       <p class="mt-2">
-        Un total de {{ numberOfPosts }} sur {{ numberOfTopics }} sujets
+        Un total de {{ numberOfPosts }} tutos sur {{ numberOfTopics }} sujets
       </p>
       <topics-list :topics="topics"/>
     </div>

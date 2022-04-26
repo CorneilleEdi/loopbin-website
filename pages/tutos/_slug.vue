@@ -42,14 +42,17 @@
         <NuxtContent :document="post"/>
       </div>
       <div
-        class="mt-6 md:mt-12 flex flex-col md:flex-row  justify-end  space-y-4 md:space-x-4 md:space-y-0"
+        class="mt-6 md:mt-12 mx-4 flex flex-col md:flex-row  justify-end  space-y-4 md:space-x-4 md:space-y-0"
         :class="{'justify-between':prevPost!==null&&nextPost!==null,
            'justify-start':prevPost!==null&&nextPost===null}">
 
-        <div v-if="prevPost" class="slick-border slick-hover px-4 py-4 cursor-pointer text-sm">
+        <nuxt-link
+          v-if="prevPost"
+          :to="{ name: 'tutos-slug', params: { slug: prevPost.slug } }"
+          class="slick-border slick-hover px-4 py-4 cursor-pointer text-sm">
 
-          <nuxt-link
-            :to="{ name: 'tutos-slug', params: { slug: prevPost.slug } }"
+          <div
+
             class="flex flex-row flex-nowrap items-center space-x-4">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6 dark-text">
               <path fill="none" d="M0 0h24v24H0z"/>
@@ -59,12 +62,15 @@
               <p class="dark-text text-xs">Précedent</p>
               <p class="darker-text">{{ prevPost.title }}</p>
             </div>
-          </nuxt-link>
+          </div>
 
-        </div>
-        <div v-if="nextPost" class="slick-border slick-hover px-4 py-4 cursor-pointer text-sm">
-          <nuxt-link
-            :to="{ name: 'tutos-slug', params: { slug: nextPost.slug } }"
+        </nuxt-link>
+        <nuxt-link
+          v-if="nextPost"
+          :to="{ name: 'tutos-slug', params: { slug: nextPost.slug } }"
+          class="slick-border slick-hover px-4 py-4 cursor-pointer text-sm">
+          <div
+
             class="flex flex-row flex-nowrap items-center space-x-4">
 
             <div>
@@ -76,9 +82,9 @@
               <path fill="none" d="M0 0h24v24H0z"/>
               <path fill="currentColor" d="M13.172 12l-4.95-4.95 1.414-1.414L16 12l-6.364 6.364-1.414-1.414z"/>
             </svg>
-          </nuxt-link>
+          </div>
 
-        </div>
+        </nuxt-link>
       </div>
     </div>
   </div>

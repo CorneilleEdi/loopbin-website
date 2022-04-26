@@ -5,6 +5,8 @@ tags: [dart, dart-base]
 topics: [dart]
 date: 2020-01-07
 slug: dart-07-les-fonctions
+prev: dart-06-switch-case
+next: dart-08-les-collections
 ---
 
 Une fonction est un bloc de code qui effectue une tâche spécifique. Au lieu d'écrire le code complet autant de fois que nécessaire, on crée une fonction que l’on appellera pour l'exécuter, ce qui peut aussi alléger le code, le rendre plus lisible. Les fonctions permettent de diviser le problème que veut résoudre le code en plusieurs parties indépendantes ou interdépendantes.

@@ -5,6 +5,8 @@ tags: [dart, dart-base]
 topics: [dart]
 date: 2020-01-01
 slug: dart-01-les-variables
+prev: dart-00-introduction
+next: dart-02-les-types-de-donnees
 ---
 
 # Les règles bases de Dart

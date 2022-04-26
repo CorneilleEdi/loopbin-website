@@ -5,6 +5,8 @@ tags: [vagrant]
 topics: [vagrant]
 date: 2021-02-08
 slug: vagrant-03-les-box-images
+next: vagrant-04-creation-de-notre-premiere-machine
+prev: vagrant-02-installation
 ---
 
 #

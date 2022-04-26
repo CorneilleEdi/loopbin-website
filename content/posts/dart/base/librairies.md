@@ -5,6 +5,8 @@ tags: [dart, dart-base]
 topics: [dart]
 date: 2020-01-09
 slug: dart-09-les-librairies-integrees
+prev: dart-08-les-collections
+next: dart-10-les-entrees-sorties
 ---
 
 #

@@ -20,7 +20,7 @@
         </div>
       </section>
 
-      <h4 class="mb-4">Posts ({{ posts.length }})</h4>
+      <h4 class="mb-4">Tutos ({{ posts.length }})</h4>
 
       <section class="space-y-4">
         <post-item v-for="post in posts" :key="post.slug" :post="post"/>

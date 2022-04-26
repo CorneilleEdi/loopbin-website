@@ -5,6 +5,8 @@ tags: [vagrant]
 topics: [vagrant]
 date: 2021-02-13
 slug: vagrant-08-dossiers-synchronises
+next: vagrant-09-provision-approvisionnement
+prev: vagrant-07-reseau
 ---
 
 #

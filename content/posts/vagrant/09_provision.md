@@ -5,6 +5,8 @@ tags: [vagrant]
 topics: [vagrant]
 date: 2021-02-14
 slug: vagrant-09-provision-approvisionnement
+next: vagrant-les-commandes-a-retenir
+prev: vagrant-08-dossiers-synchronises
 ---
 
 #

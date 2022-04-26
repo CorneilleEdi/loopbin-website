@@ -5,6 +5,8 @@ tags: [dart, dart-base]
 topics: [dart]
 date: 2020-01-10
 slug: dart-10-les-entrees-sorties
+prev: dart-09-les-librairies-integrees
+next: dart-11-map-where-reduce-every
 ---
 
 #

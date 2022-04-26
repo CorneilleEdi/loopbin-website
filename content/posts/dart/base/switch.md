@@ -5,6 +5,8 @@ tags: [dart, dart-base]
 topics: [dart]
 date: 2020-01-06
 slug: dart-06-switch-case
+prev: dart-05-les-boucles
+next: dart-07-les-fonctions
 ---
 
 #

@@ -5,6 +5,8 @@ tags: [vagrant]
 topics: [vagrant]
 date: 2021-02-09
 slug: vagrant-04-creation-de-notre-premiere-machine
+next: vagrant-05-se-connecter-avec-ssh
+prev: vagrant-03-les-box-images
 ---
 
 #

@@ -5,6 +5,8 @@ tags: [vagrant]
 topics: [vagrant]
 date: 2021-02-12
 slug: vagrant-07-reseau
+next: vagrant-08-dossiers-synchronises
+prev: vagrant-06-provider-fournisseur
 ---
 
 #

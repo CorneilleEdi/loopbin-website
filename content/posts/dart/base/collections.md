@@ -5,6 +5,8 @@ tags: [dart, dart-base]
 topics: [dart]
 date: 2020-01-08
 slug: dart-08-les-collections
+prev: dart-07-les-fonctions
+next: dart-09-les-librairies-integrees
 ---
 
 #

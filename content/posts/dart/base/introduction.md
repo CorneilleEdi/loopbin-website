@@ -5,6 +5,7 @@ tags: [dart, dart-base]
 topics: [dart]
 date: 2020-01-01
 slug: dart-00-introduction
+next: dart-01-les-variables
 ---
 
 #

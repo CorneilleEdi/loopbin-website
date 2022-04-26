@@ -5,6 +5,8 @@ tags: [vagrant]
 topics: [vagrant]
 date: 2021-02-11
 slug: vagrant-06-provider-fournisseur
+next: vagrant-07-reseau
+prev: vagrant-05-se-connecter-avec-ssh
 ---
 
 #

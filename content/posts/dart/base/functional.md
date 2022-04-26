@@ -5,6 +5,7 @@ tags: [dart, dart-base]
 topics: [dart]
 date: 2020-01-11
 slug: dart-11-map-where-reduce-every
+prev: dart-10-les-entrees-sorties
 ---
 
 #

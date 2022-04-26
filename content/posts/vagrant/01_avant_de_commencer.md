@@ -5,6 +5,8 @@ tags: [vagrant]
 topics: [vagrant]
 date: 2021-02-06
 slug: vagrant-01-avant-de-commencer-avec-vagrant
+next: vagrant-02-installation
+prev: vagrant-00-cest-quoi-vagrant
 ---
 
 Avant de commencer à utiliser Vagrant, il y a des terminologies spécifique à comprendre
