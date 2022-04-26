@@ -3,7 +3,7 @@ title: Dart 12 - Programmation asynchrone
 description: Pogrammation asynchrone en Dart. Explication et utilisation des Futures, Streams et async/await
 tags: [dart, dart-base]
 topics: [dart]
-date: 2020-01-01
+date: 2020-01-12
 slug: dart-12-programmation-asynchrone
 ---
 
@@ -17,7 +17,7 @@ Ce chapitre sera un peu théorique. Son but principal est d'expliquer le concept
 
 ## Explication du concept
 
-Imaginons un programme simple dans lequel nous faisons plusieurs actions comme l' exécution de plusieurs fonctions. Dans la programmation synchrone, ces fonctions s' exécutent l'une après l'autre. La règle de base dans ce cas est que chaque tâche est exécutée une à la fois, l’une s’achevant complètement
+Imaginons un programme simple dans lequel nous faisons plusieurs actions comme l'exécution de plusieurs fonctions. Dans la programmation synchrone, ces fonctions s' exécutent l'une après l'autre. La règle de base dans ce cas est que chaque tâche est exécutée une à la fois, l’une s’achevant complètement
 avant que l’autre ne commence. Cette façon de procéder à quand même un gros désavantage:
 
 lorsqu'une tache prend du temps, elle retarde ainsi l' exécution des autres fonctions.

@@ -3,7 +3,7 @@ title: Dart 07 - Les fonctions
 description: Les fonctions en Dart, leurs syntaxes et les différents types de paramètres
 tags: [dart, dart-base]
 topics: [dart]
-date: 2020-01-01
+date: 2020-01-07
 slug: dart-07-les-fonctions
 ---
 

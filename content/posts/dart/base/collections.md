@@ -3,7 +3,7 @@ title: Dart 08 - Les collections
 description: Les listes, ensembles et  dictionnaires en Dart. La syntaxe de définition et de manipulation de chaque collection
 tags: [dart, dart-base]
 topics: [dart]
-date: 2020-01-01
+date: 2020-01-08
 slug: dart-08-les-collections
 ---
 

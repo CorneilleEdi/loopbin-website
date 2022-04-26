@@ -3,7 +3,7 @@ title: Dart 02 - Les types de données
 description: Les différents types de données en Dart et leurs utilisations
 tags: [dart, dart-base]
 topics: [dart]
-date: 2020-01-01
+date: 2020-01-02
 slug: dart-02-les-types-de-donnees
 ---
 

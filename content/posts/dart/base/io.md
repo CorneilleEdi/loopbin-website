@@ -3,7 +3,7 @@ title: Dart 10 - Les entrées / sorties
 description: Quelques méthodes pour manipuler les entrées / sorties et les fichiers.
 tags: [dart, dart-base]
 topics: [dart]
-date: 2020-01-01
+date: 2020-01-10
 slug: dart-10-les-entrees-sorties
 ---
 

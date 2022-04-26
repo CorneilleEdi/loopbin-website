@@ -3,7 +3,7 @@ title: Dart 03 - Les opérateurs en Dart
 description: Les opérateurs et leurs significations en Dart
 tags: [dart, dart-base]
 topics: [dart]
-date: 2020-01-01
+date: 2020-01-03
 slug: dart-03-les-operateurs-en-dart
 ---
 
