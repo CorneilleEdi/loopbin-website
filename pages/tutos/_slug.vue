@@ -141,10 +141,6 @@ export default {
       } else {
         ops.push(Promise.resolve([]))
       }
-
-      console.log(ops);
-
-
       [nextPosts, prevPosts] = await Promise.all(ops).catch(() => {
       })
     }
