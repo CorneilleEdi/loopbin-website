@@ -9,7 +9,7 @@ const generateSitemapRoutes = async () => {
   const posts = await $content('posts', {deep: true}).fetch()
 
   for (const post of posts) {
-    routes.push(`/posts/${post.slug}`)
+    routes.push(`/tutos/${post.slug}`)
   }
   return routes
 }
@@ -21,7 +21,6 @@ export default {
   server: {
     host: '0.0.0.0',
   },
-
   head: {
     htmlAttrs: {
       lang: 'fr',
@@ -110,6 +109,7 @@ export default {
   },
 
   generate: {
+    fallback: true,
     async routes() {
       return await generateSitemapRoutes()
     },
