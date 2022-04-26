@@ -22,13 +22,11 @@
         "image": "java.svg",
         "description": "Langage de programmation orienté objet"
       },
-
       {
         "name": "Kotlin",
         "image": "kotlin.svg",
         "description": "Langage de programmation généraliste"
       },
-
       {
         "name": "Javascript",
         "image": "javascript.svg",
@@ -69,7 +67,6 @@
         "image": "nestjs.svg",
         "description": "Progressive Node.js framework"
       },
-
       {
         "name": "Spring / Spring Boot",
         "image": "spring.svg",
@@ -90,7 +87,6 @@
         "image": "jest.svg",
         "description": "Framework de test JavaScript"
       },
-
       {
         "name": "Mocha",
         "image": "mocha.svg",
@@ -134,7 +130,7 @@
       {
         "name": "Docker",
         "image": "docker.svg",
-        "description": "Plateforme de conteneurs"
+        "description": "Plateforme de conteneurisation"
       },
       {
         "name": "Git",
@@ -155,6 +151,11 @@
         "name": "Gitlab CI/CD",
         "image": "gitlab.svg",
         "description": "CI/CD by Gitlab"
+      },
+      {
+        "name": "Jenkins",
+        "image": "jenkins.svg",
+        "description": "Serveur d'automatisation"
       },
       {
         "name": "Terraform",
@@ -183,7 +184,6 @@
       }
     ]
   },
-
   {
     "title": "Backend",
     "techs": [
