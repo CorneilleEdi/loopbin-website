@@ -11,7 +11,7 @@
           <h3>Hey 👋, salut</h3>
           <p class="mt-8">
             Je m'appelle
-            <span class="hightlighted">Corneille</span>, étudiant en Ingénierie Systèmes et Logiciels et je suis agé de
+            <span class="hightlighted">Ayao Corneille ALLOGBALO</span> (Corneille Edi), étudiant en Ingénierie Systèmes et Logiciels et je suis agé de
             22 ans. Je suis un grand passionné de
             programmation et de nouvelles techs. J'aime tout ce qui touche au
             <span class="hightlighted"
