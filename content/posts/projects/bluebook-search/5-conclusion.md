@@ -5,6 +5,7 @@ tags: [gcp, javascript, nodejs, cloud-functions,vm, meilisearch, firestore]
 topics: [gcp, nodejs]
 date: 2022-01-23
 slug: recherche-plain-texte-sur-cloud-firestore-a-laide-de-meilisearch-5-problemes
+prev: recherche-plain-texte-sur-cloud-firestore-a-laide-de-meilisearch-4-evenements
 ---
 
 Félicitations, vous avez réussi jusqu'à présent.

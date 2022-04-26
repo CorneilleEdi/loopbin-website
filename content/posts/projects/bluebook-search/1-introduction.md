@@ -5,6 +5,7 @@ tags: [gcp, javascript, nodejs, cloud-functions,vm, meilisearch, firestore]
 topics: [gcp, nodejs]
 date: 2022-01-19 
 slug: recherche-plain-texte-sur-cloud-firestore-a-laide-de-meilisearch-1-introduction
+next: recherche-plain-texte-sur-cloud-firestore-a-laide-de-meilisearch-2-api
 ---
 
 S'il y a une fonctionnalité notoire qui manque dans Cloud Firestore, c'est la recherche plain texte. La documentation de

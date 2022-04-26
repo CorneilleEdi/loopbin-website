@@ -4,7 +4,9 @@ description: Créer une API avec Cloud Firestore et Cloud Functions
 tags: [gcp, javascript, nodejs, cloud-functions,vm, meilisearch, firestore]
 topics: [gcp, nodejs]
 date: 2022-01-20 
-slug: recherche-plain-texte-sur-cloud-firestore-a-laide-de-meilisearch-2-introduction
+slug: recherche-plain-texte-sur-cloud-firestore-a-laide-de-meilisearch-2-api
+next: recherche-plain-texte-sur-cloud-firestore-a-laide-de-meilisearch-3-meilisearch
+prev: recherche-plain-texte-sur-cloud-firestore-a-laide-de-meilisearch-1-introduction
 ---
 
 Content de vous revoir. Dans cette partie, nous allons configurer et créer l'API CRUD Restful avec Cloud Firestore et Cloud Functions. Cette partie ne contiendra pas la logique des événements.
