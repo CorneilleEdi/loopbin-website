@@ -7,7 +7,7 @@
       </div>
 
       <div class="mt-8">
-        <h3>Derniers posts</h3>
+        <h3>Derniers tutos</h3>
         <section class="space-y-4 mt-8">
           <post-item
             v-for="post in latestPosts"

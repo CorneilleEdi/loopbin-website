@@ -1,7 +1,7 @@
 <template>
   <div class="page-bg">
     <div class="container">
-      <h5 class="">Posts ({{ totalPosts }})</h5>
+      <h5 class="">Tutos ({{ totalPosts }})</h5>
 
       <div class="flex flex-wrap my-4">
         <div v-for="post in posts" :key="post.slug" class="p-2 lg:w-1/2 w-full">
@@ -29,16 +29,8 @@ import PostItem from '~/components/PostItem'
 import generateMeta from "~/utils/meta.util";
 
 export default {
-  name: 'Posts',
+  name: 'Tutos',
   components: { PostItem, Pager },
-  head() {
-    return {
-      title: "Posts",
-      meta: generateMeta({
-        title: "Posts",
-      }),
-    }
-  },
   async asyncData({ $content, query, redirect }) {
     const actualPage = parseInt(query?.page ?? '1')
 
@@ -55,7 +47,7 @@ export default {
     // redirect to page 1 if  query.page > numberOfPages
 
     if (!query.page || query.page <= 0 || query.page > numberOfPages) {
-      redirect('/posts/?page=1')
+      redirect('/tutos/?page=1')
     }
 
     const skipNumber = () => {
@@ -94,6 +86,14 @@ export default {
       hasMorePage,
       perPage,
       lastPageCount,
+    }
+  },
+  head() {
+    return {
+      title: "Tutos",
+      meta: generateMeta({
+        title: "Tutos",
+      }),
     }
   },
   methods: {

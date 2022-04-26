@@ -34,6 +34,9 @@ export default {
     topics: {
       type: Array,
       require: true,
+      default() {
+        return []
+      },
     },
   },
 
