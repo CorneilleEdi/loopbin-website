@@ -23,19 +23,19 @@
         "description": "Langage de programmation orienté objet"
       },
       {
-        "name": "Kotlin",
-        "image": "kotlin.svg",
-        "description": "Langage de programmation généraliste"
-      },
-      {
         "name": "Javascript",
         "image": "javascript.svg",
-        "description": "langage de programmation"
+        "description": "Langage de programmation"
       },
       {
         "name": "Typescript",
         "image": "typescript.svg",
         "description": "JavaScript typé à toutes échelles"
+      },
+      {
+        "name": "Python",
+        "image": "python.svg",
+        "description": "Langage de programmation et de scripting"
       },
       {
         "name": "Dart",
@@ -71,6 +71,11 @@
         "name": "Spring / Spring Boot",
         "image": "spring.svg",
         "description": "Open source Java-based framework to create Microservices"
+      },
+      {
+        "name": "Flask",
+        "image": "flask.svg",
+        "description": "Python micro web framework"
       },
       {
         "name": "Flutter",

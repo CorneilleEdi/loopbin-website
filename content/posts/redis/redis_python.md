@@ -2,7 +2,7 @@
 title: Utiliser Redis avec Python
 description: Manipuler la base de donnée Redis avec Python
 tags: [python, redis]
-topics: [redis]
+topics: [python, redis]
 date: 2020-02-01
 slug: utiliser-redis-avec-python
 ---

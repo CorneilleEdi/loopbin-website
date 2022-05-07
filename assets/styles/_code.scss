@@ -173,3 +173,18 @@ pre > code.highlight {
   background: -webkit-linear-gradient(left, rgba(224, 145, 66, 0.2) 70%, rgba(224, 145, 66, 0));
   background: linear-gradient(to right, rgba(224, 145, 66, 0.2) 70%, rgba(224, 145, 66, 0));
 }
+
+
+pre.language-diff > code .token.deleted:not(.prefix),
+pre > code.language-diff .token.deleted:not(.prefix) {
+  background-color: rgba(255, 0, 0, .1);
+  color: inherit;
+  display: block;
+}
+
+pre.language-diff > code .token.inserted:not(.prefix),
+pre > code.language-diff .token.inserted:not(.prefix) {
+  background-color: rgba(0, 255, 128, .1);
+  color: inherit;
+  display: block;
+}

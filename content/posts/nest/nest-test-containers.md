@@ -54,7 +54,7 @@ Pour spécifier les configurations du conteneur, il existe plusieurs méthodes.
 
 ![set configs](/images/nest/test-containers/set-config-methods.png)
 
-```scheme
+```typescript
 container = await new GenericContainer('mongo:5.0')
       .withExposedPorts(MONGODB_PORT)
       .withEnv('MONGO_INITDB_ROOT_USERNAME', MONGODB_USERNAME)
@@ -63,13 +63,14 @@ container = await new GenericContainer('mongo:5.0')
 
 Dans cet exemple, nous spécifions les variables d’environnement à passer au conteneur avec `withEnv` ainsi que le port qu'expose le conteneur avec `withExposedPorts`. Le port du conteneur sera mappé à un port aléatoire sur la machine que nous pourrions récupérer avec des méthodes sur `container`.Bien sûr, il ne faut pas oublier de lancer le conteneur avec `start()`.
 
-```diff
+```typescript
 container = await new GenericContainer('mongo:5.0')
       .withExposedPorts(MONGODB_PORT)
       .withEnv('MONGO_INITDB_ROOT_USERNAME', MONGODB_USERNAME)
       .withEnv('MONGO_INITDB_ROOT_PASSWORD', MONGODB_PASSWORD)
       .start()
 ```
+
 
 Maintenant  que notre conteneur `container` de test est lancé, nous pouvons nous y connecter. On peut récupérer des attributs comme le `host`, le port mappé sur la machine a un certain port et plus.
 
