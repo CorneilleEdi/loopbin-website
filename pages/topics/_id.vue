@@ -30,7 +30,7 @@
 </template>
 
 <script>
-import techs from '../../assets/data/techs-all.json'
+import techs from 'assets/data/topics.json'
 import PostItem from '~/components/PostItem'
 import generateMeta from "~/utils/meta.util";
 

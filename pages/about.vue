@@ -27,6 +27,13 @@
             </p></li>
 
             <li><p class="mt-4">
+              J'ai commencé à m'intéresser au Cloud depuis 2019. Maintenant je suis certifié <span class="hightlighted">Google Cloud Associate Cloud Engineer. </span>
+              <span class="hightlighted"><a
+                href="https://www.credential.net/ccfbc629-c59a-4160-8376-5be9f414c130" target="_blank"
+                class="underline">(certificat)</a></span>
+            </p></li>
+
+            <li><p class="mt-4">
               J'interviens dans <span class="hightlighted">la communauté togolaise des développeurs TDev </span> en tant
               que <span class="hightlighted">Lead Cloud</span>.
             </p></li>
@@ -36,12 +43,6 @@
               tout ce qui touche au backend.
             </p></li>
 
-            <li><p class="mt-4">
-              J'ai commencé à m'intéresser au Cloud depuis 2019. Maintenant je suis certifié <span class="hightlighted">Google Cloud Associate Cloud Engineer. </span>
-              <span class="hightlighted"><a
-                href="https://www.credential.net/ccfbc629-c59a-4160-8376-5be9f414c130" target="_blank"
-                class="underline">(certificat)</a></span>
-            </p></li>
           </ul>
 
 
