@@ -71,6 +71,18 @@
     "preview": "https://pub.dev/packages/sweetsheet"
   },
   {
+    "title": "MongoDB Redis Cache",
+    "description": "Mettre en place un système de Caching automatique avec MongoDB et Redis",
+    "date": "Mai 2022",
+    "tags": [
+      "nestjs",
+      "redis",
+      "mongodb",
+      "test-containers"
+    ],
+    "github": "https://github.com/CorneilleEdi/mongodb-redis-cache"
+  },
+  {
     "title": "Redstorm",
     "description": "Preuve de concept: comment déployer une instance Redis dans une VM sur GCE et y connecter un service tournant sur Cloud Run.",
     "date": "Mai 2021",
@@ -82,17 +94,5 @@
       "docker"
     ],
     "github": "https://github.com/CorneilleEdi/nest-redis-gcp-run-serverless-vpc"
-  },
-  {
-    "title": "Kotlin Testing Container",
-    "description": "Looking at testing with test-container with Kotlin, junit5, mongodb and docker",
-    "date": "Avril 2021",
-    "tags": [
-      "Kotlin",
-      "mongodb",
-      "junit5",
-      "test-containers"
-    ],
-    "github": "https://github.com/CorneilleEdi/test-container-kotlin-playground"
   }
 ]
