@@ -180,9 +180,9 @@ private readonly changeStream: ChangeStream;
 export class QuotesModule implements OnApplicationShutdown {
   constructor(private readonly listenerService: QuotesEventsListenerService) {}
 
-  onApplicationShutdown(signal?: string): any {
+  async onApplicationShutdown(signal?: string): any {
     try {
-      this.listenerService.closeChangeStream().then();
+     await this.listenerService.closeChangeStream();
     } catch (e) {}
   }
 }
