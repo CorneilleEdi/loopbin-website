@@ -110,7 +110,7 @@ Pour plus d'options, veuillez vous référer au manuel.
 
 ## Cas pratiques
 
-#### Lister tous les fichiers et dossiers ainsi que leurs tailles (en évitant les sous dossiers et sous fichiers)
+### Lister tous les fichiers et dossiers ainsi que leurs tailles (en évitant les sous dossiers et sous fichiers)
 
 ```bash
 du -sSh *

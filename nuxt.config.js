@@ -81,7 +81,7 @@ export default {
   googleFonts: {
     display: 'swap',
     families: {
-      Poppins: [400, 500, 700],
+      Inter: [400, 500, 700],
     }
   },
   googleAnalytics: {

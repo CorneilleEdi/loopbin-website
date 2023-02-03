@@ -82,7 +82,7 @@ Maintenant  que notre conteneur `container` de test est lancé, nous pouvons nou
 
 Donc pour mettre en place le module  `@nestjs/mongoose` dans la création du module de test, nous pouvons récupérer ces informations venant du conteneur.
 
-```tsx
+```typescript
 beforeEach(async () => {
     module = await Test.createTestingModule({
       imports: [
@@ -110,7 +110,7 @@ beforeEach(async () => {
 
 Nous avons maintenant une base de données en place pour nos tests. C’est le moment d’écrire de vrais tests.
 
-```tsx
+```typescript
 it('findAll to return empty array', async () => {
     const quotes = await repository.findAll();
     expect(quotes).toEqual([]);
@@ -131,7 +131,7 @@ it('findAll to return empty array', async () => {
 
 Il est important de ne pas oublier de terminer le conteneur de test à la fin de nos tests avec `stop()`.
 
-```tsx
+```typescript
 afterAll(async () => {
     await module.close();
     if (container) {

@@ -68,4 +68,4 @@ Vous pouvez également filtrer la liste en fonction de critères, par exemple, P
 
 ### Bonus
 
-L'option **-c** imprimera les informations netstat en continu, disons toutes les quelques secondes.
+L'option **-c** affiche les informations netstat en continu, disons toutes les quelques secondes.

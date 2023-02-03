@@ -1,6 +1,6 @@
 <template>
   <div
-    class="mt-2 border-dark-low dark:border-white dark:border-opacity-20 border rounded-sm hover:shadow-sm"
+    class="mt-2 p-1 border-dark-low dark:border-white dark:border-opacity-20 border rounded-sm hover:shadow-sm"
   >
     <nuxt-link
       :to="{ name: 'tutos-slug', params: { slug: post.slug } }"
@@ -9,7 +9,7 @@
 
     >
       <div class="p-2">
-        <p class="text-dark-high dark:text-white font-medium my-0" style="margin-top: 0;margin-bottom: 0">
+        <p class="text-dark-high dark:text-white font-medium my-0" style="margin-top: 0rem;margin-bottom: 0">
           {{ post.title }}
         </p>
         <p

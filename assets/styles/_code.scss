@@ -24,14 +24,18 @@ pre {
 
   // @include scrollbar;
 
-  @apply py-4 px-4 md:px-8  rounded-sm  leading-relaxed border border-black dark:border-dark border-opacity-20;
+  @apply py-4 px-4 md:px-8  rounded-sm  leading-normal border border-black dark:border-dark border-opacity-20;
+}
+
+pre {
+  font-size: 0.9rem !important;
+  line-height: 1rem !important;
 }
 
 @media screen and (max-width: 800px) {
   pre {
     font-size: 0.875rem !important;
     line-height: 1.25rem !important;
-
   }
 }
 

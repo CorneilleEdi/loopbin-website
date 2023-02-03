@@ -10,7 +10,7 @@
               <NuxtContent :document="post"/>
             </div>-->
       <div class="slick-border h-auto p-4 rounded-sm toc">
-        <p class="text-base lg:text-xl font-medium mb-2">Sommaire</p>
+        <p class="text-base lg:text-lg font-medium mb-2">Sommaire</p>
         <li
           v-for="link of post.toc"
           :key="link.id"

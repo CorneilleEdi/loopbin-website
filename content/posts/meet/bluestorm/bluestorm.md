@@ -144,8 +144,6 @@ firebase emulators:start
 
 Les processus d'émulateur continueront à s'exécuter jusqu'à leur arrêt explicite. Le lancement des émulateurs pour la première fois téléchargera les émulateurs s'ils ne sont pas déjà installés.
 
-> Attention :
-
 - Firebase emulators aura besoin de Java pour lancer les émulateurs vu qu'ils sont des fichiers `.jar`
 - Firebase hosting et Cloud Functions auront besoin de configurations supplémentaires
 
