@@ -27,12 +27,12 @@
             </p>
           </div>
 
-          <p
-            v-if="post.date !== 'Invalid date'"
-            class="text-sm text-gray-400 mt-3 ml-2"
-          >
-            {{ fDate(post.date) }}
-          </p>
+<!--          <p-->
+<!--            v-if="post.date !== 'Invalid date'"-->
+<!--            class="text-sm text-gray-400 mt-3 ml-2"-->
+<!--          >-->
+<!--            {{ fDate(post.date) }}-->
+<!--          </p>-->
         </div>
       </div>
     </nuxt-link>

@@ -11,7 +11,8 @@
           <h3>Hey 👋, salut</h3>
           <p class="mt-8">
             Je m'appelle
-            <span class="hightlighted">Ayao Corneille ALLOGBALO</span> (Corneille Edi), étudiant en Ingénierie Systèmes et Logiciels et je suis agé de
+            <span class="hightlighted">Ayao Corneille ALLOGBALO</span> (Corneille Edi), étudiant en Ingénierie Systèmes
+            et Logiciels et je suis agé de
             23 ans. Je suis un grand passionné de
             programmation et de nouvelles techs. J'aime tout ce qui touche au
             <span class="hightlighted"
@@ -27,10 +28,18 @@
             </p></li>
 
             <li><p class="mt-4">
-              J'ai commencé à m'intéresser au Cloud depuis 2019. Maintenant je suis certifié <span class="hightlighted">Google Cloud Associate Cloud Engineer. </span>
+              J'ai commencé à m'intéresser au Cloud depuis 2019. Maintenant je suis certifié Google Cloud <span> <a
+              class="underline"
+              href="https://www.credential.net/ccfbc629-c59a-4160-8376-5be9f414c130" target="_blank">Associate Cloud Engineer</a></span>
+              et
+              <span>
+              <a
+                class="underline"
+                href="https://google.accredible.com/95d7650d-6868-4ebe-abe0-dc12fead5380">Professional Cloud Architect.</a>
+              </span>
               <span class="hightlighted"><a
-                href="https://www.credential.net/ccfbc629-c59a-4160-8376-5be9f414c130" target="_blank"
-                class="underline">(certificat)</a></span>
+                href="https://google.accredible.com/profile/ayaocorneilleallogbalo" target="_blank"
+                class="underline">(Mon profile)</a></span>
             </p></li>
 
             <li><p class="mt-4">
@@ -69,13 +78,18 @@
         </div>
         <div class="md:w-1/2">
           <h4 class="my-4">Badges</h4>
-          <a href="https://www.credential.net/ccfbc629-c59a-4160-8376-5be9f414c130" target="_blank">
-            <img src="../assets/images/gcp-ace.png" alt="gcp ace" class="h-28 md:h-32 lg:h-44">
-          </a>
+         <div class="flex space-x-2">
+           <a href="https://www.credential.net/ccfbc629-c59a-4160-8376-5be9f414c130" target="_blank">
+             <img src="../assets/images/gcp-ace-badge.png" alt="gcp ace" class="h-28 md:h-32 lg:h-44">
+           </a>
+           <a href="https://google.accredible.com/95d7650d-6868-4ebe-abe0-dc12fead5380" target="_blank">
+             <img src="../assets/images/gcp-pca-badge.png" alt="gcp pca" class="h-28 md:h-32 lg:h-44">
+           </a>
+         </div>
         </div>
       </div>
       <div class="mt-12 md:mt-16">
-        <h4>Mes Centres d'interets</h4>
+        <h4>Mes Centres d'intérêts</h4>
 
         <div class="my-4">
           <div
