@@ -2,7 +2,7 @@
   <div class="page-bg">
     <div class="container">
       <div>
-        <h3>Sujets disponibles</h3>
+
         <topics-list :topics="topics" />
       </div>
 

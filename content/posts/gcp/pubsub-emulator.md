@@ -7,7 +7,7 @@ date: 2022-02-17
 slug: google-cloud-pub-sub-et-son-emulateur
 ---
 
-l ne fait aucun doute que Cloud Pub/Sub est l'un des produits les plus populaires sur Google Cloud Platform.
+Il ne fait aucun doute que Cloud Pub/Sub est l'un des produits les plus populaires sur Google Cloud Platform.
 
 Pub/Sub est un service entièrement géré qui permet de mettre en œuvre une messagerie asynchrone entre les applications et les services. Pub/Sub aide les développeurs à se connecter entre des applications/services écrits individuellement en dissociant les expéditeurs et les destinataires.
 

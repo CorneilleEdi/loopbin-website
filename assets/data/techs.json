@@ -1,131 +1,21 @@
 [
   {
-    "title": "Programmation",
+    "title": "Cloud",
     "techs": [
       {
-        "name": "Algorithmique et Structure de donnees",
-        "image": "code.svg",
-        "description": "Coding, OOP, Design patterns"
+        "name": "Google Cloud",
+        "image": "google-cloud-platform.svg",
+        "description": "Google Cloud: Cloud Computing Services"
       },
       {
-        "name": "RxJs / RxJava",
-        "image": "reactivex.svg",
-        "description": "Programmation Reactive"
-      }
-    ]
-  },
-  {
-    "title": "Language de programmation ",
-    "techs": [
-      {
-        "name": "Java",
-        "image": "java.svg",
-        "description": "Langage de programmation orienté objet"
+        "name": "Firebase",
+        "image": "firebase.svg",
+        "description": "Google Cloud pour le mobiles et le web"
       },
       {
-        "name": "Javascript",
-        "image": "javascript.svg",
-        "description": "Langage de programmation"
-      },
-      {
-        "name": "Typescript",
-        "image": "typescript.svg",
-        "description": "JavaScript typé à toutes échelles"
-      },
-      {
-        "name": "Python",
-        "image": "python.svg",
-        "description": "Langage de programmation et de scripting"
-      },
-      {
-        "name": "Dart",
-        "image": "dart.svg",
-        "description": "Langage optimisé pour les applications rapides"
-      }
-    ]
-  },
-  {
-    "title": "Dev",
-    "techs": [
-      {
-        "name": "NodeJs",
-        "image": "nodejs.svg",
-        "description": "JavaScript runtime"
-      },
-      {
-        "name": "Android",
-        "image": "android.svg",
-        "description": "Development Mobile"
-      }
-    ]
-  },
-  {
-    "title": "Framework",
-    "techs": [
-      {
-        "name": "NestJs",
-        "image": "nestjs.svg",
-        "description": "Progressive Node.js framework"
-      },
-      {
-        "name": "Spring / Spring Boot",
-        "image": "spring.svg",
-        "description": "Open source Java-based framework to create Microservices"
-      },
-      {
-        "name": "Flask",
-        "image": "flask.svg",
-        "description": "Python micro web framework"
-      },
-      {
-        "name": "Flutter",
-        "image": "flutter.svg",
-        "description": "Framework de développement mobile"
-      }
-    ]
-  },
-  {
-    "title": "Testing",
-    "techs": [
-      {
-        "name": "Jest",
-        "image": "jest.svg",
-        "description": "Framework de test JavaScript"
-      },
-      {
-        "name": "Mocha",
-        "image": "mocha.svg",
-        "description": "Framework de test JavaScript riche en fonctionnalités"
-      },
-      {
-        "name": "JUnit",
-        "image": "junit.png",
-        "description": "Framework de test Java"
-      },
-      {
-        "name": "Cypress",
-        "image": "cypress.svg",
-        "description": "JavaScript end-to-end testing"
-      }
-    ]
-  },
-  {
-    "title": "Base de donneées",
-    "techs": [
-      {
-        "name": "MySQL",
-        "image": "mysql.svg",
-        "description": "Système de gestion de base de données relationnelle"
-      },
-      {
-        "name": "Redis",
-        "image": "redis.svg",
-        "description": "InMemory Database"
-      },
-      {
-        "name": "MongoDB",
-        "image": "mongodb.svg",
-        "description": "Base de données NoSQL orienté documents"
+        "name": "AWS",
+        "image": "aws.svg",
+        "description": "Amazon Web Services"
       }
     ]
   },
@@ -133,14 +23,14 @@
     "title": "DevOps",
     "techs": [
       {
-        "name": "Docker",
-        "image": "docker.svg",
-        "description": "Plateforme de conteneurisation"
-      },
-      {
         "name": "Git",
         "image": "git.svg",
         "description": "Version Control"
+      },
+      {
+        "name": "Docker",
+        "image": "docker.svg",
+        "description": "Plateforme de conteneurisation"
       },
       {
         "name": "Github",
@@ -155,27 +45,22 @@
       {
         "name": "Gitlab",
         "image": "gitlab.svg",
-        "description": "Gitlab"
+        "description": "Gitlab and Gitlab CI/CD"
       },
       {
         "name": "Terraform",
         "image": "terraform.svg",
         "description": "Infrastructure as Code"
-      }
-    ]
-  },
-  {
-    "title": "Cloud",
-    "techs": [
-      {
-        "name": "Google Cloud",
-        "image": "google-cloud-platform.svg",
-        "description": "Google Cloud: Cloud Computing Services"
       },
       {
-        "name": "Firebase",
-        "image": "firebase.svg",
-        "description": "Fun Cloud"
+        "name": "Ansible",
+        "image": "ansible.svg",
+        "description": "Gestion et automatisation de configuration"
+      },
+      {
+        "name": "Packer",
+        "image": "packer.svg",
+        "description": "Outil de création d'image machine"
       }
     ]
   },
@@ -196,6 +81,26 @@
         "name": "NGINX",
         "image": "nginx.svg",
         "description": "Seveur Web, reverse proxy, load balance"
+      }
+    ]
+  },
+  {
+    "title": "Base de donneées",
+    "techs": [
+      {
+        "name": "MySQL",
+        "image": "mysql.svg",
+        "description": "Système de gestion de base de données relationnelle"
+      },
+      {
+        "name": "Redis",
+        "image": "redis.svg",
+        "description": "InMemory Database"
+      },
+      {
+        "name": "MongoDB",
+        "image": "mongodb.svg",
+        "description": "Base de données NoSQL orienté documents"
       }
     ]
   },
@@ -246,6 +151,111 @@
         "name": "Notion",
         "image": "notion.png",
         "description": "L'espace de travail tout-en-un pour vos notes, taches"
+      }
+    ]
+  },
+  {
+    "title": "Language de programmation ",
+    "techs": [
+      {
+        "name": "Java",
+        "image": "java.svg",
+        "description": "Langage de programmation orienté objet"
+      },
+      {
+        "name": "Javascript",
+        "image": "javascript.svg",
+        "description": "Langage de programmation"
+      },
+      {
+        "name": "Typescript",
+        "image": "typescript.svg",
+        "description": "JavaScript typé à toutes échelles"
+      },
+      {
+        "name": "Python",
+        "image": "python.svg",
+        "description": "Langage de programmation et de scripting"
+      }
+    ]
+  },
+  {
+    "title": "Programmation",
+    "techs": [
+      {
+        "name": "Algorithmique et Structure de donnees",
+        "image": "code.svg",
+        "description": "Coding, OOP, Design patterns"
+      },
+      {
+        "name": "RxJs / RxJava",
+        "image": "reactivex.svg",
+        "description": "Programmation Reactive"
+      }
+    ]
+  },
+  {
+    "title": "Dev",
+    "techs": [
+      {
+        "name": "NodeJs",
+        "image": "nodejs.svg",
+        "description": "JavaScript runtime"
+      },
+      {
+        "name": "Android",
+        "image": "android.svg",
+        "description": "Développement Mobile"
+      }
+    ]
+  },
+  {
+    "title": "Framework",
+    "techs": [
+      {
+        "name": "NestJs",
+        "image": "nestjs.svg",
+        "description": "Progressive Node.js framework"
+      },
+      {
+        "name": "Spring / Spring Boot",
+        "image": "spring.svg",
+        "description": "Open source Java-based framework to create Microservices"
+      },
+      {
+        "name": "Flask",
+        "image": "flask.svg",
+        "description": "Python micro web framework"
+      },
+      {
+        "name": "Flutter",
+        "image": "flutter.svg",
+        "description": "Framework de développement mobile"
+      }
+    ]
+  },
+  {
+    "title": "Testing",
+    "techs": [
+      {
+        "name": "Jest",
+        "image": "jest.svg",
+        "description": "Framework de test JavaScript"
+      },
+      {
+        "name": "Mocha",
+        "image": "mocha.svg",
+        "description": "Framework de test JavaScript riche en fonctionnalités"
+      },
+      {
+        "name": "JUnit",
+        "image": "junit.png",
+        "description": "Framework de test Java"
+      },
+      {
+        "name": "Cypress",
+        "image": "cypress.svg",
+        "description": "JavaScript end-to-end testing"
       }
     ]
   },

@@ -1,5 +1,208 @@
 [
   {
+    "title": "Cloud",
+    "techs": [
+      {
+        "name": "Google Cloud",
+        "image": "gcp.svg",
+        "description": "Google Cloud: Cloud Computing Services",
+        "primary": true
+      },
+      {
+        "name": "Firebase",
+        "image": "firebase.svg",
+        "description": "Google Cloud pour le mobiles et le web",
+        "primary": true
+      },
+      {
+        "name": "AWS",
+        "image": "aws.svg",
+        "description": "Amazon Web Services",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "title": "DevOps",
+    "techs": [
+      {
+        "name": "Git",
+        "image": "git.svg",
+        "description": "Version Control",
+        "primary": true
+      },
+      {
+        "name": "Docker",
+        "image": "docker.svg",
+        "description": "Plateforme de conteneurisation",
+        "primary": true
+      },
+      {
+        "name": "Github",
+        "image": "github.svg",
+        "description": "Github",
+        "primary": true
+      },
+      {
+        "name": "Github Actions",
+        "image": "github-actions.svg",
+        "description": "CI/CD by Github",
+        "primary": true
+      },
+      {
+        "name": "Gitlab",
+        "image": "gitlab.svg",
+        "description": "Gitlab and Gitlab CI/CD",
+        "primary": true
+      },
+      {
+        "name": "Terraform",
+        "image": "terraform.svg",
+        "description": "Infrastructure as Code",
+        "primary": true
+      },
+      {
+        "name": "Ansible",
+        "image": "ansible.svg",
+        "description": "Gestion et automatisation de configuration",
+        "primary": true
+      },
+      {
+        "name": "Packer",
+        "image": "packer.svg",
+        "description": "Outil de création d'image machine",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "title": "Backend",
+    "techs": [
+      {
+        "name": "RabbitMQ",
+        "image": "rabbitmq.svg",
+        "description": "Message Queue",
+        "primary": true
+      },
+      {
+        "name": "Network",
+        "image": "network.svg",
+        "description": "Reseaux: HTTP, TSL, SSL, DNS",
+        "primary": true
+      },
+      {
+        "name": "NGINX",
+        "image": "nginx.svg",
+        "description": "Seveur Web, reverse proxy, load balance",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "title": "Base de donneées",
+    "techs": [
+      {
+        "name": "MySQL",
+        "image": "mysql.svg",
+        "description": "Système de gestion de base de données relationnelle",
+        "primary": true
+      },
+      {
+        "name": "Redis",
+        "image": "redis.svg",
+        "description": "InMemory Database",
+        "primary": true
+      },
+      {
+        "name": "MongoDB",
+        "image": "mongodb.svg",
+        "description": "Base de données NoSQL orienté documents",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "title": "OS",
+    "techs": [
+      {
+        "name": "Linux",
+        "image": "linux.svg",
+        "description": "Awesome Open-source OS",
+        "primary": true
+      }
+    ]
+  },
+  {
+    "title": "Tools",
+    "techs": [
+      {
+        "name": "Git",
+        "image": "git.svg",
+        "description": "Version Control",
+        "primary": true
+      },
+      {
+        "name": "Bash",
+        "image": "bash.svg",
+        "description": "Bash, Shell scripting",
+        "primary": true
+      },
+      {
+        "name": "Vagrant",
+        "image": "vagrant.svg",
+        "description": "Gestionnaire d'environnement",
+        "primary": true
+      },
+      {
+        "name": "Gradle",
+        "image": "gradle.svg",
+        "description": "Moteur de production",
+        "primary": true
+      },
+      {
+        "name": "Slack",
+        "image": "slack.svg",
+        "description": "Communiquer avec votre équipe"
+      },
+      {
+        "name": "Trello",
+        "image": "trello.svg",
+        "description": "Organisez n'importe quoi avec n'importe qui, n'importe où!"
+      },
+      {
+        "name": "Notion",
+        "image": "notion.png",
+        "description": "L'espace de travail tout-en-un pour vos notes, taches"
+      }
+    ]
+  },
+  {
+    "title": "Language de programmation ",
+    "techs": [
+      {
+        "name": "Java",
+        "image": "java.svg",
+        "description": "Langage de programmation orienté objet"
+      },
+      {
+        "name": "Javascript",
+        "image": "javascript.svg",
+        "description": "Langage de programmation"
+      },
+      {
+        "name": "Typescript",
+        "image": "typescript.svg",
+        "description": "JavaScript typé à toutes échelles"
+      },
+      {
+        "name": "Python",
+        "image": "python.svg",
+        "description": "Langage de programmation et de scripting",
+        "primary": true
+      }
+    ]
+  },
+  {
     "title": "Programmation",
     "techs": [
       {
@@ -15,36 +218,6 @@
     ]
   },
   {
-    "title": "Language de programmation ",
-    "techs": [
-      {
-        "name": "Java",
-        "image": "java.svg",
-        "description": "Langage de programmation orienté objet"
-      },
-      {
-        "name": "Javascript",
-        "image": "javascript.svg",
-        "description": "langage de programmation"
-      },
-      {
-        "name": "Typescript",
-        "image": "typescript.svg",
-        "description": "JavaScript typé à toutes échelles"
-      },
-      {
-        "name": "Python",
-        "image": "python.svg",
-        "description": "Langage de programmation et de scripting"
-      },
-      {
-        "name": "Dart",
-        "image": "dart.svg",
-        "description": "Langage optimisé pour les applications rapides"
-      }
-    ]
-  },
-  {
     "title": "Dev",
     "techs": [
       {
@@ -55,7 +228,7 @@
       {
         "name": "Android",
         "image": "android.svg",
-        "description": "Development Mobile"
+        "description": "Développement Mobile"
       }
     ]
   },
@@ -75,7 +248,8 @@
       {
         "name": "Flask",
         "image": "flask.svg",
-        "description": "Python micro web framework"
+        "description": "Python micro web framework",
+        "primary": true
       },
       {
         "name": "Flutter",
@@ -106,161 +280,6 @@
         "name": "Cypress",
         "image": "cypress.svg",
         "description": "JavaScript end-to-end testing"
-      },
-      {
-        "name": "Testing",
-        "image": "testing.svg",
-        "description": "Tests de logiciel"
-      }
-    ]
-  },
-  {
-    "title": "Base de donneées",
-    "techs": [
-      {
-        "name": "MySQL",
-        "image": "mysql.svg",
-        "description": "Système de gestion de base de données relationnelle"
-      },
-      {
-        "name": "Redis",
-        "image": "redis.svg",
-        "description": "InMemory Database"
-      },
-      {
-        "name": "MongoDB",
-        "image": "mongodb.svg",
-        "description": "Base de données NoSQL orienté documents"
-      }
-    ]
-  },
-  {
-    "title": "DevOps",
-    "techs": [
-      {
-        "name": "Docker",
-        "image": "docker.svg",
-        "description": "Plateforme de conteneurisation"
-      },
-      {
-        "name": "Git",
-        "image": "git.svg",
-        "description": "Version Control"
-      },
-      {
-        "name": "Github",
-        "image": "github.svg",
-        "description": "Github"
-      },
-      {
-        "name": "Github Actions",
-        "image": "github-actions.svg",
-        "description": "CI/CD by Github"
-      },
-      {
-        "name": "Gitlab CI/CD",
-        "image": "gitlab.svg",
-        "description": "CI/CD by Gitlab"
-      },
-      {
-        "name": "Jenkins",
-        "image": "jenkins.svg",
-        "description": "Serveur d'automatisation"
-      },
-      {
-        "name": "Terraform",
-        "image": "terraform.svg",
-        "description": "Infrastructure as Code"
-      },
-      {
-        "name": "Pulumi",
-        "image": "pulumi.svg",
-        "description": "Modern Infrastructure as Code"
-      }
-    ]
-  },
-  {
-    "title": "Cloud",
-    "techs": [
-      {
-        "name": "Google Cloud",
-        "image": "google-cloud-platform.svg",
-        "description": "Google Cloud: Cloud Computing Services"
-      },
-      {
-        "name": "Firebase",
-        "image": "firebase.svg",
-        "description": "Fun Cloud"
-      }
-    ]
-  },
-  {
-    "title": "Backend",
-    "techs": [
-      {
-        "name": "RabbitMQ",
-        "image": "rabbitmq.svg",
-        "description": "Message Queue"
-      },
-      {
-        "name": "Network",
-        "image": "network.svg",
-        "description": "Reseaux: HTTP, TSL, SSL, DNS"
-      },
-      {
-        "name": "NGINX",
-        "image": "nginx.svg",
-        "description": "Seveur Web, reverse proxy, load balance"
-      }
-    ]
-  },
-  {
-    "title": "OS",
-    "techs": [
-      {
-        "name": "Linux",
-        "image": "linux.svg",
-        "description": "Awesome Open-source OS"
-      }
-    ]
-  },
-  {
-    "title": "Tools",
-    "techs": [
-      {
-        "name": "Git",
-        "image": "git.svg",
-        "description": "Version Control"
-      },
-      {
-        "name": "Bash",
-        "image": "bash.svg",
-        "description": "Bash, Shell scripting"
-      },
-      {
-        "name": "Vagrant",
-        "image": "vagrant.svg",
-        "description": "Gestionnaire d'environnement"
-      },
-      {
-        "name": "Gradle",
-        "image": "gradle.svg",
-        "description": "Moteur de production"
-      },
-      {
-        "name": "Slack",
-        "image": "slack.svg",
-        "description": "Communiquer avec votre équipe"
-      },
-      {
-        "name": "Trello",
-        "image": "trello.svg",
-        "description": "Organisez n'importe quoi avec n'importe qui, n'importe où!"
-      },
-      {
-        "name": "Notion",
-        "image": "notion.png",
-        "description": "L'espace de travail tout-en-un pour vos notes, taches"
       }
     ]
   },
@@ -275,7 +294,8 @@
       {
         "name": "VSCode",
         "image": "vscode.svg",
-        "description": "Editeur de code moderne"
+        "description": "Editeur de code moderne",
+        "primary": true
       }
     ]
   }
