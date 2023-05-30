@@ -2,7 +2,6 @@
   <div class="page-bg">
     <div class="container">
       <div>
-
         <topics-list :topics="topics" />
       </div>
 

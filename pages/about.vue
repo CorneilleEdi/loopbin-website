@@ -3,7 +3,7 @@
     <div class="container">
       <div class="flex flex-col md:flex-row items-center">
         <img
-          class="mx-auto h-40 w-40 md:h-48 md:w-48 flex-shrink-0 rounded-full bg-green dark:bg-green border border-dark-low"
+          class="mx-auto h-40 w-40 md:h-56 md:w-56 flex-shrink-0 rounded-full bg-green dark:bg-green border border-dark-low"
           src="../assets/images/me-s.png"
           alt="profile"
         />
@@ -16,7 +16,7 @@
             23 ans. Je suis un grand passionné de
             programmation et de nouvelles techs. J'aime tout ce qui touche au
             <span class="hightlighted"
-            >développement et à l'architecture Backend et Cloud</span
+            >développement, à l'ingénierie et à l'architecture Backend et Cloud</span
             >, au développement web et au développement de logiciel en général.
           </p>
 
@@ -59,6 +59,13 @@
           <ul class="mt-4 list-disc ml-4 md:ml-6">
             <li>Bachelor (4 ans) en Computer Science Engineering en Inde 🇮🇳</li>
             <li>Master (en cours) en Ingénierie Systèmes et Logiciels en France 🇫🇷</li>
+          </ul>
+
+          <h6 class="mt-4 font-medium">Expériences professionnelles</h6>
+          <ul class="mt-4 list-disc ml-4 md:ml-6">
+            <li>Ingénieur Cloud Public chez <span class="hightlighted"><a
+              href="https://worldline.com/" target="_blank"
+              class="underline">Worldline</a></span></li>
           </ul>
 
         </div>

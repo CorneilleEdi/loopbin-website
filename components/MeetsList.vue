@@ -4,12 +4,12 @@
 
     <div class="flex flex-wrap my-4">
       <div v-for="meet in meets" :key="meet.number" class="p-2 md:w-1/2 w-full">
-        <div class="h-full flex flex-col slick-border p-6 rounded-sm">
+        <div class="h-full flex flex-col slick-border p-2 px-4 rounded-sm">
           <div class="flex-grow">
-            <p class="darker-text text-base sm:text-lg font-medium mb-2">
+            <p class="darker-text text-base  font-medium mb-2">
               {{ meet.title }}
             </p>
-            <p class="dark-text opacity-80 text-sm sm:text-base">
+            <p class="dark-text opacity-80 text-sm">
               {{ meet.description || '' }}
             </p>
           </div>
@@ -17,7 +17,7 @@
           <div class="flex">
             <div class="mt-2">
               <button
-                class="px-3 py-2 text-sm  font-medium flex items-center justify-center transition duration-500 ease-in-out hover:bg-dark-high hover:text-white focus:outline-none focus:shadow-outline dark-low-bg slick-border"
+                class="px-3 py-2 text-sm  font-medium flex items-center justify-center transition duration-500 ease-in-out  rounded-sm hover:bg-dark-high hover:text-white focus:outline-none focus:shadow-outline dark-low-bg slick-border"
               >
                 <a
                   target="_blank"

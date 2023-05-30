@@ -40,7 +40,7 @@ redis 20.0.13 from /home/corneilleedi/.local/lib/python3.7/site-packages/redis/_
 
 Avant tout chose, il va falloir importer Redis et nous connecter à la base de donnée
 
-```python[app.py]
+```python
 import redis
 db = redis.StrictRedis(host="localhost", port=6379, db=0)
 ```
@@ -63,7 +63,7 @@ Il est aussi possible d'utiliser un URI sour le format
 - PORT: le port sous lequel tourne Redis.
 - DATABASE: le numero de la base de donnée que vous visé. Generalement mis à 0
 
-```python[app.py]
+```python
 import redis
 db = redis.from_url(url= 'redis://localhost@loopbin:6379/0')
 ```
@@ -89,7 +89,7 @@ Encore plus de méthode dans la documentation:
 
 Jetons un coup d'oeuil a un peu de code.
 
-```python[app.py]
+```python
 import redis
 db = redis.from_url(url= 'redis://localhost:6379/0')
 

@@ -1,5 +1,29 @@
 [
   {
+    "title": "Google Cloud Bootcamp: Terraform",
+    "description": "Repertoire du projet Terraform grant l'infrastructure du bootcamp Google Cloud Platform organisé par le Google Developer Student Clubs Université de Lomé",
+    "date": "Avril 2023",
+    "tags": [
+      "google-cloud-platform",
+      "terraform",
+      "bash"
+    ],
+    "github": "https://github.com/CorneilleEdi/gdsc-ul-gcp-terraform"
+  },
+  {
+    "title": "Google Cloud Bootcamp",
+    "description": "Repertoire des projets réalisés lors du bootcamp Google Cloud Platform organisé par le Google Developer Student Clubs Université de Lomé",
+    "date": "Avril 2023",
+    "tags": [
+      "google-cloud-platform",
+      "python",
+      "docker",
+      "terraform",
+      "bash"
+    ],
+    "github": "https://github.com/CorneilleEdi/gdsc-ul-gcp-bootcamp"
+  },
+  {
     "title": "Bluebook Search",
     "description": "Recherche plain texte sur Cloud Firestore à l'aide de MeiliSearch",
     "date": "Mai 2021",
@@ -18,13 +42,11 @@
     "date": "Mai 2021",
     "tags": [
       "nodejs",
-      "nestjs",
-      "terraform",
       "vuejs",
+      "terraform",
       "google-cloud-platform",
-      "text-sentiment-analysis",
+      "Vision API",
       "compute-vision",
-      "full-text=search",
       "caching",
       "docker"
     ],

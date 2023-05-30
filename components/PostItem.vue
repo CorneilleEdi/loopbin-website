@@ -7,7 +7,7 @@
       class="w-full"
       style="text-decoration: none"
     >
-      <div class="p-4  flex flex-col h-full">
+      <div class="py-3 px-3  flex flex-col h-full">
         <p class="text-dark-high dark:text-white font-medium">
           {{ post.title }}
         </p>
