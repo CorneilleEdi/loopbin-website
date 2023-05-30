@@ -63,7 +63,7 @@
 
           <h6 class="mt-4 font-medium">Expériences professionnelles</h6>
           <ul class="mt-4 list-disc ml-4 md:ml-6">
-            <li>Ingénieur Cloud Public chez <span class="hightlighted"><a
+            <li>Apprenti Ingénieur Cloud Public chez <span class="hightlighted"><a
               href="https://worldline.com/" target="_blank"
               class="underline">Worldline</a></span></li>
           </ul>
