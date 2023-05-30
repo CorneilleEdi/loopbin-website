@@ -195,6 +195,8 @@ loop-node-18-ubuntu-minimal-2204  XXX              loop-ubuntu-2204             
 Il est bien sûr d’utiliser Cloud Build afin d’automatiser le build des images avec packer.
 Nous explorerons cette partie dans un autre tutoriel.
 
+<post-item-with-id slug="cloud-build-packer-automatiser-la-creation-dimage-machine"></post-item-with-id>
+
 ## Conclusion
 
 Enfin, Packer rationalise la production d'images en automatisant la génération et le provisionnement des images machine sur plusieurs plates-formes. L'utilisation de Packer pour créer une image Google Compute Engine sur mesure offre des avantages significatifs en termes de cohérence, de répétabilité et d'efficacité.
