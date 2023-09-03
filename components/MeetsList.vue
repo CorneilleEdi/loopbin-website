@@ -3,7 +3,7 @@
     <h5 class="">Lives ({{ meets.length }})</h5>
 
     <div class="flex flex-wrap my-4">
-      <div v-for="meet in meets" :key="meet.number" class="p-2 md:w-1/2 w-full">
+      <div v-for="meet in meets" :key="meet.number" class="p-3 md:w-1/2 w-full">
         <div class="h-full flex flex-col slick-border p-2 px-4 rounded-sm">
           <div class="flex-grow">
             <p class="darker-text text-base  font-medium mb-2">
