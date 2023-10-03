@@ -3,7 +3,7 @@ title: Gérer plusieurs bases de données Firestore dans un projet
 description: "Comment mettre en place et gérer plusieurs bases de données Firestore dans un même projet ?"
 tags: [ gcp, firebase, terraform ]
 topics: [ gcp, firebase, terraform ]
-date: 2023-07-22
+date: 2023-10-03
 slug: gerer-plusieurs-bases-de-donnees-firestore-dans-un-projet
 ---
 
@@ -14,15 +14,15 @@ Une nouvelle fonctionnalité ajoutée à Google Cloud Firestore est la gestion d
 
 ## Scénario
 
-Vous travaillez sur un projet bien structure avec plusieurs environnements : dev/staging/prod et vous aimeriez tout garder dans un même projet. Vous avez alors la possibilité de :
+Vous travaillez sur un projet bien structuré avec plusieurs environnements : `dev`, `staging`, `prod` et vous aimeriez tout garder dans un même projet. Vous avez alors la possibilité de :
 
-- suffixer chaque collection Firestore avec le suffix de l’environnement. Par exemple dev_users, prod_users pour les collections des utilisateurs en dev et en prod
+- suffixer chaque collection Firestore avec le suffix de l’environnement. Par exemple `dev_users`, `prod_users` pour les collections des utilisateurs en dev et en prod
 - créer une base de données dev et prod afin d’isoler vos données
 
 ## Avantages de cette nouvelle fonctionnalité
 
 - Isolation des bases de données : possibilité d’isoler les données
-- Gestion individuelle des bases de donnes
+- Gestion individuelle des bases de données
 - Suivi individuel de la facturation des bdd
 - Surveillance et collection des métriques de bdd de façons séparée
 - Gestion des règles de sécurité à différentes bases de données Firestore avec les Conditions IAM ou les Règles de sécurité Firebase
@@ -42,8 +42,8 @@ Le concept est assez simple à comprendre et à utiliser (il existe déjà dans 
 
 Pour interagir avec le service Firestore et les bdd, il est possible d’utiliser :
 
-- gcloud (l’utilitaire de commande de Google Cloud)
-- terraform
+- Gcloud (l’utilitaire de commande de Google Cloud)
+- Terraform
 - l’API Google Cloud Platform
 
 Pour cette partie, nous utiliserons gcloud.
@@ -53,7 +53,8 @@ Voici les opérations possibles
 - Créer une bdd
 
 ```bash
-gcloud alphafirestore databases create --database=development --location=europe-west9 --type=firestore-native
+gcloud alphafirestore databases create --database=development --location=europe-west9 \
+  --type=firestore-native
 ```
 
 Cette commande comme paramétrés :
@@ -157,6 +158,6 @@ Comme vous pouvez le voir dans la documentation, il est possible de passer la ba
 
 ![Python doc](/images/gcp/firetore-multi-db/firestore-python-db-dev.png)
 
-Pour les autres langages et SDk, veuillez consulter les documentations.
+Pour les autres langages et SDK, veuillez consulter les documentations.
 
 Until next time, stay in the loop, stay awesome.

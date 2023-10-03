@@ -8,9 +8,9 @@
     /* Fix anchor scrollTo */
     &::before {
       display: block;
-      content: ' ';
+      content: '#';
       margin-top: -50px;
-      height: 85px;
+      height: 60px;
       visibility: hidden;
       pointer-events: none;
     }
