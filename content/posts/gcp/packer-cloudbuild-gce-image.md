@@ -13,11 +13,11 @@ Ce poste est la suite du poste:
 <post-item-with-id slug="creer-une-image-machine-personnalisees-sur-gcp-avec-packer"></post-item-with-id>
 ## Logique
 
-Afin d’atteindre notre but, nous allons utiliser le builder communautraire `packer` de Cloud Build.
+Afin d’atteindre notre but, nous allons utiliser le builder communautaire `packer` de Cloud Build.
 
-Il est bien sur possible d’utiliser une autre image docker de packer
+Il est bien sûr possible d’utiliser une autre image docker de packer
 
-Voici les étapes:
+Voici les étapes :
 
 1- Récupérer le builder https://github.com/GoogleCloudPlatform/cloud-builders-community/tree/master/packer
 
@@ -130,7 +130,7 @@ DIGEST        TAGS
 ac3a246e203a  1.8.7,latest  
 ```
 
-## 3- Ecrire un fichier Packer
+## 3- Écrire un fichier Packer
 
 Nous allons utiliser le fichier écrit dans le tutoriel Packer sur GCP précèdent. Il contient aussi plus d’explication à propos de Packer et du fichier.
 
@@ -184,7 +184,7 @@ build {
 }
 ```
 
-## 4- Definir le fichier de configuration pour Cloud Build
+## 4- Définir le fichier de configuration pour Cloud Build
 
 Il nous faut maintenant définir le fichier de build avec les différentes étapes.
 
@@ -229,7 +229,7 @@ Pour lancer le build, il nous faut une seule commande
 gcloud builds submit .
 ```
 
-Resultat
+Résultat : 
 
 ![cloudbuild-result.png](/images/gcp/cloudbuild-result.png)
 

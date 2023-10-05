@@ -17,7 +17,7 @@ L’application qui sera utilisée est un simple API CRUD qui utilise MongoDB co
 <action-button type="github" text="Code sur Github" link="https://github.com/CorneilleEdi/mongodb-redis-cache"></action-button>
 
 
-## la logic
+## La logic
 
 Durant les tests, la base de données utilisée pour le test ne doit être utilisée que pour ce test pendant le test. Ensuite, il peut être effacé et utilisé pour un autre essai. Par conséquent, nous avons besoin de bases de données dédiées aux tests. Dans un cas pareil, quoi de mieux que des conteneurs ? Facile à mettre en place et éphémère de nature.
 

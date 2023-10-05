@@ -16,8 +16,8 @@ Une nouvelle fonctionnalité ajoutée à Google Cloud Firestore est la gestion d
 
 Vous travaillez sur un projet bien structuré avec plusieurs environnements : `dev`, `staging`, `prod` et vous aimeriez tout garder dans un même projet. Vous avez alors la possibilité de :
 
-- suffixer chaque collection Firestore avec le suffix de l’environnement. Par exemple `dev_users`, `prod_users` pour les collections des utilisateurs en dev et en prod
-- créer une base de données dev et prod afin d’isoler vos données
+- Suffixer chaque collection Firestore avec le suffix de l’environnement. Par exemple `dev_users`, `prod_users` pour les collections des utilisateurs en dev et en prod
+- Créer une base de données dev et prod afin d’isoler vos données
 
 ## Avantages de cette nouvelle fonctionnalité
 
@@ -44,29 +44,31 @@ Pour interagir avec le service Firestore et les bdd, il est possible d’utilise
 
 - Gcloud (l’utilitaire de commande de Google Cloud)
 - Terraform
-- l’API Google Cloud Platform
+- L’API Google Cloud Platform
 
 Pour cette partie, nous utiliserons gcloud.
 
-Voici les opérations possibles
+<br/>
 
-- Créer une bdd
+Voici les opérations possibles :
+
+- **Créer une bdd**
 
 ```bash
 gcloud alphafirestore databases create --database=development --location=europe-west9 \
   --type=firestore-native
 ```
 
-Cette commande comme paramétrés :
+Cette commande prend comme paramètres :
 
-- `database`: nom de la bdd. Entre 4 et 63 caractères
-- `location`: emplacement de la bdd (region, multiregion). voir: https://firebase.google.com/docs/firestore/locations
-- `type`: type/mode de la bdd firestore. `firestore-native` pour le mode natif et `datastore-mode` pour le mode Datastore. `firestore-native` par défaut
-- `-delete-protection` pour activer la protection contre la suppression. C’est une fonctionnalité qui bloque la suppression d’une bdd tant qu'elle est activée.
+- `database` : nom de la bdd. Entre 4 et 63 caractères
+- `location` : emplacement de la bdd (region, multiregion). voir: https://firebase.google.com/docs/firestore/locations
+- `type` : type/mode de la bdd firestore. `firestore-native` pour le mode natif et `datastore-mode` pour le mode Datastore. `firestore-native` par défaut
+- `-delete-protection`: pour activer la protection contre la suppression. C’est une fonctionnalité qui bloque la suppression d’une bdd tant qu'elle est activée.
 
 ![GCP Firestore Screenshot](/images/gcp/firetore-multi-db/firestore-multi-db-list.png)
 
-- Lister les bdd
+- **Lister les bdd**
 
 ```bash
 gcloud alpha firestore databases list
@@ -96,7 +98,7 @@ gcloud firestore databases list
 ```
 
 
-- Mettre à jour les bdd
+- **Mettre à jour une bdd**
 
 ```bash
 gcloud alpha firestore databases update --database=development \
@@ -109,16 +111,14 @@ Activation sur la bdd se développent en utilisant `--delete-protection`
 
 ```bash
 gcloud alpha firestore databases update --database=development --delete-protection
-
 ```
 
 On peut utiliser `--no-delete-protection` pour retirer cette protection.
 
-- Supprimer une bdd
+- **Supprimer une bdd**
 
 ```bash
 gcloud alpha firestore databases delete --database=development
-
 ```
 
 Bien sûr, cette commande échouera si la protection de suppression est activée.
