@@ -38,6 +38,24 @@
         "primary": true
       },
       {
+        "name": "Kubernetes",
+        "image": "kubernetes.svg",
+        "description": "Container orchestration",
+        "primary": true
+      },
+      {
+        "name": "Prometheus",
+        "image": "prometheus.svg",
+        "description": "Monitoring system",
+        "primary": true
+      },
+      {
+        "name": "Grafana",
+        "image": "grafana.svg",
+        "description": "Analytics & Interactive visualization ",
+        "primary": true
+      },
+      {
         "name": "Github",
         "image": "github.svg",
         "description": "Github",

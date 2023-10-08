@@ -33,6 +33,21 @@
         "description": "Plateforme de conteneurisation"
       },
       {
+        "name": "Kubernetes",
+        "image": "kubernetes.svg",
+        "description": "Container orchestration"
+      },
+      {
+        "name": "Prometheus",
+        "image": "prometheus.svg",
+        "description": "Monitoring system"
+      },
+      {
+        "name": "Grafana",
+        "image": "grafana.svg",
+        "description": "Analytics & Interactive visualization "
+      },
+      {
         "name": "Github",
         "image": "github.svg",
         "description": "Github"

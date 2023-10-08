@@ -165,7 +165,7 @@
   }
 
   ul {
-    @apply my-4 list-disc text-left ;
+    @apply my-4 ml-8 list-disc text-left ;
 
     li {
       @apply my-4   ml-4 text-dark dark:text-white dark:text-opacity-80 font-thin;
@@ -246,3 +246,4 @@
     }
   }
 }
+

@@ -2,7 +2,7 @@
 title: NestJS -  Facilitez les tests d’intégration avec Docker et TestContainers
 description: Configurer facilement les tests d'intégration à l'aide de testcontainers et de Docker
 tags: [nest, docker, test, mongodb]
-topics: [nestjs, docker, mongodb, testing]
+topics: [nestjs, docker, mongodb]
 date: 2022-05-02
 slug: nestjs-facilitez-les-tests-dintegration-plus-simplement-avec-docker-et-testcontainers
 ---

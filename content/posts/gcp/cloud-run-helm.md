@@ -2,7 +2,7 @@
 title: Déployer sur Cloud Run avec Helm
 description: "Générer les configurations de déploiement d'un service sur Cloud Run avec Helm"
 tags: [ gcp, helm, docker ]
-topics: [ gcp, helm, docker ]
+topics: [ gcp, docker ]
 date: 2023-07-22
 slug: deployer-sur-cloud-run-avec-helm
 ---
@@ -144,13 +144,10 @@ Voici la structure de notre charte (kind of)
   -- values.yaml
 ```
 
-`service.yaml` : le template de la configuration du service que nous voulons déployer
-
-`values.yaml` : valeurs par défaut a appliqué
-
-`values_dev.yaml` : valeurs a appliqué en développement
-
-`Chart.yaml` : information à propos de la charte (version, type, description)
+- `service.yaml` : le template de la configuration du service que nous voulons déployer
+- `values.yaml` : valeurs par défaut a appliqué
+- `values_dev.yaml` : valeurs a appliqué en développement
+- `Chart.yaml` : information à propos de la charte (version, type, description)
 
 Les fichiers sous le dossier `values` ne sont là que pour le déploiement local. Dans la deuxième partie, nous les
 retirons avant de publier notre charte Helm.
