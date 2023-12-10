@@ -19,6 +19,12 @@
         "image": "aws.svg",
         "description": "Amazon Web Services",
         "primary": true
+      },
+      {
+        "name": "Azure",
+        "image": "azure.svg",
+        "description": "Microsoft Azure",
+        "primary": true
       }
     ]
   },
