@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
-          node-version: 16
+          node-version: 16 # Should be increased: https://github.com/FirebaseExtended/action-hosting-deploy/issues/326
       - run: yarn install
       - run: yarn generate
       - uses: FirebaseExtended/action-hosting-deploy@v0
@@ -25,3 +25,4 @@ jobs:
           projectId: loopbin
           target: loopbin-luna
           channelId: live
+          firebaseToolsVersion: 12.9.1
