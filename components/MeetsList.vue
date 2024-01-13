@@ -22,7 +22,7 @@
                 <a
                   target="_blank"
                   :href="'https://meet.loopbin.dev/' + meet.code"
-                  >details</a
+                >details</a
                 >
               </button>
             </div>
@@ -40,7 +40,11 @@ export default {
   name: 'MeetsList',
 
   data() {
-    return { meets: meets.reverse() }
+    return {
+      meets: meets.sort(function (a, b) {
+        return  b.number - a.number ;
+      })
+    }
   },
 }
 </script>

@@ -16,6 +16,11 @@
         "name": "AWS",
         "image": "aws.svg",
         "description": "Amazon Web Services"
+      },
+      {
+        "name": "Azure",
+        "image": "azure.svg",
+        "description": "Microsoft Azure"
       }
     ]
   },
@@ -82,11 +87,6 @@
   {
     "title": "Backend",
     "techs": [
-      {
-        "name": "RabbitMQ",
-        "image": "rabbitmq.svg",
-        "description": "Message Queue"
-      },
       {
         "name": "Network",
         "image": "network.svg",
@@ -173,6 +173,11 @@
     "title": "Language de programmation ",
     "techs": [
       {
+        "name": "Python",
+        "image": "python.svg",
+        "description": "Langage de programmation et de scripting"
+      },
+      {
         "name": "Java",
         "image": "java.svg",
         "description": "Langage de programmation orienté objet"
@@ -186,11 +191,6 @@
         "name": "Typescript",
         "image": "typescript.svg",
         "description": "JavaScript typé à toutes échelles"
-      },
-      {
-        "name": "Python",
-        "image": "python.svg",
-        "description": "Langage de programmation et de scripting"
       }
     ]
   },

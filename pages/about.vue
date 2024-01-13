@@ -64,6 +64,9 @@
             <li>Apprenti Ingénieur Public Cloud chez <span class="hightlighted"><a
               href="https://worldline.com/" target="_blank"
               class="underline">Worldline</a></span></li>
+            <li>Ingénieur Système & Cloud chez <span class="hightlighted"><a
+              href="https://worldline.com/" target="_blank"
+              class="underline">Worldline</a></span></li>
           </ul>
 
         </div>

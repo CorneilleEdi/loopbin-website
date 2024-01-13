@@ -1,7 +1,7 @@
 ---
 title: Recherche plain texte sur Cloud Firestore à l'aide de MeiliSearch 1 - Introduction
 description: Comment ajouter une capacité de recherche plain texte ultra-rapide à Cloud Firestore à l'aide de MeiliSearch
-tags: [gcp, javascript, nodejs, cloud-functions,vm, meilisearch, firestore]
+tags: [gcp, nodejs, cloud-functions,vm, meilisearch, firestore]
 topics: [gcp, nodejs]
 date: 2022-01-19 
 slug: recherche-plain-texte-sur-cloud-firestore-a-laide-de-meilisearch-1-introduction

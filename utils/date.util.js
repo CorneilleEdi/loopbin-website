@@ -5,5 +5,5 @@ require('dayjs/locale/fr')
 export const formatDate = (date) => {
   dayjs.locale('fr')
   const f = dayjs(date)
-  return f.isValid() ? f.format('DD MMM YYYY').toString() : ''
+  return f.isValid() ? f.format('DD-MM-YYYY').toString() : ''
 }

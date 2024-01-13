@@ -1,7 +1,7 @@
 ---
 title: Recherche plain texte sur Cloud Firestore à l'aide de MeiliSearch 5 - Problèmes
 description: Points d'échec et comment les surmonter
-tags: [gcp, javascript, nodejs, cloud-functions,vm, meilisearch, firestore]
+tags: [gcp, nodejs, cloud-functions,vm, meilisearch, firestore]
 topics: [gcp, nodejs]
 date: 2022-01-23
 slug: recherche-plain-texte-sur-cloud-firestore-a-laide-de-meilisearch-5-problemes
