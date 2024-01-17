@@ -1,10 +1,10 @@
 ---
-title: Gérer les plages IP d'adresses gérées par Google Cloud avec Terraform
+title: Gérer les plages d'adresses IP gérées par Google Cloud avec Terraform
 description: "Optimiser l'administration des adresses IP de Google Cloud grâce à Terraform."
 tags: [ gcp, terraform, network ]
 topics: [ gcp, terraform, network ]
 date: 2023-12-11
-slug: gerer-les-plages-ip-dadresses-gerees-par-google-cloud-avec-terraform
+slug: gerer-les-plages-dadresses-ip-gerees-par-google-cloud-avec-terraform
 ---
 
 Si vous maîtrisez un peu les configurations réseau de Google Cloud avec certains de ces services, vous saurez qu'ils disposent d'espaces d'adressage spéciaux que vous devez ajouter à vos configurations. Par exemple, pour le contrôle de santé de votre équilibrage de charge, vous devez autoriser le trafic pour certaines plages IP spécifiques à Google.
@@ -103,4 +103,4 @@ data "google_netblock_ip_ranges" "this" {
 On peut voir que ces ranges sont les memes que les ranges dans la documentation.
 ![Helm docs](/images/gcp/gcp-managed-ip-ranges.png)
 
-Voila, c’est tout. 
+Voilà, c’est tout. 

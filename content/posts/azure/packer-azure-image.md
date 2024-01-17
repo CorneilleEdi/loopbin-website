@@ -16,9 +16,9 @@ Dans celui-ci, nous allons faire la même chose sur Azure. Le scénario reste le
 
 ## Scenario
 
-Vous travaillez dans une entreprise ou chaque machine virtuelle lancée doit contenir votre version à vous de certains logicielle comme par exemple java, python, un logiciel de monitoring et logging système. Afin de s’assurer que les images créées soient preconfiguré, vous décidez de créer des images personnalisées afin de les utiliser sur vos diffèrents Cloud provider.
+Vous travaillez dans une entreprise où chaque machine virtuelle lancée doit contenir votre version à vous de certains logiciels par exemple java, python, un logiciel de monitoring et logging système. Afin de s’assurer que les images créées soient preconfiguré, vous décidez de créer des images personnalisées pour les utiliser sur vos diffèrents Cloud provider.
 
-Vous avez bien sur vos playbook ansible qui vous permettent déjà de faire ces configurations sur vos machines.
+Vous avez bien sûr vos playbook ansible qui vous permettent déjà de faire ces configurations sur vos machines.
 
 C’est le moment d’utiliser un outil comme Packer pour automatiser la création et la configuration de vos images personnalisées.
 
@@ -57,7 +57,7 @@ az group create --name "lab-resource-group"  --location francecentral
 
 ## Créér une shared image gallery pour nos images.
 
-Déjà, c’est quoi une Shared Image Gallery? Le nom est explicite, c'est un répertoire d’image machine bien définie et versionner qui permet de stocker et de gérer les différentes images personnalisées qu’on crée.
+Déjà, c’est quoi une Shared Image Gallery ? Le nom est explicite, c'est un répertoire d’image machine bien définie et versionner qui permet de stocker et de gérer les différentes images personnalisées qu’on crée.
 
 ### Principales fonctionnalités
 
@@ -173,13 +173,13 @@ az ad sp create-for-rbac \
          --query "{ ClientId: appId, ClientSecret: password, TenantId: tenant }"
 ```
 
-En précisant l’option `—qeury`, cette commande ne nous retournera que le appId (ClientId), password (ClientSecret) et tenant (TenantId) que nous utiliserions pour authentifier Packer dans notre script HCL.
+En précisant l’option `—qeury`, cette commande ne nous retournera que l'appId (ClientId), password (ClientSecret) et tenant (TenantId) que nous utiliserions pour authentifier Packer dans notre script HCL.
 
 ## Écrire, valider et lancer le template packer
 
 ### Écrire
 
-Notre script sera le suivant:
+Notre script sera le suivant :
 
 `azure-ubuntu-2204.pkr.hcl`
 
@@ -285,10 +285,10 @@ Les différentes parties
 - `build`: Définit ce qui doit être construit par Packer. Ici, il utilise la source `source.azure-arm.ubuntu-base` précédemment définie.
 - `provisioner`: fournisseur (de type shell dans ce cas) qui exécutera un ensemble de commandes pendant le processus de création d'images. Dans notre cas, il exécute un script shell pour mettre à jour et mettre à niveau les packages dans l'image en cours de création.
 
-Revenons sur quelques attributs de notre source:
+Revenons sur quelques attributs de notre source :
 
 - `shared_image_gallery_destination` : Cela nous aidera à spécifier les propriétés de la galerie d'images partagées sous lesquelles l'image gérée sera publiée en tant que version d'image de la galerie partagée.
-- `image_offer`, `image_publisher`, `image_sku` sont des informations à propos de votre image de base qui peuvent être récupère de plusieurs façons différentes
+- `image_offer`, `image_publisher`, `image_sku` sont des informations à propos de votre image de base qui peuvent être récupéré de plusieurs façons différentes
 - Azure CLI
 
 ```bash
@@ -310,7 +310,7 @@ tenant_id = "XXXX"
 resource_group = "XXXX"
 ```
 
-*`client_id`*, *`client_secret`* *et* *`tenant_id` nous on été donne comme résultat après la création du service principal pour packer.*
+*`client_id`*, *`client_secret`* *et* *`tenant_id` nous ont été donné comme résultat après la création du service principal pour packer.*
 
 ### Valider
 

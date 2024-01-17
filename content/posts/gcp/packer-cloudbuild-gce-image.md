@@ -54,7 +54,7 @@ COPY --from=build packer /usr/bin/packer
 ENTRYPOINT ["/usr/bin/packer"]
 ```
 
-Nous allons cloner le repo. Dans le dossier packer on y trouvera nos deux fichiers: `Dockerfile` et **`cloudbuild.yaml`**
+Nous allons cloner le repo. Dans le dossier packer, on y trouvera nos deux fichiers : `Dockerfile` et **`cloudbuild.yaml`**
 
 ```bash
 git clone https://github.com/GoogleCloudPlatform/cloud-builders-community.git
@@ -102,7 +102,7 @@ tags: [ 'cloud-builders-community' ]
 
 ## 2- Construire l’image docker
 
-Pour construire notre image, nous allons utiliser la commande suivante:
+Pour construire notre image, nous allons utiliser la commande suivante :
 
 ```bash
 gcloud builds submit .
@@ -235,4 +235,4 @@ Résultat :
 
 ## Conclusion
 
-Comme nous l'avons vu dans le dernier tutoriel, Packer est un outil très utile en soi,mais en le combinant avec Cloud Build, nous pouvons automatiser la construction de nos images machines personnalisées et ainsi optimiser notre pipeline de livraison.
+Comme nous l'avons vu dans le dernier tutoriel, Packer est un outil très utile en soi, mais en le combinant avec Cloud Build, nous pouvons automatiser la construction de nos images machines personnalisées et ainsi optimiser notre pipeline de livraison.
