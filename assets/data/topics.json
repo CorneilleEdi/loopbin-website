@@ -96,6 +96,12 @@
         "image": "packer.svg",
         "description": "Outil de création d'image machine",
         "primary": true
+      },
+      {
+        "name": "chaos-engineering",
+        "image": "chaos-engineering.svg",
+        "description": "Tester des infrastructures en créant des pannes volontaires",
+        "primary": true
       }
     ]
   },
